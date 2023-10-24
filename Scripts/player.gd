@@ -13,7 +13,7 @@ func _ready() -> void:
 	_state_machine = _animation_tree["parameters/playback"]
 	pass
 	
-func _dialogue() -> void:
+func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var acionaveis = detector.get_overlapping_areas()
 		if acionaveis.size()>0:
@@ -23,7 +23,6 @@ func _dialogue() -> void:
 func _physics_process(_delta: float) -> void:
 	_move()
 	_animated()
-	_dialogue()
 	move_and_slide()
 	
 func _move() -> void:

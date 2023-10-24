@@ -1,14 +1,16 @@
 ~ start
-Bruxinha: Alguma coisa!!!
-
-#Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-#Nathan: Here are some choices.
-#- First one
-#	Nathan: You picked the first one.
-#- Second one
-#	Nathan: You picked the second one.
-#- Start again => this_is_a_node_title
-#- End the conversation => END
-#Nathan: For more information see the online documentation.
-
+Adonis: Um capuccino.
+if capuccino_count == 1:
+	Leia: Só tenho um...
+	- Dar o Capuccino
+		set capuccino_count = 0
+		Leia: Aqui está
+		Adonis: Valeus
+	- Oferecer aguinha
+		Leia: Quer aguinha não?
+		Adonis: Tá bom
+		
+else:
+	Leia: Só tem água agora
+	Adonis: Droga
 => END

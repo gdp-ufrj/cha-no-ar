@@ -121,3 +121,7 @@ dialogue_resource = ExtResource("4_wfgf0")
 position = Vector2(0, 9)
 shape = SubResource("CircleShape2D_b3x4i")
 debug_color = Color(0.996078, 0, 0, 0.419608)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(161, 77)
+zoom = Vector2(2, 2)
