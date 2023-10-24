@@ -1,0 +1,16 @@
+~ start
+Adonis: Um capuccino.
+if capuccino_count == 1:
+	Leia: Só tenho um...
+	- Dar o Capuccino
+		set capuccino_count = 0
+		Leia: Aqui está
+		Adonis: Valeus
+	- Oferecer aguinha
+		Leia: Quer aguinha não?
+		Adonis: Tá bom
+		
+else:
+	Leia: Só tem água agora
+	Adonis: Droga
+=> END
