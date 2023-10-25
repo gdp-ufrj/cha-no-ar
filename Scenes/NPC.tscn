@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cqqyyreus6j82" path="res://Assets/sprites/characters/slime.png" id="1_no7gc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_y5uhk"]
-radius = 7.0
+radius = 6.16903
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qbe1c"]
 atlas = ExtResource("1_no7gc")
