@@ -1,6 +1,8 @@
 extends CharacterBody2D
 var _state_machine
 
+@onready var camera = get_node("Camera2D")
+
 @export_category("variable")
 @export var _move_speed:float =128
 
@@ -17,7 +19,11 @@ func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var acionaveis = detector.get_overlapping_areas()
 		if acionaveis.size()>0:
-			acionaveis[0].action()
+			var interacting = acionaveis[0]
+			if interacting.portal != "":
+				get_parent().go_to_scene(interacting.portal)
+			else:
+				interacting.start_dialogue()
 			return
 		
 func _physics_process(_delta: float) -> void:
@@ -40,3 +46,12 @@ func _animated() -> void:
 		_state_machine.travel("walk")
 		return
 	_state_machine.travel("idle")
+
+func make_player_current_camera():
+	var tilemap = get_owner().get_node("Terreno")
+	var map_rect = tilemap.get_used_rect()
+	var cell_size = tilemap.cell_quadrant_size
+	
+	var map_size = map_rect.size * cell_size
+	camera.limit_right = map_size.x
+	camera.limit_bottom = map_size.y

@@ -586,3 +586,11 @@ collision_mask = 16
 position = Vector2(0, 8)
 shape = SubResource("CircleShape2D_igcbd")
 debug_color = Color(0.996078, 0, 0, 0.419608)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+limit_left = -80
+limit_top = -80
+limit_right = 320
+limit_bottom = 176
+position_smoothing_enabled = true

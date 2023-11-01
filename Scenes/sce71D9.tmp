@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqe0gbev5r2gl"]
+
+[ext_resource type="Script" path="res://Scripts/sceneManager.gd" id="1_tmmck"]
+
+[node name="sceneManager" type="Node"]
+script = ExtResource("1_tmmck")
+
+[node name="LuzAmbiente" type="DirectionalLight2D" parent="."]
+energy = 0.0
+blend_mode = 1
