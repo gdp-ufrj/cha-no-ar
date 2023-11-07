@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=3 format=3 uid="uid://bsr4i8u0khvh8"]
 
 [ext_resource type="PackedScene" uid="uid://da5lbj8fwjr8y" path="res://Scenes/terreno.tscn" id="1_na5e6"]
+[ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="2_lc0rj"]
 
 [node name="cafe" type="Node2D"]
 
@@ -13,4 +14,9 @@ layer_2/tile_data = PackedInt32Array(-65534, 65538, 0, 2, 2, 1, 65538, 2, 1, -65
 position = Vector2(196, 70)
 
 [node name="LuzesFocais" type="Node2D" parent="."]
+visible = false
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="PauseMenu" instance=ExtResource("2_lc0rj")]
 visible = false

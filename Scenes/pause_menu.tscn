@@ -31,23 +31,29 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
-theme_override_constants/separation = 10
 
 [node name="PausedLabel" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "Pausado"
 horizontal_alignment = 1
 
-[node name="Control" type="Control" parent="CenterContainer/VBoxContainer"]
-layout_mode = 2
-
 [node name="ResumeButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "Resumir"
+
+[node name="Menu principal" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Menu principal"
 
 [node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "Sair do jogo"
 
+[node name="Ajuda" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Ajuda
+"
+
 [connection signal="pressed" from="CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Ajuda" to="." method="_on_ajuda_pressed"]

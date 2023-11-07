@@ -68,7 +68,7 @@ debug_color = Color(0.729412, 0.470588, 0, 0.419608)
 [node name="Spawn" type="Marker2D" parent="."]
 position = Vector2(121, 65)
 
-[node name="GUI" type="CanvasLayer" parent="."]
+[node name="PauseMenu" type="CanvasLayer" parent="."]
 
-[node name="PauseMenu" parent="GUI" instance=ExtResource("7_io7h3")]
+[node name="PauseMenu" parent="PauseMenu" instance=ExtResource("7_io7h3")]
 visible = false
