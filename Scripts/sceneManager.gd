@@ -21,7 +21,6 @@ func _ready():
 	maps["fase"] = quarto
 	var cafe = load("res://Scenes/cafe.tscn").instantiate()
 	maps["cafe"] = cafe
-	
 	start_game()
 
 

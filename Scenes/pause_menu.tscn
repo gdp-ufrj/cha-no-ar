@@ -54,6 +54,30 @@ layout_mode = 2
 text = "Ajuda
 "
 
+[node name="Ajuda2" type="VBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer/Ajuda2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "A que não sei o que não sei que la
+E bla bla bla bla bla blabla bla blab
+Ueeeeeepa"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+text_direction = 1
+
+[node name="Voltar" type="Button" parent="CenterContainer/Ajuda2"]
+layout_mode = 2
+text = "Voltar
+"
+
 [connection signal="pressed" from="CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Menu principal" to="." method="_on_menu_principal_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Ajuda" to="." method="_on_ajuda_pressed"]
+[connection signal="pressed" from="CenterContainer/Ajuda2/Voltar" to="." method="_on_voltar_pressed"]
