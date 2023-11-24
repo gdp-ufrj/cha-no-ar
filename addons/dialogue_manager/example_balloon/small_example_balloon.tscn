@@ -166,20 +166,18 @@ script = ExtResource("3_1j1j0")
 layout_mode = 2
 text = "Response Example"
 
-[node name="MolduraPlayer" type="Sprite2D" parent="Balloon" node_paths=PackedStringArray("moldura")]
+[node name="MolduraPlayer" type="Sprite2D" parent="Balloon"]
 position = Vector2(501, -9)
 scale = Vector2(0.412599, 0.412599)
 texture = ExtResource("4_ibpep")
 script = ExtResource("5_1wtiv")
-moldura = NodePath(".")
 
-[node name="MolduraNPC" type="Sprite2D" parent="Balloon" node_paths=PackedStringArray("moldura")]
+[node name="MolduraNPC" type="Sprite2D" parent="Balloon"]
 position = Vector2(90, -9)
 scale = Vector2(0.412599, 0.412599)
 texture = ExtResource("4_ibpep")
 flip_h = true
 script = ExtResource("5_1wtiv")
-moldura = NodePath("../MolduraPlayer")
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

@@ -1,18 +1,15 @@
-extends Node
+extends Sprite2D
 
-@export var moldura : Sprite2D
-@onready var state = load("res://Scripts/state.gd")
-var emocao = 0
+var iconPadrao = preload("res://Temporario/kirbyNormal.png")
+var iconFeliz = preload("res://Temporario/kirbyFeliz.png")
+@onready var retrato = get_node("MolduraPlayer")
+var emocao: int = 1
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass 
+	pass
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func changePicuture():
 	if emocao == 0:
-		moldura.texture = load("res://Temporario/kirbyNormal.png")
+		retrato.set_texture(iconPadrao)
 	if emocao == 1:
-		moldura.texture = load("res://Temporario/kirbyFeliz.png")
-	if emocao == 2:
-		pass
+		retrato.set_texture(iconFeliz)
