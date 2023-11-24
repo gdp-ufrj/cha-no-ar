@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://13s5spsk34qu"]
+[gd_scene load_steps=12 format=3 uid="uid://13s5spsk34qu"]
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_s2gbs"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_hfvdi"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_1j1j0"]
+[ext_resource type="Texture2D" uid="uid://dbvye554uar8g" path="res://Temporario/kirbyNormal.png" id="4_ibpep"]
+[ext_resource type="Script" path="res://Scripts/pictureManage.gd" id="5_1wtiv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_235ry"]
 content_margin_left = 6.0
@@ -95,14 +97,15 @@ script = ExtResource("1_s2gbs")
 
 [node name="Balloon" type="Panel" parent="."]
 unique_name_in_owner = true
-anchors_preset = 12
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 5.0
+offset_left = -288.0
 offset_top = -69.0
-offset_right = -4.0
-offset_bottom = -5.0
+offset_right = 293.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_qq3yp")
@@ -112,6 +115,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 173.0
+offset_top = 7.0
+offset_right = -162.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -158,6 +165,21 @@ script = ExtResource("3_1j1j0")
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
 text = "Response Example"
+
+[node name="MolduraPlayer" type="Sprite2D" parent="Balloon" node_paths=PackedStringArray("moldura")]
+position = Vector2(501, -9)
+scale = Vector2(0.412599, 0.412599)
+texture = ExtResource("4_ibpep")
+script = ExtResource("5_1wtiv")
+moldura = NodePath(".")
+
+[node name="MolduraNPC" type="Sprite2D" parent="Balloon" node_paths=PackedStringArray("moldura")]
+position = Vector2(90, -9)
+scale = Vector2(0.412599, 0.412599)
+texture = ExtResource("4_ibpep")
+flip_h = true
+script = ExtResource("5_1wtiv")
+moldura = NodePath("../MolduraPlayer")
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
