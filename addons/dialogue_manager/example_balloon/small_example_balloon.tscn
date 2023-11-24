@@ -148,10 +148,10 @@ anchor_left = 0.226
 anchor_top = 0.166
 anchor_right = 0.961
 anchor_bottom = 0.168
-offset_left = -3.286
-offset_top = -168.624
-offset_right = -0.871002
-offset_bottom = -0.752
+offset_left = 98.694
+offset_top = -168.288
+offset_right = -130.341
+offset_bottom = -0.424
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -173,7 +173,7 @@ texture = ExtResource("4_ibpep")
 script = ExtResource("5_1wtiv")
 
 [node name="MolduraNPC" type="Sprite2D" parent="Balloon"]
-position = Vector2(90, -9)
+position = Vector2(89, -9)
 scale = Vector2(0.412599, 0.412599)
 texture = ExtResource("4_ibpep")
 flip_h = true
