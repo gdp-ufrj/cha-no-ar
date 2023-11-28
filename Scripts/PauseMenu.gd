@@ -30,12 +30,9 @@ func _on_ajuda_pressed():
 	pause_menu = get_node("CenterContainer/VBoxContainer")
 	pause_menu.visible = false
 
-
 func _on_voltar_pressed():
 	pause_menu.visible = true
 	ajuda.visible = false
-
-
 
 func _on_menu_principal_pressed():
 	is_paused = false

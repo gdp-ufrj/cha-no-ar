@@ -7,11 +7,6 @@ func _ready():
 	get_window().min_size = Vector2i(960, 540)
 	creditos.visible = false
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
 func _on_jogar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/sceneManager.tscn")
 

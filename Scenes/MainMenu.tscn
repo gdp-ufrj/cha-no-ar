@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfx5lihtn0by"]
+[gd_scene load_steps=3 format=3 uid="uid://dfx5lihtn0by"]
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_68c6x"]
+[ext_resource type="Texture2D" uid="uid://crysitwohkk41" path="res://Assets/sprites/ui/pngtree-tea-cup-tea-mountain-green-chinese-style-zen-tea-image_805332.jpg" id="2_uap85"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,14 +12,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_68c6x")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.172549, 0.172549, 0.172549, 0.564706)
+texture = ExtResource("2_uap85")
+expand_mode = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -33,24 +35,30 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 
 [node name="Nome" type="Label" parent="CenterContainer/MainMenu"]
+modulate = Color(0.380392, 0.403922, 0.203922, 1)
 layout_mode = 2
-text = "O jogo"
+theme_override_font_sizes/font_size = 86
+text = "Chá No Ar"
 horizontal_alignment = 1
 
 [node name="Jogar" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 22
 text = "Jogar"
 
 [node name="Opções" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 22
 text = "Opções"
 
 [node name="Créditos" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 22
 text = "Créditos"
 
 [node name="Sair" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 22
 text = "Sair"
 
 [node name="Opções" type="VBoxContainer" parent="CenterContainer"]
@@ -58,28 +66,34 @@ visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="CenterContainer/Opções"]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
 layout_mode = 2
 text = "Volume geral"
 
 [node name="HSlider" type="HSlider" parent="CenterContainer/Opções"]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 max_value = 9.0
 value = 9.0
 
 [node name="Label2" type="Label" parent="CenterContainer/Opções"]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
 layout_mode = 2
 text = "Volume da música"
 
 [node name="HSlider2" type="HSlider" parent="CenterContainer/Opções"]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 max_value = 9.0
 value = 9.0
 
 [node name="Label3" type="Label" parent="CenterContainer/Opções"]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
 layout_mode = 2
 text = "Volume dos sons"
 
 [node name="HSlider3" type="HSlider" parent="CenterContainer/Opções"]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 max_value = 9.0
 value = 9.0
@@ -95,19 +109,25 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -71.0
+offset_right = 3.0
+offset_bottom = -71.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Creditos"]
+modulate = Color(0.529412, 0.490196, 0.109804, 1)
 layout_mode = 2
+theme_override_font_sizes/normal_font_size = 35
 text = "Artistas: Julia Teixeira, Marcela, Nico
 Programação: Rafael Lima, Luciana, João Pedro
  e Igor Delfino
 Roteiro: Joana, Lucas de Araújo
 Som:Douglas Oliveira
 Game Design: Christian
-Lider do Projeto: Carlos Bravo"
+Gestão: Carlos Bravo"
 fit_content = true
 scroll_active = false
 autowrap_mode = 0

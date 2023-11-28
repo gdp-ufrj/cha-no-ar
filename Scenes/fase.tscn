@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cknedyiq3v434"]
+[gd_scene load_steps=13 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="PackedScene" uid="uid://da5lbj8fwjr8y" path="res://Scenes/terreno.tscn" id="1_u2okv"]
@@ -7,6 +7,7 @@
 [ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
 [ext_resource type="Texture2D" uid="uid://gh43phwe43xn" path="res://Assets/sprites/objects/chest_01.png" id="7_udh8f"]
+[ext_resource type="PackedScene" uid="uid://cp7jiuykmsgcf" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3x4i"]
 radius = 8.0
@@ -67,6 +68,10 @@ debug_color = Color(0.729412, 0.470588, 0, 0.419608)
 
 [node name="Spawn" type="Marker2D" parent="."]
 position = Vector2(121, 65)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Receitas" parent="CanvasLayer" instance=ExtResource("8_qxn06")]
 
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 
