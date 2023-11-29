@@ -1,9 +1,9 @@
 extends Control
 @onready var receitas = $"."
+@onready var cha_amarelo = $"../../SpawnCha/CháAmarelo"
 var aberto = false
-var cha_amarelo = preload("res://Scenes/cha_amarelo.tscn")
-#@onready var background_image = $BackgroundImage
-#
+
+
 func _unhandled_input(event):
 	if event.is_action_pressed("receitas"):
 		if aberto == false:
@@ -14,6 +14,9 @@ func _unhandled_input(event):
 			receitas.visible = false
 
 func _on_cha_amarelo_pressed():
-	self.add_child(cha_amarelo)
+	cha_amarelo.global_position = Vector2(65,116)
+	cha_amarelo.visible = true
+	receitas.visible = false
+	aberto = false
 func _on_cha_azul_pressed():
 	print("Cha Azul vish")

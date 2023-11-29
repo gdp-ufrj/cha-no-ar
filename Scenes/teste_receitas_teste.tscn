@@ -43,6 +43,7 @@ texture = ExtResource("1_0msc3")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Background"]
+layout_mode = 0
 offset_left = 167.0
 offset_top = 87.0
 offset_right = 207.0
