@@ -8,6 +8,7 @@
 
 [node name="Receitas" type="Control"]
 process_mode = 3
+visible = false
 layout_mode = 3
 anchor_left = 0.293403
 anchor_top = 0.271605

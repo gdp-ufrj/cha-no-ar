@@ -93,6 +93,7 @@ Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
+visible = false
 script = ExtResource("1_s2gbs")
 
 [node name="Balloon" type="Panel" parent="."]
