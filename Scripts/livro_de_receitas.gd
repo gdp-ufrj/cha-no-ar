@@ -16,7 +16,15 @@ func _unhandled_input(event):
 func _on_cha_amarelo_pressed():
 	cha_amarelo.global_position = Vector2(65,116)
 	cha_amarelo.visible = true
+#	get_node("ContainerBebidas/Bebidas/ZonaZen/Label").show()
 	receitas.visible = false
 	aberto = false
 func _on_cha_azul_pressed():
 	print("Cha Azul vish")
+
+
+func _on_zona_zen_mouse_entered():
+	get_node("ContainerBebidas/Bebidas/ZonaZen/Label").show()
+
+func _on_zona_zen_mouse_exited():
+	get_node("ContainerBebidas/Bebidas/ZonaZen/Label").hide()

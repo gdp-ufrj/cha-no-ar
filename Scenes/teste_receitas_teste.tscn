@@ -8,7 +8,6 @@
 
 [node name="Receitas" type="Control"]
 process_mode = 3
-visible = false
 layout_mode = 3
 anchor_left = 0.293403
 anchor_top = 0.271605
@@ -17,63 +16,158 @@ anchor_bottom = 0.709877
 offset_top = 1.52588e-05
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_wvtyh")
 metadata/_edit_use_anchors_ = true
 
 [node name="Background" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -136.0
-offset_top = -52.0
-offset_right = -136.0
-offset_bottom = -52.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.764706, 0.764706, 0.764706, 1)
-
-[node name="TextureRect" type="TextureRect" parent="Background"]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 9.0
-offset_right = 207.0
-offset_bottom = 49.0
-texture = ExtResource("1_0msc3")
-expand_mode = 1
+offset_left = 68.0
+offset_top = 16.0
+offset_right = 250.0
+offset_bottom = 168.0
+color = Color(0.639216, 0.00784314, 0.282353, 1)
 
-[node name="TextureRect2" type="TextureRect" parent="Background"]
+[node name="ContainerBebidas" type="ScrollContainer" parent="."]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 87.0
-offset_right = 207.0
-offset_bottom = 127.0
-texture = ExtResource("2_737l7")
-expand_mode = 1
+offset_left = 68.0
+offset_top = 17.0
+offset_right = 250.0
+offset_bottom = 168.0
 
-[node name="ChaAmarelo" type="Button" parent="Background"]
+[node name="Bebidas" type="VBoxContainer" parent="ContainerBebidas"]
+layout_mode = 2
+
+[node name="ZonaZen" type="Button" parent="ContainerBebidas/Bebidas"]
 modulate = Color(0.988235, 0.796078, 0, 1)
 layout_mode = 2
-offset_left = 13.0
-offset_top = 7.0
-offset_right = 144.0
-offset_bottom = 51.0
 theme_override_font_sizes/font_size = 15
 theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
-text = "Chá amarelo
-(Energético, Doce)"
+text = "Zona Zen
+"
 
-[node name="ChaAzul" type="Button" parent="Background"]
+[node name="Label" type="Label" parent="ContainerBebidas/Bebidas/ZonaZen"]
+visible = false
+layout_mode = 0
+offset_left = 25.9998
+offset_top = 12.9999
+offset_right = 101.0
+offset_bottom = 38.9999
+text = "Calmante"
+
+[node name="ZonaZenSprite" type="Sprite2D" parent="ContainerBebidas/Bebidas"]
+position = Vector2(155, 20)
+scale = Vector2(0.056, 0.056)
+texture = ExtResource("1_0msc3")
+
+[node name="OvelhaNegra" type="Button" parent="ContainerBebidas/Bebidas"]
 modulate = Color(0.356863, 0.870588, 0.894118, 1)
 layout_mode = 2
-offset_left = 18.0
-offset_top = 83.0
-offset_right = 144.0
-offset_bottom = 127.0
 theme_override_font_sizes/font_size = 15
 theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
-text = "Chá azul
-(Relxante, cítrico)"
+text = "Ovelha Negra
+(Estimulante)"
 
-[connection signal="pressed" from="Background/ChaAmarelo" to="." method="_on_cha_amarelo_pressed"]
-[connection signal="pressed" from="Background/ChaAzul" to="." method="_on_cha_azul_pressed"]
+[node name="OvelhaNegraSprite" type="Sprite2D" parent="ContainerBebidas/Bebidas"]
+position = Vector2(155, 75.9999)
+scale = Vector2(0.0562404, 0.0562404)
+texture = ExtResource("2_737l7")
+
+[node name="AndoJururu" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Ando Jururu
+(Calmante)"
+
+[node name="MamãeNatureza" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Mamãe Natureza
+(Calmante)"
+
+[node name="Corre-Corre" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Corre-Corre
+(Estimulante)"
+
+[node name="Bem-Me-Quer" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Bem-Me-Quer"
+
+[node name="BarataTonta" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Barata Tonta"
+
+[node name="BichoGrilo" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Bicho Grilo"
+
+[node name="CruelaCruel" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Cruela Cruel"
+
+[node name="Shangrila" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Shangrila"
+
+[node name="Benzadeus" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Benzadeus"
+
+[node name="Xuxuzinho" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Xuxuzinho"
+
+[node name="ChegaMais" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Chega Mais"
+
+[node name="Modinha" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Modinha"
+
+[node name="PegaRapaz" type="Button" parent="ContainerBebidas/Bebidas"]
+modulate = Color(0.356863, 0.870588, 0.894118, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkv4w")
+text = "Pega Rapaz"
+
+[connection signal="mouse_entered" from="ContainerBebidas/Bebidas/ZonaZen" to="." method="_on_zona_zen_mouse_entered"]
+[connection signal="mouse_exited" from="ContainerBebidas/Bebidas/ZonaZen" to="." method="_on_zona_zen_mouse_exited"]
+[connection signal="pressed" from="ContainerBebidas/Bebidas/ZonaZen" to="." method="_on_cha_amarelo_pressed"]
+[connection signal="pressed" from="ContainerBebidas/Bebidas/OvelhaNegra" to="." method="_on_cha_azul_pressed"]

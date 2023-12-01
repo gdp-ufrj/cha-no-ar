@@ -1,11 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2cuujfoqrm2a"]
+[gd_scene load_steps=3 format=3 uid="uid://b2cuujfoqrm2a"]
 
 [ext_resource type="Texture2D" uid="uid://cy1mjl5jjd2lc" path="res://Assets/sprites/ui/CháAmarelo.png" id="1_173yr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pdn5b"]
+radius = 233.358
 
 [node name="CháAmarelo" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 999
 position = Vector2(293, 225)
-scale = Vector2(12.8729, 12.8729)
+scale = Vector2(7.13292, 7.13292)
 texture = ExtResource("1_173yr")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+position = Vector2(-22.761, -17.4786)
+scale = Vector2(0.0776826, 0.0776826)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+position = Vector2(-49, 889)
+scale = Vector2(12.8729, 12.8729)
+shape = SubResource("CircleShape2D_pdn5b")
