@@ -1,9 +1,8 @@
 ~ start
-set emocao = 0
 Adonis: Um capuccino.
-if capuccino_count == 1:
-	set emocao = 1
-	Leia: Só tenho um...
+if capuccino_count == 1 and emocao_count == 0:
+	set emocao_count = 1
+	Leia: Só tenho um... 
 	- Dar o Capuccino
 		set capuccino_count = 0
 		Leia: Aqui está
