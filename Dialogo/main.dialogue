@@ -16,4 +16,5 @@ else:
 	Leia: Só tem água agora
 	set emocao_count = 2
 	Adonis: Droga
+	set emocao_count = 0
 => END

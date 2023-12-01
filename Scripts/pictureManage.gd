@@ -15,7 +15,5 @@ func changePicuture():
 		moldura_player.texture = iconPadrão
 	if State.emocao_count == 1:
 		moldura_player.texture = iconFeliz
-#		moldura_player.scale.x = 0.213
-#		moldura_player.scale.y= 0.213
 	if  State.emocao_count == 2:
 		moldura_player.texture = iconTriste
