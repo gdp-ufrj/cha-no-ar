@@ -1,0 +1,11 @@
+~ start
+Leia: Como vc se sente em relação a mim Adonis?
+if adonis_love == 3:
+	Adonis: [#apaixonado]Sinto que seus olhos são as coisas mais brilhantes do universo!
+if adonis_love == 2:
+	Adonis: [#interessado]Eu acho você uma mulher linda,Leia..
+if adonis_love == 1:
+	Adonis: [#surpreso]Ué você é uma grande amiga, e valorizo muito a nossa amizade.
+if adonis_love == 0:
+	Adonis: [#indiferente]Ainda estou formando minhas opiniões, me pergunte depois.
+=> END

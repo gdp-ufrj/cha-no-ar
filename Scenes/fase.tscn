@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cknedyiq3v434"]
+[gd_scene load_steps=12 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="PackedScene" uid="uid://da5lbj8fwjr8y" path="res://Scenes/terreno.tscn" id="1_u2okv"]
 [ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="2_sbekf"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_4uegc"]
 [ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
+[ext_resource type="Resource" uid="uid://diluhs0dbb68e" path="res://Dialogo/score.dialogue" id="6_dvewo"]
 [ext_resource type="Texture2D" uid="uid://gh43phwe43xn" path="res://Assets/sprites/objects/chest_01.png" id="7_udh8f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3x4i"]
@@ -40,6 +41,17 @@ position = Vector2(0, 9)
 shape = SubResource("CircleShape2D_b3x4i")
 debug_color = Color(0.996078, 0, 0, 0.419608)
 
+[node name="Adonis" parent="." instance=ExtResource("2_sbekf")]
+position = Vector2(100, 33)
+
+[node name="acionaveis" parent="Adonis" instance=ExtResource("3_4uegc")]
+dialogue_resource = ExtResource("6_dvewo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Adonis/acionaveis"]
+position = Vector2(0, 9)
+shape = SubResource("CircleShape2D_b3x4i")
+debug_color = Color(0.996078, 0, 0, 0.419608)
+
 [node name="LuzesFocais" type="Node2D" parent="."]
 visible = false
 
@@ -58,7 +70,6 @@ texture = ExtResource("7_udh8f")
 hframes = 4
 
 [node name="acionaveis" parent="PortaCafe" instance=ExtResource("3_4uegc")]
-portal = "cafe"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortaCafe/acionaveis"]
 shape = SubResource("RectangleShape2D_3c76q")

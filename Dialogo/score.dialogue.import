@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://diluhs0dbb68e"
+path="res://.godot/imported/score.dialogue-d0ca1cfa1980f38a0f3461c7512d8275.tres"
+
+[deps]
+
+source_file="res://Dialogo/score.dialogue"
+dest_files=["res://.godot/imported/score.dialogue-d0ca1cfa1980f38a0f3461c7512d8275.tres"]
+
+[params]
+
+defaults=true
