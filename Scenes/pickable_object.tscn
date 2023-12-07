@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdb60u1ccci6m"]
+
+[ext_resource type="Script" path="res://Scenes/pickable_object.gd" id="1_dcpmj"]
+[ext_resource type="Texture2D" uid="uid://bb82qkau0fj3w" path="res://icon.svg" id="2_6l524"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6233o"]
+size = Vector2(12, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gujsi"]
+
+[node name="pickable_object" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_dcpmj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6233o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6l524")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_gujsi")

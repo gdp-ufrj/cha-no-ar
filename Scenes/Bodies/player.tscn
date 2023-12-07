@@ -552,6 +552,7 @@ states/walk/position = Vector2(653.333, 72.963)
 [sub_resource type="CircleShape2D" id="CircleShape2D_igcbd"]
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("_animation_tree")]
+scale = Vector2(1.25234, 1.23809)
 script = ExtResource("1_afgj6")
 _animation_tree = NodePath("AnimationTree")
 
@@ -594,3 +595,6 @@ limit_top = -80
 limit_right = 320
 limit_bottom = 176
 position_smoothing_enabled = true
+
+[node name="ItemSpot" type="Marker2D" parent="."]
+position = Vector2(0, -3.23079)
