@@ -1,5 +1,7 @@
 extends Area2D
 
+@export_enum("Dialogue", "Door", "Carry") var type: String
+
 @export_group("Dialogue")
 @export var dialogue_resource: DialogueResource
 @export var dialogue_start: String = "start"

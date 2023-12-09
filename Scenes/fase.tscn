@@ -5,10 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="2_sbekf"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_4uegc"]
 [ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
-[ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
+[ext_resource type="PackedScene" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
 [ext_resource type="Texture2D" uid="uid://gh43phwe43xn" path="res://Assets/sprites/objects/chest_01.png" id="7_udh8f"]
-[ext_resource type="PackedScene" uid="uid://cp7jiuykmsgcf" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
-[ext_resource type="PackedScene" uid="uid://b2cuujfoqrm2a" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
+[ext_resource type="PackedScene" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
+[ext_resource type="PackedScene" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3x4i"]
 radius = 8.0
@@ -57,6 +57,7 @@ layer_2/tile_data = PackedInt32Array(131086, 2, 2, -65534, 65538, 0, 2, 2, 1, 65
 position = Vector2(186, 30)
 
 [node name="acionaveis" parent="NPC" instance=ExtResource("3_4uegc")]
+type = "Dialogue"
 dialogue_resource = ExtResource("4_wfgf0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis"]
@@ -82,6 +83,7 @@ texture = ExtResource("7_udh8f")
 hframes = 4
 
 [node name="acionaveis" parent="PortaCafe" instance=ExtResource("3_4uegc")]
+type = "Door"
 portal = "cafe"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortaCafe/acionaveis"]

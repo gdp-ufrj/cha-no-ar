@@ -9,7 +9,6 @@ var iconTriste = preload("res://Temporario/kirbyTristeResized.png")
 
 func _process(delta):
 	changePicuture()
-	print(State.emocao_count)
 func changePicuture():
 	if State.emocao_count == 0:
 		moldura_player.texture = iconPadrão
