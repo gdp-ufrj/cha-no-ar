@@ -11,6 +11,8 @@ var _state_machine
 
 @onready var detector: Area2D = $direcao/Area2D
 
+var can_pick = true
+
 func _ready() -> void:
 	_state_machine = _animation_tree["parameters/playback"]
 	pass

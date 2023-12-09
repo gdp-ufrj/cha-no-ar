@@ -594,3 +594,6 @@ limit_top = -80
 limit_right = 320
 limit_bottom = 176
 position_smoothing_enabled = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -4)
