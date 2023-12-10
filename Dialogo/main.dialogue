@@ -1,20 +1,20 @@
 ~ start
 Adonis: Um capuccino.
-if capuccino_count == 1:
-	set emocao_count = 1
+if estado["capuccino_count"] == 1:
+	set estado["emocao_count"] = 1
 	Leia: Só tenho um... 
 	- Dar o Capuccino
-		set capuccino_count = 0
+		set estado["capuccino_count"] = 0
 		Leia: Aqui está
 		Adonis: Valeus
-		set emocao_count = 0
+		set estado["emocao_count"] = 0
 	- Oferecer aguinha
 		Leia: Quer aguinha não?
 		Adonis: Tá bom
 		
 else:
 	Leia: Só tem água agora
-	set emocao_count = 2
+	set estado["emocao_count"] = 2
 	Adonis: Droga
-	set emocao_count = 0
+	set estado["emocao_count"] = 0
 => END

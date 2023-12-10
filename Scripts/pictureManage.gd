@@ -7,9 +7,9 @@ var iconTriste = preload("res://Temporario/kirbyTristeResized.png")
 #var emocao: int = 0
 # Called when the node enters the scene tree for the first time.
 
-func _process(delta):
+func _process(_delta):
 	changePicuture()
-	print(State.emocao_count)
+
 func changePicuture():
 	if State.emocao_count == 0:
 		moldura_player.texture = iconPadrão

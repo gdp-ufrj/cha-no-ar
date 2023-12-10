@@ -1,5 +1,7 @@
 extends Node
 
+var teste = "AAAA"
+
 var player_instance = load("res://Scenes/Bodies/player.tscn").instantiate()
 var player
 
@@ -12,8 +14,6 @@ var current_scene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-		#get_window().borderless = true
-	get_window().min_size = Vector2i(960, 540)
 	luz_ambiente.set_energy(1.4)
 	luz_ambiente.set_color(valores_luz_ambiente[0])
 	
@@ -31,6 +31,7 @@ func start_game():
 	go_to_scene("fase")
 
 func go_to_scene(nome):
+	print(State.capuccino_count)
 	if current_scene:
 		self.remove_child(current_scene)
 	
@@ -52,3 +53,4 @@ func _on_time_pressed(index):
 		current_scene.get_node("LuzesFocais").visible = true
 	else:
 		current_scene.get_node("LuzesFocais").visible = false
+		

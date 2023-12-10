@@ -41,10 +41,16 @@ theme_override_font_sizes/font_size = 86
 text = "Chá No Ar"
 horizontal_alignment = 1
 
-[node name="Jogar" type="Button" parent="CenterContainer/MainMenu"]
+[node name="Começar" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 22
-text = "Jogar"
+text = "Começar"
+
+[node name="Continuar" type="Button" parent="CenterContainer/MainMenu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+disabled = true
+text = "Continuar"
 
 [node name="Opções" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
@@ -98,10 +104,37 @@ layout_mode = 2
 max_value = 9.0
 value = 9.0
 
+[node name="Fullscreen" type="CheckButton" parent="CenterContainer/Opções"]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
+layout_mode = 2
+text = "Fullscreen"
+
 [node name="VoltarOpçoes" type="Button" parent="CenterContainer/Opções"]
 layout_mode = 2
 text = "Voltar
 "
+
+[node name="Aviso" type="VBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/Aviso"]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
+layout_mode = 2
+text = "Atenção: Ao continuar, qualquer progresso será perdido"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/Aviso"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Aceitar" type="Button" parent="CenterContainer/Aviso/HBoxContainer"]
+layout_mode = 2
+text = "Aceitar"
+
+[node name="Voltar" type="Button" parent="CenterContainer/Aviso/HBoxContainer"]
+layout_mode = 2
+text = "Voltar"
+icon_alignment = 1
 
 [node name="Creditos" type="VBoxContainer" parent="."]
 visible = false
@@ -139,9 +172,13 @@ layout_mode = 2
 text = "Voltar
 "
 
-[connection signal="pressed" from="CenterContainer/MainMenu/Jogar" to="." method="_on_jogar_pressed"]
-[connection signal="pressed" from="CenterContainer/MainMenu/Opções" to="." method="_on_opções_pressed"]
-[connection signal="pressed" from="CenterContainer/MainMenu/Créditos" to="." method="_on_créditos_pressed"]
+[connection signal="pressed" from="CenterContainer/MainMenu/Começar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="CenterContainer/MainMenu/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="CenterContainer/MainMenu/Opções" to="." method="troca_visibilidade" binds= ["CenterContainer/Opções"]]
+[connection signal="pressed" from="CenterContainer/MainMenu/Créditos" to="." method="troca_visibilidade" binds= ["Creditos"]]
 [connection signal="pressed" from="CenterContainer/MainMenu/Sair" to="." method="_on_sair_pressed"]
-[connection signal="pressed" from="CenterContainer/Opções/VoltarOpçoes" to="." method="_on_voltar_opçoes_pressed"]
-[connection signal="pressed" from="Creditos/VoltarCreditos" to="." method="_on_voltar_creditos_pressed"]
+[connection signal="toggled" from="CenterContainer/Opções/Fullscreen" to="." method="_on_fullscreen_toggled"]
+[connection signal="pressed" from="CenterContainer/Opções/VoltarOpçoes" to="." method="troca_visibilidade" binds= ["CenterContainer/Opções"]]
+[connection signal="pressed" from="CenterContainer/Aviso/HBoxContainer/Aceitar" to="." method="_on_aceitar_pressed"]
+[connection signal="pressed" from="CenterContainer/Aviso/HBoxContainer/Voltar" to="." method="troca_visibilidade" binds= ["CenterContainer/Aviso"]]
+[connection signal="pressed" from="Creditos/VoltarCreditos" to="." method="troca_visibilidade" binds= ["Creditos"]]

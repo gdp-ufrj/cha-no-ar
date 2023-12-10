@@ -1,42 +1,45 @@
 extends Control
-@onready var creditos = Container.new()
-@onready var main_menu = Container.new()
-@onready var opçoes = Container.new()
+
+var scene_manager = "res://Scenes/sceneManager.tscn"
+@onready var main_menu = get_node("CenterContainer/MainMenu")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#get_window().borderless = true
 	get_window().min_size = Vector2i(960, 540)
-	creditos.visible = false
+	if State.save_exists():
+		get_node("CenterContainer/MainMenu/Continuar").disabled = false
 
 func _on_jogar_pressed():
-	get_tree().change_scene_to_file("res://Scenes/sceneManager.tscn")
+	if State.save_exists():
+		troca_visibilidade("CenterContainer/Aviso")
+	else:
+		get_tree().change_scene_to_file(scene_manager)
+
+func _on_continuar_pressed():
+	State.load_data()
+	get_tree().change_scene_to_file(scene_manager)
+
+func _on_aceitar_pressed():
+	State.save_game()
+	get_tree().change_scene_to_file(scene_manager)
+
+func troca_visibilidade(node_path):
+	var container = get_node(node_path)
+	main_menu.visible = !main_menu.visible
+	container.visible = !container.visible
+
+
+##### OPCOES
+func _on_fullscreen_toggled(button_pressed):
+	if button_pressed == true:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 
 
 
-func _on_opções_pressed():
-	main_menu = get_node("CenterContainer/MainMenu")
-	main_menu.visible = false
-	opçoes = get_node("CenterContainer/Opções")
-	opçoes.visible = true
-
-
-func _on_créditos_pressed():
-	main_menu = get_node("CenterContainer/MainMenu")
-	main_menu.visible = false
-	creditos = get_node("Creditos")
-	creditos.visible = true
-#	pause_menu = get_node("CenterContainer/VBoxContainer")
-#	pause_menu.visible = false
-
-
+##### SAIR DO JOGO
 func _on_sair_pressed():
 	get_tree().quit()
 
-
-func _on_voltar_creditos_pressed():
-	creditos.visible = false
-	main_menu.visible = true
-
-
-func _on_voltar_opçoes_pressed():
-	opçoes.visible = false
-	main_menu.visible = true
