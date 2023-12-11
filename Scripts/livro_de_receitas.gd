@@ -3,9 +3,6 @@ extends Control
 @onready var cha_amarelo = $"../../SpawnCha/CháAmarelo"
 var aberto = false
 
-@export var drinks: Array[Drink_Resource]
-
-
 func _unhandled_input(event):
 	if event.is_action_pressed("receitas"):
 		if aberto == false:
