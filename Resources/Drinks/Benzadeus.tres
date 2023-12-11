@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://lnahqpxw3051"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_qdcpf"]
+
+[resource]
+script = ExtResource("1_qdcpf")
+Drink_Name = "Benzadeus"
+Drink_Tags = ["Calmante", "Refrescante"]
+Drink_Description = "Matchá com Menta"
+Drink_Image = null

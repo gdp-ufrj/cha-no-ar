@@ -6,7 +6,7 @@ var player_marker
 var player
 var fase
 
-var drink_properties= {}
+var drink_resource: Resource
 
 func _ready():
 	player_marker = get_node("../../Player/Marker2D")
@@ -16,7 +16,7 @@ func _ready():
 func _input(event):
 	if Input.is_action_just_pressed("ui_pick") and picked == false:
 		var bodies = $Area2D.get_overlapping_bodies()
-		for body in bodies:			
+		for body in bodies:
 			if body.name == "Player" and get_node("../../Player").can_pick == true:
 				self.picked = true
 				fase.remove_child(self)

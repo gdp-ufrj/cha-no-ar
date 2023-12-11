@@ -12,6 +12,7 @@ var _state_machine
 @onready var detector: Area2D = $direcao/Area2D
 
 var can_pick = true
+var drink_in_hand: Resource
 
 func _ready() -> void:
 	_state_machine = _animation_tree["parameters/playback"]

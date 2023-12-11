@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://c6dmkjr7nlbwv"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_753m3"]
+
+[resource]
+script = ExtResource("1_753m3")
+Drink_Name = "Bicho Grilo"
+Drink_Tags = ["Calmante", "Refrescante"]
+Drink_Description = "Chá Verde com Hortelã e Gengibre"
+Drink_Image = null

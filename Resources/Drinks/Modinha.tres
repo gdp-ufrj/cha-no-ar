@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://buaoga6hl5f31"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_48kdj"]
+
+[resource]
+script = ExtResource("1_48kdj")
+Drink_Name = "Modinha"
+Drink_Tags = ["Energético", "Refrescante"]
+Drink_Description = "Frappé"
+Drink_Image = null

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://bhnntuq4miykc"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_xewqa"]
+
+[resource]
+script = ExtResource("1_xewqa")
+Drink_Name = "Shangrila"
+Drink_Tags = ["Calmante", "Refrescante"]
+Drink_Description = "Chá de Camomila com Abacaxi e Hortelã"
+Drink_Image = null

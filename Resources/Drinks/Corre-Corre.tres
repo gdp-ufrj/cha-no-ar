@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://cq3c8xcbfk37w"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_egn67"]
+
+[resource]
+script = ExtResource("1_egn67")
+Drink_Name = "Corre-Corre"
+Drink_Tags = ["Energético", "Tradicional"]
+Drink_Description = "Chá de Erva Mate, Capim Limão, Maracujá, Cardamomo"
+Drink_Image = null

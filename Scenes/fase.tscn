@@ -7,8 +7,8 @@
 [ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
 [ext_resource type="PackedScene" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
 [ext_resource type="Texture2D" uid="uid://gh43phwe43xn" path="res://Assets/sprites/objects/chest_01.png" id="7_udh8f"]
-[ext_resource type="PackedScene" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
-[ext_resource type="PackedScene" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
+[ext_resource type="PackedScene" uid="uid://7xcrirmakwn8" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
+[ext_resource type="PackedScene" uid="uid://d0tw14utntjkc" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
 [ext_resource type="PackedScene" uid="uid://d3noddnmhi4dg" path="res://Scenes/carriable_object.tscn" id="10_3jcdk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3x4i"]
@@ -30,11 +30,8 @@ script = ExtResource("1_pb8pg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Receitas" parent="CanvasLayer" instance=ExtResource("8_qxn06")]
-anchor_left = 0.232639
-anchor_top = 0.324074
-anchor_right = 0.657118
-anchor_bottom = 0.760802
+[node name="Recipes" parent="CanvasLayer" instance=ExtResource("8_qxn06")]
+anchors_preset = 0
 
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 
@@ -43,6 +40,7 @@ visible = false
 z_index = 999
 
 [node name="SpawnCha" type="Node2D" parent="."]
+visible = false
 
 [node name="CháAmarelo" parent="SpawnCha" instance=ExtResource("9_akegy")]
 position = Vector2(90, 18)

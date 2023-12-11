@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://brrl8paputtr8"]
+
+[ext_resource type="Texture2D" uid="uid://c7air4tt8c4qo" path="res://Assets/sprites/ui/Chá.png" id="1_8h36g"]
+[ext_resource type="Script" path="res://Scripts/Cards.gd" id="1_v357s"]
+
+[node name="Cards" type="Button"]
+show_behind_parent = true
+clip_children = 2
+anchors_preset = -1
+anchor_right = 0.341667
+anchor_bottom = 0.111111
+offset_right = 8.0
+offset_bottom = 8.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_v357s")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(106.667, 66.6666)
+scale = Vector2(0.263158, 0.263158)
+texture = ExtResource("1_8h36g")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 67.0
+offset_right = 1347.0
+offset_bottom = 201.0
+vertical_alignment = 1
