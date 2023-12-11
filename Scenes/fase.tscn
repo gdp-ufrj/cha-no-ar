@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cknedyiq3v434"]
+[gd_scene load_steps=16 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="PackedScene" uid="uid://da5lbj8fwjr8y" path="res://Scenes/terreno.tscn" id="1_u2okv"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
 [ext_resource type="Texture2D" uid="uid://gh43phwe43xn" path="res://Assets/sprites/objects/chest_01.png" id="7_udh8f"]
 [ext_resource type="PackedScene" uid="uid://7xcrirmakwn8" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
+[ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_ah5rm"]
 [ext_resource type="PackedScene" uid="uid://d0tw14utntjkc" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
 [ext_resource type="PackedScene" uid="uid://d3noddnmhi4dg" path="res://Scenes/carriable_object.tscn" id="10_3jcdk"]
 
@@ -59,6 +60,19 @@ type = "Dialogue"
 dialogue_resource = ExtResource("4_wfgf0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis"]
+position = Vector2(0, 9)
+shape = SubResource("CircleShape2D_b3x4i")
+debug_color = Color(0.996078, 0, 0, 0.419608)
+
+[node name="Leticia" parent="." instance=ExtResource("2_sbekf")]
+position = Vector2(104, 30)
+
+[node name="acionaveis" parent="Leticia" instance=ExtResource("3_4uegc")]
+type = "Dialogue"
+dialogue_resource = ExtResource("9_ah5rm")
+dialogue_start = "Leticia"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Leticia/acionaveis"]
 position = Vector2(0, 9)
 shape = SubResource("CircleShape2D_b3x4i")
 debug_color = Color(0.996078, 0, 0, 0.419608)

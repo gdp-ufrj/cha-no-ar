@@ -16,7 +16,6 @@ func set_infos(received_drink_resource: Resource):
 		self.icon = load("res://Assets/sprites/ui/Chá.png")
 		
 func _on_card_button_pressed():
-	print("ouço a função")
 	var carriable_object = load("res://Scenes/carriable_object.tscn")
 	var drink = carriable_object.instantiate()
 	var drink_stand_location = get_node("../../../../../../DrinkStand").global_position

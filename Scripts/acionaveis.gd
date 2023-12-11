@@ -5,9 +5,12 @@ extends Area2D
 @export_group("Dialogue")
 @export var dialogue_resource: DialogueResource
 @export var dialogue_start: String = "start"
+var dialogue_spot: int = 0
 
 @export_group("Teleporting")
 @export var portal: String = ""
 
 func start_dialogue() -> void:
-	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
+	var dialogue_marker = dialogue_start + "_" + str(dialogue_spot)
+	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_marker)
+	dialogue_spot = dialogue_spot + 1

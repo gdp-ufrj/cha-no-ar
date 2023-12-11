@@ -21,7 +21,7 @@ func set_object_data(received_drink_resource: Resource, drink_spawn_location):
 		get_node("ObjectSprite").texture = load("res://Assets/sprites/ui/Chá.png")
 	self.global_position = drink_spawn_location
 	
-func _input(event):
+func _input(_event):
 	if Input.is_action_just_pressed("ui_pick") and picked == false:
 		var bodies = $Area2D.get_overlapping_bodies()
 		for body in bodies:
@@ -29,6 +29,9 @@ func _input(event):
 				self.picked = true
 				fase.remove_child(self)
 				player_marker.add_child(self)
+				if self.drink_resource:
+					player.drink_in_hand = drink_resource
+					State.held_drink_tags = drink_resource.Drink_Tags
 				self.position = Vector2(0,0)
 				player.can_pick = false
 				
@@ -37,5 +40,6 @@ func _input(event):
 		player_marker.remove_child(self)
 		self.global_position = player_marker.global_position
 		fase.add_child(self)
+		State.held_drink_tags = []
 		player.can_pick = true
 	
