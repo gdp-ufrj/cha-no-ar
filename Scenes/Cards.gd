@@ -1,24 +1,24 @@
-extends Button
+extends Node
 
 var container: VBoxContainer
 var drink_resource: Resource
+var button: Button
 
 func _ready():
 	container = self.get_parent()
-	var button = Button.new()
-	button.pressed.connect(self.spawn_drink)
 
-func set_infos(drink_resource_1: Resource):
-	drink_resource = drink_resource_1
+func set_infos(received_drink_resource: Resource):
+	drink_resource = received_drink_resource
 	self.text = drink_resource.Drink_Name
 	if drink_resource.Drink_Image:
 		self.icon = load(drink_resource.Drink_Image)
 	else: 
 		self.icon = load("res://Assets/sprites/ui/Chá.png")
 		
-func _on_time_():
+func _on_card_button_pressed():
 	print("ouço a função")
-	var drink_stand_location = get_node("DrinkStand").global_position
 	var carriable_object = load("res://Scenes/carriable_object.tscn")
 	var drink = carriable_object.instantiate()
+	var drink_stand_location = get_node("../../../../../../DrinkStand").global_position
 	drink.set_object_data(drink_resource, drink_stand_location)
+	get_node("../../../../../../../fase").add_child(drink)

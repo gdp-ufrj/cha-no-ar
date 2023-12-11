@@ -12,7 +12,6 @@ blend_mode = 1
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 3
 visible = false
-follow_viewport_enabled = true
 
 [node name="Manha" type="Button" parent="CanvasLayer"]
 offset_left = -55.0

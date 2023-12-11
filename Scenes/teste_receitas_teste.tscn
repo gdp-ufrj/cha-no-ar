@@ -20,6 +20,7 @@ layout_mode = 1
 anchors_preset = -1
 offset_right = 256.0
 offset_bottom = 552.0
+mouse_filter = 2
 color = Color(0, 0, 0, 0.878431)
 
 [node name="RecipesContainer" type="ScrollContainer" parent="."]
@@ -27,12 +28,14 @@ layout_mode = 1
 anchors_preset = -1
 offset_right = 256.0
 offset_bottom = 552.0
+mouse_filter = 2
 follow_focus = true
 horizontal_scroll_mode = 3
 vertical_scroll_mode = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="RecipesContainer"]
 layout_mode = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
@@ -42,4 +45,5 @@ theme_override_constants/margin_bottom = 10
 clip_children = 1
 layout_mode = 2
 size_flags_stretch_ratio = 2.01
+mouse_filter = 2
 script = ExtResource("2_8c623")

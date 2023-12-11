@@ -14,7 +14,7 @@ collision_layer = 2
 input_pickable = true
 script = ExtResource("1_tsm2r")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="ObjectSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("1_hl5dl")
 

@@ -12,6 +12,14 @@ func _ready():
 	player_marker = get_node("../../Player/Marker2D")
 	player = get_node("../../Player")
 	fase = get_parent()
+
+func set_object_data(received_drink_resource: Resource, drink_spawn_location):
+	drink_resource = received_drink_resource
+	if received_drink_resource.Drink_Image:
+		get_node("ObjectSprite").texture = load(received_drink_resource.Drink_Image)
+	else:
+		get_node("ObjectSprite").texture = load("res://Assets/sprites/ui/Chá.png")
+	self.global_position = drink_spawn_location
 	
 func _input(event):
 	if Input.is_action_just_pressed("ui_pick") and picked == false:
@@ -30,3 +38,4 @@ func _input(event):
 		self.global_position = player_marker.global_position
 		fase.add_child(self)
 		player.can_pick = true
+	

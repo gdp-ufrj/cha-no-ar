@@ -10,7 +10,6 @@ func _ready():
 	drink_directory.list_dir_begin()
 	var file_name = drink_directory.get_next()
 	while file_name != "":
-		print(file_name)
 		var drink_resource = load(path + file_name)
 		var card_instance = card.instantiate()
 		card_instance.set_infos(drink_resource)
