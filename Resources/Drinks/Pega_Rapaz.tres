@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://ddjv0lrqrohy0"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_i8b66"]
+
+[resource]
+script = ExtResource("1_i8b66")
+Drink_Name = "Pega Rapaz"
+Drink_Tags = ["Energético", "Refrescante"]
+Drink_Description = "Mocha"
+Drink_Image = null

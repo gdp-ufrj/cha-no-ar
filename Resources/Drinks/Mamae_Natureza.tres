@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://dwcva22m3hchm"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_15foj"]
+
+[resource]
+script = ExtResource("1_15foj")
+Drink_Name = "Mamãe Natureza"
+Drink_Tags = ["Calmante", "Tradicional"]
+Drink_Description = "Chá de Jasmim, Erva Cidreira, Gengibre"
+Drink_Image = null

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://otujic4yrrwy"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_qsafj"]
+
+[resource]
+script = ExtResource("1_qsafj")
+Drink_Name = "Xuxuzinho"
+Drink_Tags = ["Energético", "Tradicional"]
+Drink_Description = "Café Preto Expresso"
+Drink_Image = null

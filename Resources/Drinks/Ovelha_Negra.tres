@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Drink_Resource" load_steps=2 format=3 uid="uid://crmk0aklbne4x"]
+
+[ext_resource type="Script" path="res://Resources/drink_resource.gd" id="1_8i0jv"]
+
+[resource]
+script = ExtResource("1_8i0jv")
+Drink_Name = "Ovelha Negra"
+Drink_Tags = ["Energético", "Tradicional"]
+Drink_Description = "Chá Preto, Canela, Cardamomo, Baunilha"
+Drink_Image = null
