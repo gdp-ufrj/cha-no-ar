@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ctx52f5e17dcf"]
+
+[ext_resource type="FontFile" uid="uid://d3stl27lla7y2" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY.otf" id="1_hxyxk"]
+
+[resource]
+default_font = ExtResource("1_hxyxk")
