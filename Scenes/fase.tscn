@@ -58,6 +58,7 @@ position = Vector2(186, 30)
 [node name="acionaveis" parent="NPC" instance=ExtResource("3_4uegc")]
 type = "Dialogue"
 dialogue_resource = ExtResource("4_wfgf0")
+dialogue_owner = "Adonis_Day_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis"]
 position = Vector2(0, 9)
@@ -70,7 +71,7 @@ position = Vector2(104, 30)
 [node name="acionaveis" parent="Leticia" instance=ExtResource("3_4uegc")]
 type = "Dialogue"
 dialogue_resource = ExtResource("9_ah5rm")
-dialogue_start = "Leticia"
+dialogue_owner = "Leticia_Day_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Leticia/acionaveis"]
 position = Vector2(0, 9)
