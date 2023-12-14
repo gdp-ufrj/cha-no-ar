@@ -32,7 +32,6 @@ func get_drink_resources():
 		drinks.append(drink_resource)
 		file_name = drink_directory.get_next()
 	page_limit = drinks.size() - 1
-	print(page_limit)
 	
 func set_info(drink: Drink_Resource):
 	if drink.Drink_Image:
