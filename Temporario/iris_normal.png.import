@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ef2jiykkvgoc"
-path="res://.godot/imported/kirbyFeliz.png-b2ab540cf7eb3895c02c05886b536b51.ctex"
+uid="uid://cjrnqyc78xhlm"
+path="res://.godot/imported/iris_normal.png-5ba87020f0e558d3776ea9654e369a79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Temporario/kirbyFeliz.png"
-dest_files=["res://.godot/imported/kirbyFeliz.png-b2ab540cf7eb3895c02c05886b536b51.ctex"]
+source_file="res://Temporario/iris_normal.png"
+dest_files=["res://.godot/imported/iris_normal.png-5ba87020f0e558d3776ea9654e369a79.ctex"]
 
 [params]
 
