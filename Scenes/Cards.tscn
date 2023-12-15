@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://brrl8paputtr8"]
+
+[ext_resource type="Script" path="res://Cards.gd" id="1_2em3h"]
+
+[node name="Card Button" type="Button"]
+visible = false
+show_behind_parent = true
+clip_children = 2
+custom_minimum_size = Vector2(237.435, 0)
+offset_right = 96.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.878431, 0.878431, 0.878431, 0.168627)
+theme_override_constants/h_separation = 5
+action_mode = 0
+alignment = 0
+expand_icon = true
+text_direction = 1
+script = ExtResource("1_2em3h")
+
+[connection signal="pressed" from="." to="." method="_on_card_button_pressed"]

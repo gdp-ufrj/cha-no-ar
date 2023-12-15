@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://13s5spsk34qu"]
+[gd_scene load_steps=13 format=3 uid="uid://13s5spsk34qu"]
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_s2gbs"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_hfvdi"]
+[ext_resource type="FontFile" uid="uid://d3stl27lla7y2" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY.otf" id="2_i4yo4"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_1j1j0"]
 [ext_resource type="Texture2D" uid="uid://dbvye554uar8g" path="res://Temporario/kirbyNormal.png" id="4_ibpep"]
 [ext_resource type="Script" path="res://Scripts/pictureManage.gd" id="5_1wtiv"]
@@ -130,6 +131,7 @@ unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("2_i4yo4")
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -139,6 +141,7 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("2_i4yo4")
 text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
