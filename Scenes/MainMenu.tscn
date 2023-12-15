@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfx5lihtn0by"]
+[gd_scene load_steps=5 format=3 uid="uid://dfx5lihtn0by"]
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_68c6x"]
 [ext_resource type="Texture2D" uid="uid://crysitwohkk41" path="res://Assets/sprites/ui/pngtree-tea-cup-tea-mountain-green-chinese-style-zen-tea-image_805332.jpg" id="2_uap85"]
+[ext_resource type="PackedScene" uid="uid://dpjvexosl7hdp" path="res://Scenes/opções.tscn" id="3_jhdt5"]
+[ext_resource type="AudioStream" uid="uid://cmh44bwauf7dp" path="res://Assets/audio/mainMenuTesteLoop.mp3" id="3_o0wvw"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -67,52 +69,9 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 22
 text = "Sair"
 
-[node name="Opções" type="VBoxContainer" parent="CenterContainer"]
+[node name="Opções" parent="CenterContainer" instance=ExtResource("3_jhdt5")]
 visible = false
 layout_mode = 2
-
-[node name="Label" type="Label" parent="CenterContainer/Opções"]
-modulate = Color(0.513726, 0.505882, 0.0823529, 1)
-layout_mode = 2
-text = "Volume geral"
-
-[node name="HSlider" type="HSlider" parent="CenterContainer/Opções"]
-modulate = Color(0, 0, 0, 1)
-layout_mode = 2
-max_value = 9.0
-value = 9.0
-
-[node name="Label2" type="Label" parent="CenterContainer/Opções"]
-modulate = Color(0.513726, 0.505882, 0.0823529, 1)
-layout_mode = 2
-text = "Volume da música"
-
-[node name="HSlider2" type="HSlider" parent="CenterContainer/Opções"]
-modulate = Color(0, 0, 0, 1)
-layout_mode = 2
-max_value = 9.0
-value = 9.0
-
-[node name="Label3" type="Label" parent="CenterContainer/Opções"]
-modulate = Color(0.513726, 0.505882, 0.0823529, 1)
-layout_mode = 2
-text = "Volume dos sons"
-
-[node name="HSlider3" type="HSlider" parent="CenterContainer/Opções"]
-modulate = Color(0, 0, 0, 1)
-layout_mode = 2
-max_value = 9.0
-value = 9.0
-
-[node name="Fullscreen" type="CheckButton" parent="CenterContainer/Opções"]
-modulate = Color(0.513726, 0.505882, 0.0823529, 1)
-layout_mode = 2
-text = "Fullscreen"
-
-[node name="VoltarOpçoes" type="Button" parent="CenterContainer/Opções"]
-layout_mode = 2
-text = "Voltar
-"
 
 [node name="Aviso" type="VBoxContainer" parent="CenterContainer"]
 visible = false
@@ -172,13 +131,16 @@ layout_mode = 2
 text = "Voltar
 "
 
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_o0wvw")
+autoplay = true
+
 [connection signal="pressed" from="CenterContainer/MainMenu/Começar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="CenterContainer/MainMenu/Continuar" to="." method="_on_continuar_pressed"]
-[connection signal="pressed" from="CenterContainer/MainMenu/Opções" to="." method="troca_visibilidade" binds= ["CenterContainer/Opções"]]
+[connection signal="pressed" from="CenterContainer/MainMenu/Opções" to="." method="_on_opções_pressed"]
+[connection signal="pressed" from="CenterContainer/MainMenu/Opções" to="." method="troca_visibilidade" binds= ["CenterContainer/Opções", 1]]
 [connection signal="pressed" from="CenterContainer/MainMenu/Créditos" to="." method="troca_visibilidade" binds= ["Creditos"]]
 [connection signal="pressed" from="CenterContainer/MainMenu/Sair" to="." method="_on_sair_pressed"]
-[connection signal="toggled" from="CenterContainer/Opções/Fullscreen" to="." method="_on_fullscreen_toggled"]
-[connection signal="pressed" from="CenterContainer/Opções/VoltarOpçoes" to="." method="troca_visibilidade" binds= ["CenterContainer/Opções"]]
 [connection signal="pressed" from="CenterContainer/Aviso/HBoxContainer/Aceitar" to="." method="_on_aceitar_pressed"]
 [connection signal="pressed" from="CenterContainer/Aviso/HBoxContainer/Voltar" to="." method="troca_visibilidade" binds= ["CenterContainer/Aviso"]]
 [connection signal="pressed" from="Creditos/VoltarCreditos" to="." method="troca_visibilidade" binds= ["Creditos"]]

@@ -11,4 +11,3 @@ func _unhandled_input(event):
 		else:
 			aberto = false
 			receitas.visible = false
-	

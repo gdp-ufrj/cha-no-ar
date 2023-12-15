@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpjvexosl7hdp"]
+
+[ext_resource type="Script" path="res://Scripts/opçoes.gd" id="1_cm8y5"]
+
+[node name="Options" type="VBoxContainer"]
+script = ExtResource("1_cm8y5")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
+layout_mode = 2
+text = "Volume geral"
+
+[node name="VolumeGeral" type="HSlider" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+min_value = -62.0
+max_value = 0.0
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
+layout_mode = 2
+text = "Volume da música"
+
+[node name="VolumeMusica" type="HSlider" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+min_value = -62.0
+max_value = 0.0
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
+layout_mode = 2
+text = "Volume dos sons"
+
+[node name="VolumeSons" type="HSlider" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+max_value = 9.0
+value = 9.0
+
+[node name="Fullscreen" type="CheckButton" parent="."]
+modulate = Color(0.513726, 0.505882, 0.0823529, 1)
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="VoltarOpçoes" type="Button" parent="."]
+layout_mode = 2
+text = "Voltar
+"
+
+[connection signal="drag_ended" from="VolumeGeral" to="." method="_on_volume_geral_drag_ended"]
+[connection signal="pressed" from="VoltarOpçoes" to="." method="troca_visibilidade" binds= ["."]]

@@ -1,7 +1,7 @@
 extends Control
 @onready var ajuda = Container.new()
-@onready var pause_menu = Container.new()
-
+#@onready var pause_menu = Container.new()
+@onready var pause_menu = get_node("CenterContainer/PauseMenu")
 func _unhandled_input(event):
 	#Ao apertar o input relacionado com o evento pause(nesse caso o Esc) muda o valor de is_paused pro valor
 	#contrário, ou seja, se não tiver aberto, abre, se tiver aberto, fecha.
@@ -42,3 +42,9 @@ func _on_menu_principal_pressed():
 func _on_salvar_pressed():
 	print("Salvando...")
 	State.save_game()
+
+
+func troca_visibilidade(node_path):
+	var container = get_node(node_path)
+	pause_menu.visible = !pause_menu.visible
+	container.visible = !container.visible
