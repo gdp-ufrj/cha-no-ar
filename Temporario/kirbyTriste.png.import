@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3t65htora7j7"
-path="res://.godot/imported/uichanoar.png-01731ade4a2c2ec26772af778c00de6f.ctex"
+uid="uid://5tqh5ccbm3wb"
+path="res://.godot/imported/kirbyTriste.png-86e2d6f54e57a4369734ada66c1428a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/ui/uichanoar.png"
-dest_files=["res://.godot/imported/uichanoar.png-01731ade4a2c2ec26772af778c00de6f.ctex"]
+source_file="res://Temporario/kirbyTriste.png"
+dest_files=["res://.godot/imported/kirbyTriste.png-86e2d6f54e57a4369734ada66c1428a3.ctex"]
 
 [params]
 
