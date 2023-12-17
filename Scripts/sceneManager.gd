@@ -16,7 +16,7 @@ var current_scene
 func _ready():
 	luz_ambiente.set_energy(1.4)
 	luz_ambiente.set_color(valores_luz_ambiente[0])
-	
+	print_tree()
 	var quarto = load("res://Scenes/fase.tscn").instantiate()
 	maps["fase"] = quarto
 	var cafe = load("res://Scenes/cafe.tscn").instantiate()

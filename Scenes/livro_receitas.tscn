@@ -9,6 +9,7 @@
 
 [node name="Recipes" type="Control"]
 process_mode = 3
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 40.0

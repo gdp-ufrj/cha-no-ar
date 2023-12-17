@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://13s5spsk34qu"]
+[gd_scene load_steps=11 format=3 uid="uid://13s5spsk34qu"]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_s2gbs"]
+[ext_resource type="Script" path="res://Scripts/dialogue_balloon.gd" id="1_4ln4i"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_hfvdi"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_1j1j0"]
 [ext_resource type="Texture2D" uid="uid://dbvye554uar8g" path="res://Temporario/kirbyNormal.png" id="4_ibpep"]
-[ext_resource type="Script" path="res://Scripts/pictureManage.gd" id="5_1wtiv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_235ry"]
 content_margin_left = 6.0
@@ -93,8 +92,7 @@ Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
-visible = false
-script = ExtResource("1_s2gbs")
+script = ExtResource("1_4ln4i")
 
 [node name="Balloon" type="Panel" parent="."]
 unique_name_in_owner = true
@@ -171,14 +169,12 @@ text = "Response Example"
 position = Vector2(501, -9)
 scale = Vector2(0.412599, 0.412599)
 texture = ExtResource("4_ibpep")
-script = ExtResource("5_1wtiv")
 
 [node name="MolduraNPC" type="Sprite2D" parent="Balloon"]
 position = Vector2(89, -9)
 scale = Vector2(0.412599, 0.412599)
 texture = ExtResource("4_ibpep")
 flip_h = true
-script = ExtResource("5_1wtiv")
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
