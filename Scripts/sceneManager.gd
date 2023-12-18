@@ -17,9 +17,9 @@ func _ready():
 	luz_ambiente.set_energy(1.4)
 	luz_ambiente.set_color(valores_luz_ambiente[0])
 	
-	var quarto = load("res://Scenes/fase.tscn").instantiate()
-	maps["fase"] = quarto
-	var cafe = load("res://Scenes/cafe.tscn").instantiate()
+	var quarto = load("res://Scenes/Mapas/quarto.tscn").instantiate()
+	maps["quarto"] = quarto
+	var cafe = load("res://Scenes/Mapas/cafe.tscn").instantiate()
 	maps["cafe"] = cafe
 	start_game()
 
@@ -28,7 +28,7 @@ func _ready():
 func start_game():
 	self.add_child(player_instance)
 	player = get_node("Player")
-	go_to_scene("fase")
+	go_to_scene("quarto")
 
 func go_to_scene(nome):
 	print(State.capuccino_count)
