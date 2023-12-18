@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx5jd6hp0ouum"
-path="res://.godot/imported/water_lillies.png-8704c16bbfeacb197c0a7e0ea3a09d93.ctex"
+uid="uid://vxpxigk7rtqx"
+path="res://.godot/imported/seats.png-12165adca9b937b0776514571564b057.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/tilesets/water_lillies.png"
-dest_files=["res://.godot/imported/water_lillies.png-8704c16bbfeacb197c0a7e0ea3a09d93.ctex"]
+source_file="res://Assets/sprites/tilesets/seats.png"
+dest_files=["res://.godot/imported/seats.png-12165adca9b937b0776514571564b057.ctex"]
 
 [params]
 
