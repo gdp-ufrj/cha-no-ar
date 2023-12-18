@@ -21,6 +21,8 @@ func _ready():
 	maps["quarto"] = quarto
 	var cafe = load("res://Scenes/Mapas/cafe.tscn").instantiate()
 	maps["cafe"] = cafe
+	var ap = load("res://Scenes/Mapas/apartamento.tscn").instantiate()
+	maps["ap"] = ap
 	start_game()
 
 
