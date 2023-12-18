@@ -1,7 +1,7 @@
 extends Control
 @onready var ajuda = Container.new()
-#@onready var pause_menu = Container.new()
-@onready var pause_menu = get_node("CenterContainer/PauseMenu")
+
+@onready var pause_menu = get_node("Pause/CenterContainer/PauseMenu")
 func _unhandled_input(event):
 	#Ao apertar o input relacionado com o evento pause(nesse caso o Esc) muda o valor de is_paused pro valor
 	#contrário, ou seja, se não tiver aberto, abre, se tiver aberto, fecha.
@@ -10,7 +10,6 @@ func _unhandled_input(event):
 		if ajuda.visible == true:
 			pause_menu.visible = true
 			ajuda.visible = false
-			
 #Basicamente, se o valor de is paused for true = mostra o menu, despausa o menu e pausa
 #todo mundo da arvore de cima
 var is_paused = false : 

@@ -13,7 +13,7 @@ func _ready():
 
 func _on_jogar_pressed():
 	if State.save_exists():
-		troca_visibilidade("CenterContainer/Aviso", 0)
+		troca_visibilidade("CenterContainer/Aviso")
 	else:
 		get_tree().change_scene_to_file(scene_manager)
 
@@ -25,11 +25,10 @@ func _on_aceitar_pressed():
 	State.save_game()
 	get_tree().change_scene_to_file(scene_manager)
 
-func troca_visibilidade(node_path, index):
+func troca_visibilidade(node_path):
 	var container = get_node(node_path)
 	main_menu.visible = !main_menu.visible
 	container.visible = !container.visible
-
 
 ##### OPCOES
 func _on_fullscreen_toggled(button_pressed):
@@ -38,28 +37,25 @@ func _on_fullscreen_toggled(button_pressed):
 	else:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 
-
-
 ##### SAIR DO JOGO
 func _on_sair_pressed():
 	get_tree().quit()
-
-
-
-func _on_volume_geral_drag_ended(_value_changed):
-#	print("alor")
-	volume = get_node("CenterContainer/Opções/VolumeGeral").value
-#	print("Antes da modificação:")
-#	print($BackgroundMusic.volume_db)
-	get_node("BackgroundMusic").volume_db = volume
-#	print("Depois da modificação:")
-#	print($BackgroundMusic.volume_db)
-
-
+#############Trocas de visibilidade
+func _on_voltar_pressed():
+	troca_visibilidade("CenterContainer/Aviso")
+func _on_créditos_pressed():
+	troca_visibilidade("Créditos")
+func _on_voltar_creditos_pressed():
+	troca_visibilidade("Créditos")
+###### Audio Settings
 func _on_volume_musica_drag_ended(_value_changed):
 	volume =  $"CenterContainer/Opções/VolumeMusica".value
 	$BackgroundMusic.volume_db = volume
 
+func _on_volume_geral_drag_ended(_value_changed):
+	volume = get_node("CenterContainer/Opções/VolumeGeral").value
+	get_node("BackgroundMusic").volume_db = volume
+
 
 func _on_opções_pressed():
-	checaOrigem = 1
+	troca_visibilidade("Ajustes")

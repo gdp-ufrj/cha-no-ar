@@ -1,11 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfx5lihtn0by"]
+[gd_scene load_steps=11 format=3 uid="uid://dfx5lihtn0by"]
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_68c6x"]
 [ext_resource type="Texture2D" uid="uid://crysitwohkk41" path="res://Assets/sprites/ui/pngtree-tea-cup-tea-mountain-green-chinese-style-zen-tea-image_805332.jpg" id="2_uap85"]
-[ext_resource type="PackedScene" uid="uid://dpjvexosl7hdp" path="res://Scenes/opções.tscn" id="3_jhdt5"]
+[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_l01os"]
 [ext_resource type="AudioStream" uid="uid://cmh44bwauf7dp" path="res://Assets/audio/mainMenuTesteLoop.mp3" id="3_o0wvw"]
+[ext_resource type="PackedScene" uid="uid://c7x7ovvm4cx1d" path="res://Scenes/ajustes.tscn" id="4_26u3q"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="4_mjuhi"]
+[ext_resource type="Texture2D" uid="uid://ci8gqhuuipgd0" path="res://Assets/sprites/ui/Créditos_.svg" id="7_kmjgc"]
 
-[node name="Control" type="Control"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_30rlh"]
+bg_color = Color(0.321569, 0.337255, 0.360784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fwyjp"]
+bg_color = Color(0.321569, 0.337255, 0.360784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_386wr"]
+bg_color = Color(0.321569, 0.337255, 0.360784, 1)
+
+[node name="MainMenuRoot" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,7 +38,7 @@ expand_mode = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -37,97 +49,115 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 
 [node name="Nome" type="Label" parent="CenterContainer/MainMenu"]
-modulate = Color(0.380392, 0.403922, 0.203922, 1)
+modulate = Color(0.376471, 0.4, 0.2, 1)
 layout_mode = 2
-theme_override_font_sizes/font_size = 86
-text = "Chá No Ar"
+theme_override_fonts/font = ExtResource("3_l01os")
+theme_override_font_sizes/font_size = 100
+text = "✦Chá No Ar✦"
 horizontal_alignment = 1
 
 [node name="Começar" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 text = "Começar"
 
 [node name="Continuar" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 disabled = true
 text = "Continuar"
 
 [node name="Opções" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
-text = "Opções"
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
+text = "Ajustes"
 
 [node name="Créditos" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 text = "Créditos"
 
 [node name="Sair" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 text = "Sair"
-
-[node name="Opções" parent="CenterContainer" instance=ExtResource("3_jhdt5")]
-visible = false
-layout_mode = 2
 
 [node name="Aviso" type="VBoxContainer" parent="CenterContainer"]
 visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="CenterContainer/Aviso"]
-modulate = Color(0.513726, 0.505882, 0.0823529, 1)
+modulate = Color(0.666667, 0.592157, 0, 1)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 34
 text = "Atenção: Ao continuar, qualquer progresso será perdido"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/Aviso"]
+[node name="Container" type="HBoxContainer" parent="CenterContainer/Aviso"]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Aceitar" type="Button" parent="CenterContainer/Aviso/HBoxContainer"]
+[node name="Aceitar" type="Button" parent="CenterContainer/Aviso/Container"]
 layout_mode = 2
-text = "Aceitar"
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_fwyjp")
+text = "  Aceitar  "
 
-[node name="Voltar" type="Button" parent="CenterContainer/Aviso/HBoxContainer"]
+[node name="Label" type="Label" parent="CenterContainer/Aviso/Container"]
 layout_mode = 2
-text = "Voltar"
+text = "             "
+
+[node name="Voltar" type="Button" parent="CenterContainer/Aviso/Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_fwyjp")
+text = "  Voltar  "
 icon_alignment = 1
 
-[node name="Creditos" type="VBoxContainer" parent="."]
+[node name="Ajustes" parent="." instance=ExtResource("4_26u3q")]
 visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = -71.0
-offset_right = 3.0
-offset_bottom = -71.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Creditos"]
-modulate = Color(0.529412, 0.490196, 0.109804, 1)
 layout_mode = 2
-theme_override_font_sizes/normal_font_size = 35
-text = "Artistas: Julia Teixeira, Marcela, Nico
-Programação: Rafael Lima, Luciana, João Pedro
- e Igor Delfino
-Roteiro: Joana, Lucas de Araújo
-Som:Douglas Oliveira
-Game Design: Christian
-Gestão: Carlos Bravo"
-fit_content = true
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-text_direction = 1
+offset_left = 82.0
+offset_top = 67.0
+offset_right = 82.0
+offset_bottom = 67.0
 
-[node name="VoltarCreditos" type="Button" parent="Creditos"]
+[node name="Créditos" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect2" type="TextureRect" parent="Créditos"]
 layout_mode = 2
+offset_top = 1.0
+offset_right = 1929.0
+offset_bottom = 1088.0
+scale = Vector2(0.598231, 0.598231)
+texture = ExtResource("7_kmjgc")
+expand_mode = 1
+
+[node name="VoltarCreditos" type="Button" parent="Créditos"]
+layout_mode = 2
+offset_left = 24.0
+offset_top = 246.0
+offset_right = 285.0
+offset_bottom = 296.0
+theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_386wr")
 text = "Voltar
 "
 
@@ -138,9 +168,8 @@ autoplay = true
 [connection signal="pressed" from="CenterContainer/MainMenu/Começar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="CenterContainer/MainMenu/Continuar" to="." method="_on_continuar_pressed"]
 [connection signal="pressed" from="CenterContainer/MainMenu/Opções" to="." method="_on_opções_pressed"]
-[connection signal="pressed" from="CenterContainer/MainMenu/Opções" to="." method="troca_visibilidade" binds= ["CenterContainer/Opções", 1]]
-[connection signal="pressed" from="CenterContainer/MainMenu/Créditos" to="." method="troca_visibilidade" binds= ["Creditos"]]
+[connection signal="pressed" from="CenterContainer/MainMenu/Créditos" to="." method="_on_créditos_pressed"]
 [connection signal="pressed" from="CenterContainer/MainMenu/Sair" to="." method="_on_sair_pressed"]
-[connection signal="pressed" from="CenterContainer/Aviso/HBoxContainer/Aceitar" to="." method="_on_aceitar_pressed"]
-[connection signal="pressed" from="CenterContainer/Aviso/HBoxContainer/Voltar" to="." method="troca_visibilidade" binds= ["CenterContainer/Aviso"]]
-[connection signal="pressed" from="Creditos/VoltarCreditos" to="." method="troca_visibilidade" binds= ["Creditos"]]
+[connection signal="pressed" from="CenterContainer/Aviso/Container/Aceitar" to="." method="_on_aceitar_pressed"]
+[connection signal="pressed" from="CenterContainer/Aviso/Container/Voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="Créditos/VoltarCreditos" to="." method="_on_voltar_creditos_pressed"]

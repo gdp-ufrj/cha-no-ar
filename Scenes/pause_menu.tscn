@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5yyix8n88df3"]
+[gd_scene load_steps=7 format=3 uid="uid://b5yyix8n88df3"]
 
 [ext_resource type="Script" path="res://Scripts/PauseMenu.gd" id="1_sg8mw"]
-[ext_resource type="PackedScene" uid="uid://dpjvexosl7hdp" path="res://Scenes/opções.tscn" id="2_dfj82"]
+[ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_0vket"]
+[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_x8xwp"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="4_addoo"]
+[ext_resource type="PackedScene" uid="uid://c7x7ovvm4cx1d" path="res://Scenes/ajustes.tscn" id="5_kuq82"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8yof8"]
+bg_color = Color(0.321569, 0.337255, 0.360784, 1)
 
 [node name="Control" type="Control"]
 process_mode = 3
@@ -9,6 +15,7 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1.02002
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sg8mw")
@@ -22,81 +29,103 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.172549, 0.172549, 0.172549, 0.564706)
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 2
+layout_mode = 0
+offset_left = 411.0
+offset_top = 108.0
+offset_right = 2931.0
+offset_bottom = 3248.0
+scale = Vector2(0.127, 0.127)
+texture = ExtResource("2_0vket")
+
+[node name="Pause" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 474.0
+offset_top = 213.0
+offset_right = 514.0
+offset_bottom = 253.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Pause"]
+texture_filter = 2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1.0
-offset_top = -1.0
-offset_right = -1.0
-offset_bottom = -1.0
+offset_left = -38.0
+offset_top = -55.0
+offset_right = 192.0
+offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="PauseMenu" type="VBoxContainer" parent="CenterContainer"]
+[node name="PauseMenu" type="VBoxContainer" parent="Pause/CenterContainer"]
+texture_filter = 2
 layout_mode = 2
 
-[node name="PausedLabel" type="Label" parent="CenterContainer/PauseMenu"]
+[node name="PausedLabel" type="Label" parent="Pause/CenterContainer/PauseMenu"]
+modulate = Color(0.321569, 0.337255, 0.360784, 1)
+texture_filter = 2
 layout_mode = 2
-text = "Pausado"
+theme_override_fonts/font = ExtResource("3_x8xwp")
+theme_override_font_sizes/font_size = 65
+text = "✦Pause✦"
 horizontal_alignment = 1
 
-[node name="Salvar" type="Button" parent="CenterContainer/PauseMenu"]
+[node name="Salvar" type="Button" parent="Pause/CenterContainer/PauseMenu"]
+texture_filter = 2
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_addoo")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
 text = "Salvar"
 
-[node name="ResumeButton" type="Button" parent="CenterContainer/PauseMenu"]
+[node name="ResumeButton" type="Button" parent="Pause/CenterContainer/PauseMenu"]
+texture_filter = 2
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_addoo")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
 text = "Resumir"
 
-[node name="Menu principal" type="Button" parent="CenterContainer/PauseMenu"]
+[node name="Menu principal" type="Button" parent="Pause/CenterContainer/PauseMenu"]
+texture_filter = 2
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_addoo")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
 text = "Menu principal"
 
-[node name="Configurações" type="Button" parent="CenterContainer/PauseMenu"]
+[node name="Configurações" type="Button" parent="Pause/CenterContainer/PauseMenu"]
+texture_filter = 2
 layout_mode = 2
-text = "Configurações"
+theme_override_fonts/font = ExtResource("4_addoo")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
+text = "Ajustes
+"
 
-[node name="QuitButton" type="Button" parent="CenterContainer/PauseMenu"]
+[node name="Label5" type="Label" parent="Pause/CenterContainer/PauseMenu"]
 layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="Pause/CenterContainer/PauseMenu"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_addoo")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
 text = "Sair do jogo"
 
-[node name="Ajuda" type="Button" parent="CenterContainer/PauseMenu"]
-layout_mode = 2
-text = "Ajuda
-"
-
-[node name="Ajuda2" type="VBoxContainer" parent="CenterContainer"]
+[node name="Ajustes" parent="." instance=ExtResource("5_kuq82")]
 visible = false
-layout_mode = 2
+offset_left = 120.0
+offset_top = 66.0
+offset_right = 976.0
+offset_bottom = 548.0
+scale = Vector2(1.05935, 1.05935)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer/Ajuda2"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 6
-text = "A que não sei o que não sei que la
-E bla bla bla bla bla blabla bla blab
-Ueeeeeepa"
-fit_content = true
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-text_direction = 1
-
-[node name="Voltar" type="Button" parent="CenterContainer/Ajuda2"]
-layout_mode = 2
-text = "Voltar
-"
-
-[node name="Configurações2" parent="CenterContainer" instance=ExtResource("2_dfj82")]
-visible = false
-layout_mode = 2
-
-[connection signal="pressed" from="CenterContainer/PauseMenu/Salvar" to="." method="_on_salvar_pressed"]
-[connection signal="pressed" from="CenterContainer/PauseMenu/ResumeButton" to="." method="_on_resume_button_pressed"]
-[connection signal="pressed" from="CenterContainer/PauseMenu/Menu principal" to="." method="_on_menu_principal_pressed"]
-[connection signal="pressed" from="CenterContainer/PauseMenu/Configurações" to="." method="troca_visibilidade" binds= ["CenterContainer/Configurações2"]]
-[connection signal="pressed" from="CenterContainer/PauseMenu/QuitButton" to="." method="_on_quit_button_pressed"]
-[connection signal="pressed" from="CenterContainer/PauseMenu/Ajuda" to="." method="_on_ajuda_pressed"]
-[connection signal="pressed" from="CenterContainer/Ajuda2/Voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Salvar" to="." method="_on_salvar_pressed"]
+[connection signal="pressed" from="Pause/CenterContainer/PauseMenu/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Menu principal" to="." method="_on_menu_principal_pressed"]
+[connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Configurações" to="." method="troca_visibilidade" binds= ["Ajustes"]]
+[connection signal="pressed" from="Pause/CenterContainer/PauseMenu/QuitButton" to="." method="_on_quit_button_pressed"]
