@@ -10,7 +10,7 @@ func _unhandled_input(event):
 		if ajuda.visible == true:
 			pause_menu.visible = true
 			ajuda.visible = false
-#Basicamente, se o valor de is paused for true = mostra o menu, despausa o menu e pausa
+#Basicamente, se o valor de is paused for true	 = mostra o menu, despausa o menu e pausa
 #todo mundo da arvore de cima
 var is_paused = false : 
 	set(value):
