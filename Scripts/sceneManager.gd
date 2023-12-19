@@ -48,6 +48,7 @@ func position_player():
 
 ##### INTERACAO
 func _on_time_pressed(index):
+	print("input fdp")
 	luz_ambiente.set_color(valores_luz_ambiente[index])
 	if index in[2, 3]:
 		current_scene.get_node("LuzesFocais").visible = true
