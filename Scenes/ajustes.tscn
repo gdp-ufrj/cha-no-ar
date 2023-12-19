@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://c7x7ovvm4cx1d"]
 
-[ext_resource type="Script" path="res://Scripts/opçoes.gd" id="1_cplca"]
+[ext_resource type="Script" path="res://Scripts/ajustes.gd" id="1_gibxo"]
 [ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_nmd0q"]
 [ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_3m2s0"]
 [ext_resource type="Texture2D" uid="uid://cup3qpiwoig51" path="res://Assets/sprites/ui/barraSlider1.png" id="3_tnjqy"]
@@ -56,7 +56,7 @@ anchors_preset = 0
 offset_right = 1016.0
 offset_bottom = 571.0
 scale = Vector2(1.13149, 1.13149)
-script = ExtResource("1_cplca")
+script = ExtResource("1_gibxo")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 3
