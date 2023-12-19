@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cknedyiq3v434"]
+[gd_scene load_steps=21 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_8gomm"]
@@ -8,7 +8,6 @@
 [ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
 [ext_resource type="Texture2D" uid="uid://dhrb78rbt853b" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
-[ext_resource type="Texture2D" uid="uid://gh43phwe43xn" path="res://Assets/sprites/objects/chest_01.png" id="7_udh8f"]
 [ext_resource type="PackedScene" uid="uid://7xcrirmakwn8" path="res://Scenes/livro_receitas.tscn" id="8_qxn06"]
 [ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_ah5rm"]
 [ext_resource type="PackedScene" uid="uid://d0tw14utntjkc" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
@@ -797,21 +796,20 @@ scale = Vector2(1, 0.304688)
 color = Color(0.988235, 0.760784, 0.494118, 0.368627)
 texture = SubResource("GradientTexture2D_vgjxd")
 
-[node name="PortaCafe" type="Sprite2D" parent="."]
+[node name="acionaveis" parent="." instance=ExtResource("3_4uegc")]
 position = Vector2(-32, 113)
-texture = ExtResource("7_udh8f")
-hframes = 4
-
-[node name="acionaveis" parent="PortaCafe" instance=ExtResource("3_4uegc")]
 type = "Door"
-portal = "cafe"
+portal = "apartamento"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PortaCafe/acionaveis"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="acionaveis"]
 shape = SubResource("RectangleShape2D_3c76q")
 debug_color = Color(0.729412, 0.470588, 0, 0.419608)
 
-[node name="Spawn" type="Marker2D" parent="."]
+[node name="Spawn-1" type="Marker2D" parent="."]
 position = Vector2(-36, 11)
+
+[node name="Spawn-2" type="Marker2D" parent="."]
+position = Vector2(-32, 107)
 
 [node name="carriable_object" parent="." instance=ExtResource("10_3jcdk")]
 position = Vector2(69, 79)

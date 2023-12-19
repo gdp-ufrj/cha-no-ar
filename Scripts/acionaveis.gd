@@ -9,6 +9,7 @@ var dialogue_spot
 
 @export_group("Teleporting")
 @export var portal: String = ""
+@export var number: int = 1
 
 func start_dialogue() -> void:
 	var dialogue_dictionary = State.get_dialogue_dictionary()

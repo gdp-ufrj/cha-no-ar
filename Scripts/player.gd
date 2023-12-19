@@ -24,7 +24,7 @@ func _unhandled_input(_event: InputEvent) -> void:
 		if acionaveis.size()>0:
 			var interacting = acionaveis[0]
 			if interacting.type == "Door":
-				get_parent().go_to_scene(interacting.portal)
+				get_parent().go_to_scene(interacting.portal, interacting.number)
 			elif interacting.type == "Dialogue":
 				interacting.start_dialogue()
 			return
