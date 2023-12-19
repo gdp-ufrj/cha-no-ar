@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c7x7ovvm4cx1d"]
+[gd_scene load_steps=26 format=3 uid="uid://c7x7ovvm4cx1d"]
 
 [ext_resource type="Script" path="res://Scripts/opçoes.gd" id="1_cplca"]
 [ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_nmd0q"]
@@ -6,12 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://cup3qpiwoig51" path="res://Assets/sprites/ui/barraSlider1.png" id="3_tnjqy"]
 [ext_resource type="Texture2D" uid="uid://b7svns2sxi5rb" path="res://Assets/sprites/ui/svgui/uiEstrela32.svg" id="7_l46dy"]
 [ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="9_8ox06"]
+[ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="10_8fdqh"]
 [ext_resource type="Texture2D" uid="uid://c04uwb4f7g7bo" path="res://Assets/sprites/ui/svgui/uiUncheckedButton1.svg" id="10_35k6t"]
 [ext_resource type="Texture2D" uid="uid://d1am1epdytgh7" path="res://Assets/sprites/ui/svgui/uiButtonChecked.svg" id="10_ju820"]
 [ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/LibreBaskerville-Regular.ttf" id="11_bhsi6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rw3yt"]
-load_path = "res://.godot/imported/uiEstrela44.svg-35935271552a072899bcf0d45b4797ea.ctex"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dka5c"]
 resource_local_to_scene = true
@@ -27,7 +27,6 @@ modulate_color = Color(1, 1, 1, 0)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkd2r"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g0ogu"]
-load_path = "res://.godot/imported/telaCheiaTitle.png-03c362d5fa6921fedfdb470e2370cbaa.ctex"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k41vr"]
 bg_color = Color(0.321569, 0.337255, 0.360784, 1)
@@ -54,8 +53,8 @@ bg_color = Color(0.321569, 0.337255, 0.360784, 1)
 texture_filter = 1
 layout_mode = 3
 anchors_preset = 0
-offset_right = 856.0
-offset_bottom = 482.0
+offset_right = 1016.0
+offset_bottom = 571.0
 scale = Vector2(1.13149, 1.13149)
 script = ExtResource("1_cplca")
 
@@ -63,20 +62,21 @@ script = ExtResource("1_cplca")
 z_index = 3
 texture_filter = 2
 layout_mode = 0
-offset_left = 260.661
-offset_top = 21.6595
-offset_right = 2780.66
-offset_bottom = 3161.66
+offset_left = 347.33
+offset_top = 98.9845
+offset_right = 2867.33
+offset_bottom = 3238.99
 scale = Vector2(0.126512, 0.126512)
 texture = ExtResource("2_nmd0q")
 
 [node name="Label2" type="Label" parent="."]
 z_index = 4
 texture_filter = 2
-offset_left = 293.524
-offset_top = 35.1034
-offset_right = 546.524
-offset_bottom = 122.103
+layout_mode = 0
+offset_left = 380.193
+offset_top = 112.428
+offset_right = 633.193
+offset_bottom = 199.428
 theme_override_colors/font_color = Color(0.321569, 0.337255, 0.360784, 1)
 theme_override_fonts/font = ExtResource("3_3m2s0")
 theme_override_font_sizes/font_size = 55
@@ -85,10 +85,10 @@ text = "✦Ajustes✦"
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 z_index = 4
 layout_mode = 0
-offset_left = 306.968
-offset_top = 138.92
-offset_right = 691.968
-offset_bottom = 493.92
+offset_left = 393.637
+offset_top = 216.245
+offset_right = 799.637
+offset_bottom = 571.245
 scale = Vector2(0.582, 0.582)
 
 [node name="Label" type="Label" parent="VBoxContainer"]
@@ -99,7 +99,7 @@ theme_override_fonts/font = ExtResource("11_bhsi6")
 theme_override_font_sizes/font_size = 33
 text = "Volume Geral"
 
-[node name="VolumeGeral" type="HSlider" parent="VBoxContainer"]
+[node name="VolSliderMaster" type="HSlider" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_icons/grabber = ExtResource("7_l46dy")
 theme_override_icons/grabber_highlight = ExtResource("7_l46dy")
@@ -108,8 +108,9 @@ theme_override_icons/tick = SubResource("CompressedTexture2D_rw3yt")
 theme_override_styles/slider = SubResource("StyleBoxTexture_dka5c")
 theme_override_styles/grabber_area = SubResource("StyleBoxTexture_orfmg")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_nkd2r")
-min_value = -62.0
-max_value = 0.0
+min_value = -30.0
+max_value = -12.0
+value = -12.0
 
 [node name="Label2" type="Label" parent="VBoxContainer"]
 texture_filter = 2
@@ -119,7 +120,7 @@ theme_override_fonts/font = ExtResource("11_bhsi6")
 theme_override_font_sizes/font_size = 33
 text = "Volume Efeitos Sonoros"
 
-[node name="VolumeSons" type="HSlider" parent="VBoxContainer"]
+[node name="VolSliderSFX" type="HSlider" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_constants/center_grabber = 0
 theme_override_constants/grabber_offset = 0
@@ -129,8 +130,8 @@ theme_override_icons/grabber_disabled = ExtResource("7_l46dy")
 theme_override_styles/slider = SubResource("StyleBoxTexture_dka5c")
 theme_override_styles/grabber_area = SubResource("StyleBoxTexture_orfmg")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_nkd2r")
-min_value = -62.0
-max_value = 0.0
+min_value = -30.0
+max_value = 2.0
 
 [node name="Label3" type="Label" parent="VBoxContainer"]
 texture_filter = 2
@@ -140,7 +141,7 @@ theme_override_fonts/font = ExtResource("11_bhsi6")
 theme_override_font_sizes/font_size = 33
 text = "Volume Música"
 
-[node name="VolumeMusica" type="HSlider" parent="VBoxContainer"]
+[node name="VolSliderMusic" type="HSlider" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_constants/center_grabber = 0
 theme_override_constants/grabber_offset = 0
@@ -150,8 +151,8 @@ theme_override_icons/grabber_disabled = ExtResource("7_l46dy")
 theme_override_styles/slider = SubResource("StyleBoxTexture_dka5c")
 theme_override_styles/grabber_area = SubResource("StyleBoxTexture_orfmg")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_nkd2r")
-min_value = -62.0
-max_value = 0.0
+min_value = -30.0
+max_value = 2.0
 
 [node name="Label4" type="Label" parent="VBoxContainer"]
 texture_filter = 2
@@ -173,10 +174,10 @@ texture = SubResource("CompressedTexture2D_g0ogu")
 z_index = 4
 texture_filter = 2
 layout_mode = 2
-offset_left = 322.652
-offset_top = 338.337
-offset_right = 707.652
-offset_bottom = 404.337
+offset_left = 409.321
+offset_top = 415.662
+offset_right = 794.321
+offset_bottom = 481.662
 scale = Vector2(0.505554, 0.505554)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("9_8ox06")
@@ -190,10 +191,10 @@ text = "Voltar"
 z_index = 4
 texture_filter = 2
 layout_mode = 2
-offset_left = 493.688
-offset_top = 301.74
-offset_right = 878.688
-offset_bottom = 484.74
+offset_left = 580.357
+offset_top = 379.065
+offset_right = 965.357
+offset_bottom = 562.065
 scale = Vector2(0.13473, 0.13473)
 theme_override_icons/checked = ExtResource("10_ju820")
 theme_override_icons/unchecked = ExtResource("10_35k6t")
@@ -208,10 +209,11 @@ icon = SubResource("ImageTexture_rbm2c")
 [node name="Label" type="Label" parent="."]
 z_index = 4
 texture_filter = 2
-offset_left = 305.474
-offset_top = 301.74
-offset_right = 539.474
-offset_bottom = 346.74
+layout_mode = 0
+offset_left = 392.143
+offset_top = 379.065
+offset_right = 626.143
+offset_bottom = 424.065
 scale = Vector2(0.582, 0.582)
 theme_override_colors/font_color = Color(0.321569, 0.337255, 0.360784, 1)
 theme_override_fonts/font = ExtResource("11_bhsi6")
@@ -219,6 +221,12 @@ theme_override_font_sizes/font_size = 33
 text = "Tela cheia
 "
 
-[connection signal="drag_ended" from="VBoxContainer/VolumeGeral" to="." method="_on_volume_geral_drag_ended"]
+[node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_8fdqh")
+bus = &"sfx"
+
+[connection signal="value_changed" from="VBoxContainer/VolSliderMaster" to="." method="_on_vol_slider_master_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/VolSliderSFX" to="." method="_on_vol_slider_sfx_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/VolSliderMusic" to="." method="_on_vol_slider_music_value_changed"]
 [connection signal="pressed" from="VoltarOpçoes" to="." method="_on_voltar_opçoes_pressed"]
 [connection signal="toggled" from="Fullscreen" to="." method="_on_fullscreen_toggled"]

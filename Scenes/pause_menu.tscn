@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5yyix8n88df3"]
+[gd_scene load_steps=9 format=3 uid="uid://b5yyix8n88df3"]
 
 [ext_resource type="Script" path="res://Scripts/PauseMenu.gd" id="1_sg8mw"]
 [ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_0vket"]
 [ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_x8xwp"]
 [ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="4_addoo"]
 [ext_resource type="PackedScene" uid="uid://c7x7ovvm4cx1d" path="res://Scenes/ajustes.tscn" id="5_kuq82"]
+[ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="6_71lsa"]
+[ext_resource type="AudioStream" uid="uid://cmh44bwauf7dp" path="res://Assets/audio/mainMenuTesteLoop.mp3" id="7_6h1p6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8yof8"]
 bg_color = Color(0.321569, 0.337255, 0.360784, 1)
@@ -15,7 +17,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1.02002
+offset_left = -34.0
+offset_top = -43.0
+offset_right = -32.98
+offset_bottom = -43.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sg8mw")
@@ -25,6 +30,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = 44.0
+offset_right = 35.0
+offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.172549, 0.172549, 0.172549, 0.564706)
@@ -32,19 +41,19 @@ color = Color(0.172549, 0.172549, 0.172549, 0.564706)
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 2
 layout_mode = 0
-offset_left = 411.0
-offset_top = 108.0
-offset_right = 2931.0
-offset_bottom = 3248.0
+offset_left = 446.0
+offset_top = 152.0
+offset_right = 2966.0
+offset_bottom = 3292.0
 scale = Vector2(0.127, 0.127)
 texture = ExtResource("2_0vket")
 
 [node name="Pause" type="Control" parent="."]
 anchors_preset = 0
-offset_left = 474.0
-offset_top = 213.0
-offset_right = 514.0
-offset_bottom = 253.0
+offset_left = 509.0
+offset_top = 257.0
+offset_right = 549.0
+offset_bottom = 297.0
 
 [node name="CenterContainer" type="CenterContainer" parent="Pause"]
 texture_filter = 2
@@ -118,11 +127,19 @@ text = "Sair do jogo"
 
 [node name="Ajustes" parent="." instance=ExtResource("5_kuq82")]
 visible = false
-offset_left = 120.0
-offset_top = 66.0
-offset_right = 976.0
-offset_bottom = 548.0
+offset_left = 77.0
+offset_top = 45.0
+offset_right = 933.0
+offset_bottom = 527.0
 scale = Vector2(1.05935, 1.05935)
+
+[node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_71lsa")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_6h1p6")
+autoplay = true
+bus = &"music"
 
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Salvar" to="." method="_on_salvar_pressed"]
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/ResumeButton" to="." method="_on_resume_button_pressed"]

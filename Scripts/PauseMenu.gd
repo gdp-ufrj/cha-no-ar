@@ -1,7 +1,7 @@
 extends Control
 @onready var ajuda = Container.new()
-
 @onready var pause_menu = get_node("Pause/CenterContainer/PauseMenu")
+var music_position = 0
 func _unhandled_input(event):
 	#Ao apertar o input relacionado com o evento pause(nesse caso o Esc) muda o valor de is_paused pro valor
 	#contrário, ou seja, se não tiver aberto, abre, se tiver aberto, fecha.
@@ -44,6 +44,7 @@ func _on_salvar_pressed():
 
 
 func troca_visibilidade(node_path):
+	$ButtonSound.play()
 	var container = get_node(node_path)
 	pause_menu.visible = !pause_menu.visible
 	container.visible = !container.visible

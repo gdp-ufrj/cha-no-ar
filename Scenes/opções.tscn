@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://cup3qpiwoig51" path="res://Assets/sprites/ui/barraSlider1.png" id="2_vdkv3"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fvogt"]
-load_path = "res://.godot/imported/estrelaSlider10.png-e9b3a081089c9c846f68c100a76eebcd.ctex"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cdwp0"]
 resource_local_to_scene = true
@@ -20,10 +19,8 @@ modulate_color = Color(1, 1, 1, 0)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eeu1h"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i20bp"]
-load_path = "res://.godot/imported/checkedButton.png-59640d86d78fea9c8eb2c34925d41b1f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v2gtw"]
-load_path = "res://.godot/imported/uncheckedButton6.png-a2fc66fe74784ba20bb6978ad0df273d.ctex"
 
 [sub_resource type="ImageTexture" id="ImageTexture_kk04t"]
 
