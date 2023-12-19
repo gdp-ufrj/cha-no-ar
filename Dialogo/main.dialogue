@@ -1,4 +1,5 @@
-~ start
+~ Adonis_Day_1_0
+do mark_last_speaking_for_day("Adonis_Day_1")
 Adonis: Um capuccino.
 if estado["capuccino_count"] == 1:
 	set estado["emocao_count"] = 1

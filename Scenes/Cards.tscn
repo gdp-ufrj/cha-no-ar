@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://brrl8paputtr8"]
 
-[ext_resource type="Script" path="res://Scenes/Cards.gd" id="1_kdl8v"]
+[ext_resource type="Script" path="res://Cards.gd" id="1_2em3h"]
 
 [node name="Card Button" type="Button"]
 show_behind_parent = true
@@ -15,6 +15,6 @@ action_mode = 0
 alignment = 0
 expand_icon = true
 text_direction = 1
-script = ExtResource("1_kdl8v")
+script = ExtResource("1_2em3h")
 
 [connection signal="pressed" from="." to="." method="_on_card_button_pressed"]

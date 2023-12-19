@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b6jwa7g7mv5pr"]
+[gd_scene load_steps=4 format=3 uid="uid://ccuqyxuydnhys"]
 
 [ext_resource type="Script" path="res://Scripts/livro_de_receitas.gd" id="1_5u5ag"]
 [ext_resource type="Texture2D" uid="uid://cy1mjl5jjd2lc" path="res://Assets/sprites/ui/CháAmarelo.png" id="2_ncsx0"]
