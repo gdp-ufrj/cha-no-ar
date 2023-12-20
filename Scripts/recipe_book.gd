@@ -36,7 +36,7 @@ func get_drink_resources():
 		file_name = drink_directory.get_next()
 	page_limit = drinks.size() - 1
 	
-func set_info(drink: Drink_Resource):
+func set_info(drink: Resource):
 	if drink.Drink_Image:
 		drink_sprite.texture = load(drink.Drink_Image)
 	else: 
