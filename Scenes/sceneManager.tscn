@@ -6,6 +6,7 @@
 script = ExtResource("1_tmmck")
 
 [node name="LuzAmbiente" type="DirectionalLight2D" parent="."]
+color = Color(0.0235294, 0.254902, 0.364706, 1)
 energy = 0.0
 blend_mode = 1
 

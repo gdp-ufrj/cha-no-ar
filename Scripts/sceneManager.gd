@@ -17,10 +17,14 @@ func _ready():
 	luz_ambiente.set_energy(1.4)
 	luz_ambiente.set_color(valores_luz_ambiente[0])
 	
-	var quarto = load("res://Scenes/fase.tscn").instantiate()
-	maps["fase"] = quarto
-	var cafe = load("res://Scenes/cafe.tscn").instantiate()
+	var quarto = load("res://Scenes/Mapas/quarto.tscn").instantiate()
+	maps["quarto"] = quarto
+	var cafe = load("res://Scenes/Mapas/cafe.tscn").instantiate()
 	maps["cafe"] = cafe
+	var ap = load("res://Scenes/Mapas/apartamento.tscn").instantiate()
+	maps["apartamento"] = ap
+	var varanda = load("res://Scenes/Mapas/varanda.tscn").instantiate()
+	maps["varanda"] = varanda
 	start_game()
 
 
@@ -28,21 +32,22 @@ func _ready():
 func start_game():
 	self.add_child(player_instance)
 	player = get_node("Player")
-	go_to_scene("fase")
+	go_to_scene("quarto", 1)
 
-func go_to_scene(nome):
-	print(State.capuccino_count)
+func go_to_scene(nome, portal_num):
 	if current_scene:
 		self.remove_child(current_scene)
 	
 	self.add_child(maps.get(nome))
 	current_scene = get_node(nome)
+	current_scene.get_node("Camera").make_current()
 	print("Vou pra cena: " + str(current_scene))
 	
-	position_player()
+	position_player(portal_num)
 
-func position_player():
-	player.global_position = current_scene.get_node("Spawn").global_position
+func position_player(portal_num):
+	print("Spawn-" + str(portal_num))
+	player.global_position = current_scene.get_node("Spawn-" + str(portal_num)).global_position
 	player.z_index = 2
 
 
