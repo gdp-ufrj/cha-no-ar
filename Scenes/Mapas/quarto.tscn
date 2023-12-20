@@ -816,3 +816,7 @@ position = Vector2(69, 79)
 
 [node name="DrinkStand" type="Marker2D" parent="."]
 position = Vector2(56, 94)
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(7, 32)
+zoom = Vector2(4, 4)

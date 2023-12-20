@@ -40,6 +40,7 @@ func go_to_scene(nome, portal_num):
 	
 	self.add_child(maps.get(nome))
 	current_scene = get_node(nome)
+	current_scene.get_node("Camera").make_current()
 	print("Vou pra cena: " + str(current_scene))
 	
 	position_player(portal_num)

@@ -100,9 +100,10 @@ texture = ExtResource("3_unc73")
 9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:0/0/physics_layer_0/angular_velocity = 0.0
 10:0/0 = 0
+10:0/0/z_index = 10
 10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:0/0/physics_layer_0/angular_velocity = 0.0
-10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.98093, 0.982154, 8, 1, 8, 8, -5, 8)
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.0625, 4, 8, 4, 8, 8, -5, 8)
 11:0/0 = 0
 11:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:0/0/physics_layer_0/angular_velocity = 0.0
@@ -565,7 +566,7 @@ texture = ExtResource("4_nf6fp")
 6:6/0/z_index = 10
 6:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:6/0/physics_layer_0/angular_velocity = 0.0
-6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.10485, 8, -1.06066, 8, 8, -8, 8)
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:6/0 = 0
 7:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:6/0/physics_layer_0/angular_velocity = 0.0
@@ -661,3 +662,7 @@ metadata/_edit_group_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="acionaveis2"]
 shape = SubResource("RectangleShape2D_rfgt6")
 debug_color = Color(0.788235, 0.431373, 0.0235294, 0.419608)
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(0, 30)
+zoom = Vector2(4, 4)
