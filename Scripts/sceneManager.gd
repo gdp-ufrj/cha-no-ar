@@ -31,7 +31,6 @@ func start_game():
 	go_to_scene("fase")
 
 func go_to_scene(nome):
-	print(State.capuccino_count)
 	if current_scene:
 		self.remove_child(current_scene)
 	

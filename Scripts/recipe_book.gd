@@ -1,9 +1,10 @@
 extends Control
-@onready var receitas = $"."
-@onready var cha_amarelo = $"../../SpawnCha/CháAmarelo"
+
 var aberto = false
-	
-var card = preload("res://Scenes/Cards.tscn")
+
+var carriable_object = preload("res://Scenes/carriable_object.tscn")
+
+@onready var fase = get_node("../../../fase")
 
 var drinks: Array
 var page_limit: int
@@ -15,6 +16,8 @@ var current_page: int = 0
 @onready var next_drink_button: Button = get_node("Background/Next Tea")
 @onready var previous_drink_button: Button = get_node("Background/Previous Tea")
 @onready var make_tea_button: Button = get_node("Background/Make Tea")
+
+@onready var coffe_counter_tea_spawn_location = get_node("../../coffee_counter/Tea Spawn position").global_position
 
 func _ready():
 	get_drink_resources()
@@ -63,9 +66,13 @@ func check_buttons():
 	else:
 		next_drink_button.disabled = false
 		
-
-func toggle_recipe_book():
-	aberto = !aberto
+func make_tea():
+	var tea = carriable_object.instantiate()
+	tea.set_object_data(drinks[current_page], coffe_counter_tea_spawn_location)
+	fase.add_child(tea)
 	
+func toggle_recipe_book():
+	self.visible = !aberto
+	aberto = !aberto
 
 	

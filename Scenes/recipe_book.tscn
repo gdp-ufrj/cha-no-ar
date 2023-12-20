@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://7xcrirmakwn8"]
 
-[ext_resource type="Script" path="res://Scripts/livro_de_receitas.gd" id="1_wvtyh"]
+[ext_resource type="Script" path="res://Scripts/recipe_book.gd" id="1_4rtwl"]
 [ext_resource type="Texture2D" uid="uid://c7air4tt8c4qo" path="res://Assets/sprites/ui/Chá.png" id="2_klkq5"]
 [ext_resource type="Theme" uid="uid://ctx52f5e17dcf" path="res://Assets/themes/titles.tres" id="5_vhefn"]
 [ext_resource type="Theme" uid="uid://w1km7g474tf3" path="res://Assets/themes/text.tres" id="6_ucani"]
@@ -16,7 +16,7 @@ offset_top = 40.0
 offset_right = 752.0
 offset_bottom = 960.0
 mouse_filter = 2
-script = ExtResource("1_wvtyh")
+script = ExtResource("1_4rtwl")
 
 [node name="Background" type="ColorRect" parent="."]
 visibility_layer = 2
@@ -117,3 +117,4 @@ text = "Fazer Chá"
 
 [connection signal="pressed" from="Background/Previous Tea" to="." method="previous_drink"]
 [connection signal="pressed" from="Background/Next Tea" to="." method="next_drink"]
+[connection signal="pressed" from="Background/Make Tea" to="." method="make_tea"]

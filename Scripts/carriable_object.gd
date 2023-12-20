@@ -28,7 +28,6 @@ func _input(_event):
 			if body.name == "Player" and get_node("../../Player").can_pick == true:
 				self.picked = true
 				fase.remove_child(self)
-				player_marker.add_child(self)
 				if self.drink_resource:
 					player.drink_in_hand = drink_resource
 					State.held_drink_tags = drink_resource.Drink_Tags
