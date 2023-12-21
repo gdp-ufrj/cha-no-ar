@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://qgj48ejwhm17"]
+[gd_scene load_steps=7 format=3 uid="uid://qgj48ejwhm17"]
 
 [ext_resource type="Texture2D" uid="uid://d0cx01nf1k4yq" path="res://Assets/sprites/tilesets/varanda.png" id="1_t8412"]
+[ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="1_ygtc7"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="2_88mbr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5jbjt"]
@@ -543,6 +544,12 @@ sources/0 = SubResource("TileSetAtlasSource_5jbjt")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dvp4"]
 
 [node name="varanda" type="Node2D"]
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("1_ygtc7")]
+visible = false
+z_index = 999
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_m7r5t")

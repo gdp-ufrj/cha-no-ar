@@ -4,7 +4,7 @@ var aberto = false
 
 var carriable_object = preload("res://Scenes/carriable_object.tscn")
 
-@onready var fase = get_node("../../../fase")
+@onready var fase = get_node("../../../cafe")
 
 var drinks: Array
 var page_limit: int

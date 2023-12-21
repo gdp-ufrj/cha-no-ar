@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://rb7mk3pae5bw"]
+[gd_scene load_steps=9 format=3 uid="uid://rb7mk3pae5bw"]
 
+[ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="1_nlmam"]
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_y1ece"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_np76e"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_a72w2"]
@@ -459,6 +460,12 @@ sources/1 = SubResource("TileSetAtlasSource_tvr54")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_af5sl"]
 
 [node name="apartamento" type="Node2D"]
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("1_nlmam")]
+visible = false
+z_index = 999
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_o46ou")
