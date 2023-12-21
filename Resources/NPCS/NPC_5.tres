@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=2 format=3 uid="uid://ddiety8ajxjm2"]
+
+[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_un6h1"]
+
+[resource]
+script = ExtResource("1_un6h1")
+NPC_Dialogue = ""

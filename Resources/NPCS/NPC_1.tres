@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=2 format=3 uid="uid://bmp8v7t03objx"]
+
+[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_me20v"]
+
+[resource]
+script = ExtResource("1_me20v")
+NPC_Image = "res://Assets/sprites/npcs/NPC_1_.png"
