@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://qgj48ejwhm17"]
 
-[ext_resource type="Texture2D" uid="uid://d0cx01nf1k4yq" path="res://Assets/sprites/tilesets/varanda.png" id="1_t8412"]
+[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/varanda.png" id="1_t8412"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="1_ygtc7"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="2_88mbr"]
 
@@ -593,4 +593,4 @@ position = Vector2(-113, 41)
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, 64)
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)

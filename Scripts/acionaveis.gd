@@ -1,30 +1,18 @@
 extends Area2D
 
-@export_enum("Dialogue", "Door", "Carry", "Functional") var type: String
+@export_enum("Dialogue", "Door", "Carry") var type: String
 
 @export_group("Dialogue")
 @export var dialogue_resource: DialogueResource
-@export var dialogue_start: String = "start"
-var dialogue_spot: int = 0
+@export var dialogue_owner: String
+var dialogue_spot
 
 @export_group("Teleporting")
 @export var portal: String = ""
-@onready var dialogue_balloon = get_node("DialogueBalloon")
-#func show_ballon(dialogue_resource, dialogue_marker):
-#	var dialogue_line = await DialogueManager.get_next_dialogue_line(dialogue_resource,dialogue_marker)
-#	if dialogue_line == null:
-#		return 
-#	print(dialogue_line)
-#	if dialogue_line.responses.size() != 0:
-#		print(dialogue_line.responses)
-#	show_ballon(dialogue_resource, dialogue_line.next_id)
-func show_ballon():
-	dialogue_balloon.disable = false
+@export var number: int = 1
+
 func start_dialogue() -> void:
-	print(get_tree().get_root())
-	show_ballon()
 	var dialogue_dictionary = State.get_dialogue_dictionary()
-	
 	
 	if !dialogue_dictionary.has(dialogue_owner):
 		dialogue_dictionary[dialogue_owner] = {
@@ -33,11 +21,10 @@ func start_dialogue() -> void:
 			"forks": {}
 		}
 	
-	print(dialogue_dictionary)
-	
 	dialogue_spot = dialogue_dictionary[dialogue_owner]["spot"]
 	var dialogue_marker = dialogue_owner + "_" + str(dialogue_spot)
 	
+	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_marker)
 	
 	if !dialogue_dictionary[dialogue_owner]["finished"]:
 		dialogue_dictionary[dialogue_owner]["spot"] = dialogue_dictionary[dialogue_owner]["spot"] + 1

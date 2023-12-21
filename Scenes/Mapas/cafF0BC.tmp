@@ -650,7 +650,6 @@ visible = false
 position = Vector2(64, 3)
 type = "Door"
 portal = "apartamento"
-number = 2
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="acionaveis"]
