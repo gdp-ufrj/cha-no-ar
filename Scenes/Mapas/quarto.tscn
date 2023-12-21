@@ -1,10 +1,10 @@
 [gd_scene load_steps=14 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_8gomm"]
+[ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_8gomm"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_4uegc"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/apartamento.png" id="3_k8864"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
+[ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="3_k8864"]
+[ext_resource type="Texture2D" uid="uid://dhrb78rbt853b" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v8xkm"]

@@ -1,12 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=17 format=3 uid="uid://bsr4i8u0khvh8"]
 
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_7s0vp"]
+[ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
+[ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_7s0vp"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="2_lc0rj"]
-[ext_resource type="PackedScene" uid="uid://p3j7j8evuapr" path="res://Scenes/recipe_book.tscn" id="2_psx2t"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/cafe-decorations.png" id="3_unc73"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/seats.png" id="4_nf6fp"]
+[ext_resource type="PackedScene" uid="uid://nsrb1qqundtg" path="res://Scenes/recipe_book.tscn" id="2_psx2t"]
+[ext_resource type="Texture2D" uid="uid://c3ky8gr7pv5d4" path="res://Assets/sprites/tilesets/cafe-decorations.png" id="3_unc73"]
+[ext_resource type="Texture2D" uid="uid://vxpxigk7rtqx" path="res://Assets/sprites/tilesets/seats.png" id="4_nf6fp"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="6_sbh5f"]
+[ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="8_8d1xx"]
+[ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_xc1nj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ipo5"]
 texture = ExtResource("1_1xogh")
@@ -614,6 +616,9 @@ sources/0 = SubResource("TileSetAtlasSource_6ipo5")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfgt6"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ofkq"]
+size = Vector2(20, 19)
+
 [node name="cafe" type="Node2D"]
 
 [node name="Canvas Menu" type="CanvasLayer" parent="."]
@@ -673,3 +678,15 @@ zoom = Vector2(3, 3)
 
 [node name="TeaSpawnPosition" type="Marker2D" parent="."]
 position = Vector2(-109, 24)
+
+[node name="NPC" parent="." instance=ExtResource("8_8d1xx")]
+position = Vector2(64, 43)
+
+[node name="acionaveis" parent="NPC" instance=ExtResource("6_sbh5f")]
+type = "Dialogue"
+dialogue_resource = ExtResource("9_xc1nj")
+dialogue_owner = "Leticia_Day_1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_6ofkq")

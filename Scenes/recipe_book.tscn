@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://p3j7j8evuapr"]
+[gd_scene load_steps=6 format=3 uid="uid://nsrb1qqundtg"]
 
 [ext_resource type="Script" path="res://Scripts/recipe_book.gd" id="1_4rtwl"]
 [ext_resource type="Texture2D" uid="uid://c7air4tt8c4qo" path="res://Assets/sprites/ui/Chá.png" id="2_klkq5"]

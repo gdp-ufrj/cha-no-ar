@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://rb7mk3pae5bw"]
 
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="1_nlmam"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/apartamento.png" id="1_y1ece"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_np76e"]
+[ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_y1ece"]
+[ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_np76e"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_a72w2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ierdu"]
