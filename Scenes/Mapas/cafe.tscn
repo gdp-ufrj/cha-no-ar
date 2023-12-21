@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=14 format=3 uid="uid://bsr4i8u0khvh8"]
 
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_7s0vp"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="2_lc0rj"]
+[ext_resource type="PackedScene" uid="uid://b6p3srhty0nx" path="res://Scenes/recipe_book.tscn" id="2_psx2t"]
 [ext_resource type="Texture2D" uid="uid://c3ky8gr7pv5d4" path="res://Assets/sprites/tilesets/cafe-decorations.png" id="3_unc73"]
 [ext_resource type="Texture2D" uid="uid://vxpxigk7rtqx" path="res://Assets/sprites/tilesets/seats.png" id="4_nf6fp"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="6_sbh5f"]
@@ -615,9 +616,12 @@ sources/0 = SubResource("TileSetAtlasSource_6ipo5")
 
 [node name="cafe" type="Node2D"]
 
-[node name="PauseMenu" type="CanvasLayer" parent="."]
+[node name="Canvas Menu" type="CanvasLayer" parent="."]
 
-[node name="PauseMenu" parent="PauseMenu" instance=ExtResource("2_lc0rj")]
+[node name="PauseMenu" parent="Canvas Menu" instance=ExtResource("2_lc0rj")]
+visible = false
+
+[node name="Recipes" parent="Canvas Menu" instance=ExtResource("2_psx2t")]
 visible = false
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -665,4 +669,4 @@ debug_color = Color(0.788235, 0.431373, 0.0235294, 0.419608)
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, 30)
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
