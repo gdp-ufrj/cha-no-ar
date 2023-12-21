@@ -1,14 +1,30 @@
-~ Leticia_Day_1_0
+~ start
+Adonis: Um capuccino.
+if capuccino_count == 1:
+	set emocao_count = 1
+	Leia: Só tenho um... 
+	- Dar o Capuccino
+		set capuccino_count = 0
+		Leia: Aqui está
+		Adonis: Valeus
+		set emocao_count = 0
+	- Oferecer aguinha
+		Leia: Quer aguinha não?
+		Adonis: Tá bom
+		
+else:
+	Leia: Só tem água agora
+	set emocao_count = 2
+	Adonis: Droga
+	set emocao_count = 0
+=> END
+
+~ Leticia_0
 Leticia: Oi ami! Tava me exercitando em uma corrida lá fora, mas tá muito quente! Tem alguma coisa aí para me refrescar e relaxar?
 => END
 
-~ Leticia_Day_1_1
-do mark_last_speaking_for_day("Leticia_Day_1")
-if check_fork_exists("Leticia_Day_1", "given_drink_reaction"):
-	set comparation = consult_fork_result("Leticia_Day_1", "given_drink_reaction")
-else:
-	set comparation = compare_tags(["Calmante", "Refrescante"])
-	do mark_new_fork("Leticia_Day_1", "given_drink_reaction", comparation)
+~ Leticia_1
+set comparation = compare_tags(["Calmante", "Refrescante"])
 if comparation == 0:
 	Leticia: Que isso?! Ah, não... Não foi isso que eu pedi.
 if comparation == 1:

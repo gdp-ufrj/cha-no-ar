@@ -2,8 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_8gomm"]
+[ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="2_sbekf"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_4uegc"]
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="3_k8864"]
+[ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
 [ext_resource type="Texture2D" uid="uid://dhrb78rbt853b" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
 [ext_resource type="PackedScene" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
@@ -702,6 +704,9 @@ sources/0 = SubResource("TileSetAtlasSource_v8xkm")
 sources/1 = SubResource("TileSetAtlasSource_2lom3")
 sources/2 = SubResource("TileSetAtlasSource_cqbo2")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_b3x4i"]
+radius = 8.0
+
 [sub_resource type="Gradient" id="Gradient_52u77"]
 offsets = PackedFloat32Array(0, 0.604317, 0.71223)
 colors = PackedColorArray(1, 1, 1, 1, 0.057377, 0.057377, 0.057377, 1, 0, 0, 0, 1)
@@ -717,12 +722,6 @@ fill_from = Vector2(0.5, 0.5)
 
 [node name="quarto" type="Node2D"]
 script = ExtResource("1_pb8pg")
-
-[node name="PauseMenu" type="CanvasLayer" parent="."]
-
-[node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("7_io7h3")]
-visible = false
-z_index = 999
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_8k34n")
@@ -812,6 +811,9 @@ position = Vector2(-36, 11)
 
 [node name="Spawn-2" type="Marker2D" parent="."]
 position = Vector2(-32, 107)
+
+[node name="carriable_object" parent="." instance=ExtResource("10_3jcdk")]
+position = Vector2(69, 79)
 
 [node name="DrinkStand" type="Marker2D" parent="."]
 position = Vector2(56, 94)

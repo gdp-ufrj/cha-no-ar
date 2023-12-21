@@ -5,7 +5,6 @@ var estado = {
 	"transition_scene" = false,
 	"capuccino_count" = 1,
 	"emocao_count" = 0,
-	"dialogue_dictionary" = {}
 }
 
 var current_scene = "fase"
@@ -13,7 +12,6 @@ var transition_scene = false
 @onready var player = get_node("Player")
 var talking_to
 var drink_resource: Resource
-var dialogue_dictionary: Dictionary
 
 var held_drink_tags: Array
 
@@ -29,29 +27,16 @@ func compare_tags(tags_asked: Array):
 			if delivered == asked:
 				score = score + 1
 	return score
+		
+	
+	
 
-func get_dialogue_dictionary():
-	return dialogue_dictionary
-	
-func overwrite_dialogue_dictionary(new_dialogue_dictionary):
-	dialogue_dictionary = new_dialogue_dictionary
-	
-func mark_last_speaking_for_day(character_title: String):
-	dialogue_dictionary[character_title]["finished"] = true
-
-func mark_new_fork(character_title: String, fork_key: String, result: int):
-	dialogue_dictionary[character_title]["forks"][fork_key] = result
-
-func consult_fork_result(character_title: String, fork_key: String):
-	return dialogue_dictionary[character_title]["forks"][fork_key]
-	
-func check_fork_exists(character_title: String, fork_key: String):
-	return dialogue_dictionary[character_title]["forks"].has(fork_key)
-	
 func getEmocao():
 	return emocao_count
 
+
 #SALVAMENTO
+
 const SAVE_GAME_PATH =  "user://progresso.save"
 func save_game(): #tambem serve pra dar overwrite
 	var file = FileAccess.open(SAVE_GAME_PATH, FileAccess.WRITE)

@@ -1,21 +1,20 @@
-~ Adonis_Day_1_0
-do mark_last_speaking_for_day("Adonis_Day_1")
-Adonis:[#leia:feliz,#adonis:normal] Um capuccino.
+~ start
+Adonis: Um capuccino.
 if estado["capuccino_count"] == 1:
 	set estado["emocao_count"] = 1
-	Leia:[#leia:feliz,#adonis:normal] Só tenho um... 
+	Leia: Só tenho um... 
 	- Dar o Capuccino
 		set estado["capuccino_count"] = 0
-		Leia:[#leia:feliz,#adonis:normal] Aqui está
-		Adonis:[#leia:feliz,#adonis:normal] Valeus
+		Leia: Aqui está
+		Adonis: Valeus
 		set estado["emocao_count"] = 0
 	- Oferecer aguinha
-		Leia:[#leia:feliz,#adonis:normal] Quer aguinha não?
-		Adonis:[#leia:feliz,#adonis:normal] Tá bom
+		Leia: Quer aguinha não?
+		Adonis: Tá bom
 		
 else:
-	Leia:[#leia:feliz,#adonis:normal] Só tem água agora
+	Leia: Só tem água agora
 	set estado["emocao_count"] = 2
-	Adonis:[#leia:feliz,#adonis:normal] Droga
+	Adonis: Droga
 	set estado["emocao_count"] = 0
 => END

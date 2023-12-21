@@ -1,11 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=9 format=3 uid="uid://73jm5qjy52vq"]
 
-[ext_resource type="Script" path="res://Scripts/dialogue_balloon.gd" id="1_4f5dk"]
-[ext_resource type="Texture2D" uid="uid://de1gk6coy4duo" path="res://Assets/sprites/Iris/normal/normal1.png" id="2_1jtuq"]
-[ext_resource type="Texture2D" uid="uid://dnlrn0hopo87m" path="res://Assets/sprites/ui/uichanoar-02.png" id="4_6fe1x"]
-[ext_resource type="FontFile" uid="uid://d3stl27lla7y2" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY.otf" id="5_qw5pn"]
-[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="6_shopr"]
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="7_5olvw"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_4u26j"]
+[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -66,24 +63,9 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qdyw6"]
-texture = ExtResource("4_6fe1x")
-region_rect = Rect2(483, 2500, 7034, 1482)
-
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
-script = ExtResource("1_4f5dk")
-
-[node name="MolduraNPC" type="Sprite2D" parent="."]
-position = Vector2(1664, 790)
-scale = Vector2(0.306, 0.306)
-texture = ExtResource("2_1jtuq")
-
-[node name="MolduraPlayer" type="Sprite2D" parent="."]
-position = Vector2(189.553, 790)
-scale = Vector2(0.306472, 0.306472)
-texture = ExtResource("2_1jtuq")
-flip_h = true
+script = ExtResource("1_4u26j")
 
 [node name="Balloon" type="Panel" parent="."]
 unique_name_in_owner = true
@@ -91,22 +73,19 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 281.0
+offset_left = 21.0
 offset_top = -183.0
-offset_right = -344.0
+offset_right = -19.0
 offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_qq3yp")
-theme_override_styles/panel = SubResource("StyleBoxTexture_qdyw6")
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 63.0
-offset_right = -66.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -118,30 +97,15 @@ unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
-theme_override_colors/selection_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
-theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
-theme_override_colors/table_border = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("5_qw5pn")
-theme_override_fonts/bold_font = ExtResource("5_qw5pn")
-theme_override_fonts/italics_font = ExtResource("5_qw5pn")
 bbcode_enabled = true
 text = "Character"
 fit_content = true
 scroll_active = false
 
-[node name="DialogueLabel" parent="Balloon/Dialogue/VBoxContainer" instance=ExtResource("6_shopr")]
+[node name="DialogueLabel" parent="Balloon/Dialogue/VBoxContainer" instance=ExtResource("2_a8ve6")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("5_qw5pn")
-theme_override_fonts/bold_font = ExtResource("5_qw5pn")
-theme_override_fonts/italics_font = ExtResource("5_qw5pn")
 text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
@@ -163,7 +127,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
-script = ExtResource("7_5olvw")
+script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
