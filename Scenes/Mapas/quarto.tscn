@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cknedyiq3v434"]
+[gd_scene load_steps=23 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_8gomm"]
@@ -8,12 +8,11 @@
 [ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
 [ext_resource type="Texture2D" uid="uid://dhrb78rbt853b" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
-[ext_resource type="PackedScene" uid="uid://7xcrirmakwn8" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
+[ext_resource type="PackedScene" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
 [ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_ah5rm"]
 [ext_resource type="PackedScene" uid="uid://d0tw14utntjkc" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
 [ext_resource type="PackedScene" uid="uid://d3noddnmhi4dg" path="res://Scenes/carriable_object.tscn" id="10_3jcdk"]
-[ext_resource type="PackedScene" uid="uid://djec0tk58185v" path="res://Scenes/spawn_npc.tscn" id="13_bhmq6"]
-[ext_resource type="Resource" uid="uid://bmp8v7t03objx" path="res://Resources/NPCS/NPC_1.tres" id="14_xaduo"]
+[ext_resource type="PackedScene" path="res://Scenes/spawn_npc.tscn" id="13_bhmq6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v8xkm"]
 texture = ExtResource("2_8gomm")
@@ -824,7 +823,6 @@ position = Vector2(7, 32)
 zoom = Vector2(3, 3)
 
 [node name="SpawnNPC" parent="." instance=ExtResource("13_bhmq6")]
-_NPC = ExtResource("14_xaduo")
 
 [node name="acionaveis" parent="SpawnNPC" instance=ExtResource("3_4uegc")]
 type = "Dialogue"

@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="NPC_Resource" load_steps=2 format=3 uid="uid://ddiety8ajxjm2"]
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://ddiety8ajxjm2"]
 
+[ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="1_5piov"]
 [ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_un6h1"]
 
 [resource]
 script = ExtResource("1_un6h1")
-NPC_Dialogue = ""
+NPC_Dialogue = ExtResource("1_5piov")
+NPC_Image = "res://Assets/sprites/npcs/NPC_5.png"

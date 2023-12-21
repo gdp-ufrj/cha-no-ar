@@ -1,6 +1,0 @@
-[gd_resource type="Resource" script_class="NPC_Resource" load_steps=2 format=3 uid="uid://u3omv02b5xth"]
-
-[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_e8ans"]
-
-[resource]
-script = ExtResource("1_e8ans")
