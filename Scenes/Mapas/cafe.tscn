@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=13 format=3 uid="uid://bsr4i8u0khvh8"]
 
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_7s0vp"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://c3ky8gr7pv5d4" path="res://Assets/sprites/tilesets/cafe-decorations.png" id="3_unc73"]
 [ext_resource type="Texture2D" uid="uid://vxpxigk7rtqx" path="res://Assets/sprites/tilesets/seats.png" id="4_nf6fp"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="6_sbh5f"]
-[ext_resource type="PackedScene" uid="uid://d3noddnmhi4dg" path="res://Scenes/carriable_object.tscn" id="7_y7dvg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ipo5"]
 texture = ExtResource("1_1xogh")
@@ -643,38 +642,6 @@ visible = false
 [node name="PauseMenu" parent="PauseMenu" instance=ExtResource("2_lc0rj")]
 visible = false
 
-[node name="PauseMenu" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
-[node name="PauseMenu2" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
-[node name="PauseMenu3" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
-[node name="PauseMenu4" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
-[node name="PauseMenu5" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
-[node name="PauseMenu6" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
-[node name="PauseMenu7" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
-[node name="PauseMenu8" parent="PauseMenu/PauseMenu" instance=ExtResource("2_lc0rj")]
-visible = false
-layout_mode = 1
-
 [node name="acionaveis" parent="." instance=ExtResource("6_sbh5f")]
 position = Vector2(64, 3)
 type = "Door"
@@ -698,7 +665,4 @@ debug_color = Color(0.788235, 0.431373, 0.0235294, 0.419608)
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, 30)
-zoom = Vector2(3, 3)
-
-[node name="carriable_object" parent="." instance=ExtResource("7_y7dvg")]
-position = Vector2(-25, 26)
+zoom = Vector2(4, 4)

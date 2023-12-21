@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cknedyiq3v434"]
+[gd_scene load_steps=21 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_8gomm"]
@@ -8,12 +8,10 @@
 [ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
 [ext_resource type="Texture2D" uid="uid://dhrb78rbt853b" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
-[ext_resource type="PackedScene" uid="uid://7xcrirmakwn8" path="res://Scenes/teste_receitas_teste.tscn" id="8_qxn06"]
+[ext_resource type="PackedScene" uid="uid://7xcrirmakwn8" path="res://Scenes/livro_receitas.tscn" id="8_qxn06"]
 [ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_ah5rm"]
 [ext_resource type="PackedScene" uid="uid://d0tw14utntjkc" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
 [ext_resource type="PackedScene" uid="uid://d3noddnmhi4dg" path="res://Scenes/carriable_object.tscn" id="10_3jcdk"]
-[ext_resource type="PackedScene" uid="uid://djec0tk58185v" path="res://Scenes/spawn_npc.tscn" id="13_eqp5w"]
-[ext_resource type="Resource" uid="uid://bmp8v7t03objx" path="res://Resources/NPCS/NPC_1.tres" id="14_eokw5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v8xkm"]
 texture = ExtResource("2_8gomm")
@@ -719,8 +717,6 @@ fill_from = Vector2(0.5, 0.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3c76q"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_jtadf"]
-
 [node name="quarto" type="Node2D"]
 script = ExtResource("1_pb8pg")
 
@@ -763,11 +759,12 @@ scale = Vector2(0.00465134, 0.00465134)
 metadata/_edit_pinned_properties_ = [&"position"]
 
 [node name="NPC" parent="." instance=ExtResource("2_sbekf")]
-position = Vector2(0, 85)
+position = Vector2(-98, 67)
 
 [node name="acionaveis" parent="NPC" instance=ExtResource("3_4uegc")]
 type = "Dialogue"
 dialogue_resource = ExtResource("4_wfgf0")
+dialogue_owner = "Adonis_Day_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis"]
 position = Vector2(0, 9)
@@ -775,11 +772,12 @@ shape = SubResource("CircleShape2D_b3x4i")
 debug_color = Color(0.996078, 0, 0, 0.419608)
 
 [node name="Leticia" parent="." instance=ExtResource("2_sbekf")]
-position = Vector2(-51, 85)
+position = Vector2(-149, 67)
 
 [node name="acionaveis" parent="Leticia" instance=ExtResource("3_4uegc")]
 type = "Dialogue"
 dialogue_resource = ExtResource("9_ah5rm")
+dialogue_owner = "Leticia_Day_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Leticia/acionaveis"]
 position = Vector2(0, 9)
@@ -821,19 +819,4 @@ position = Vector2(56, 94)
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(7, 32)
-zoom = Vector2(3, 3)
-
-[node name="SpawnNPC" parent="." instance=ExtResource("13_eqp5w")]
-position = Vector2(3, 20)
-scale = Vector2(2.5548, 2.55199)
-_NPC = ExtResource("14_eokw5")
-
-[node name="acionaveis" parent="SpawnNPC" instance=ExtResource("3_4uegc")]
-position = Vector2(-0.39142, -3.91851)
-scale = Vector2(1.19792, 1.19792)
-type = "Dialogue"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnNPC/acionaveis"]
-position = Vector2(0, 2.83533)
-scale = Vector2(1.14487, 1.14487)
-shape = SubResource("CircleShape2D_jtadf")
+zoom = Vector2(4, 4)

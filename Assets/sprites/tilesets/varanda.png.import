@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df65utvkoy8y7"
-path="res://.godot/imported/wooden_door.png-6b8b9100df079770ac7fdaab7ef8f6cf.ctex"
+uid="uid://d0cx01nf1k4yq"
+path="res://.godot/imported/varanda.png-2ee08c949438f7943253950634291f7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/tilesets/walls/wooden_door.png"
-dest_files=["res://.godot/imported/wooden_door.png-6b8b9100df079770ac7fdaab7ef8f6cf.ctex"]
+source_file="res://Assets/sprites/tilesets/varanda.png"
+dest_files=["res://.godot/imported/varanda.png-2ee08c949438f7943253950634291f7d.ctex"]
 
 [params]
 

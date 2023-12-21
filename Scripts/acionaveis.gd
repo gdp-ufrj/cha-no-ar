@@ -9,6 +9,7 @@ var dialogue_spot: int = 0
 
 @export_group("Teleporting")
 @export var portal: String = ""
+@export var number: int = 1
 
 func start_dialogue() -> void:
 	var dialogue_marker = dialogue_start + "_" + str(dialogue_spot)

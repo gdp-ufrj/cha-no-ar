@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yganiiw6iu3t"
-path="res://.godot/imported/carpet.png-fe88a6cce1d07cbecaef214dedd459b6.ctex"
+uid="uid://dhrb78rbt853b"
+path="res://.godot/imported/quarto.png-f9fcf35012f9ed2166fbcbc700a450b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/tilesets/floors/carpet.png"
-dest_files=["res://.godot/imported/carpet.png-fe88a6cce1d07cbecaef214dedd459b6.ctex"]
+source_file="res://Assets/sprites/tilesets/quarto.png"
+dest_files=["res://.godot/imported/quarto.png-f9fcf35012f9ed2166fbcbc700a450b9.ctex"]
 
 [params]
 
