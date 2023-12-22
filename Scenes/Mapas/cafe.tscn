@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=15 format=3 uid="uid://bsr4i8u0khvh8"]
 
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
+[ext_resource type="Script" path="res://Scenes/Mapas/customer_manager.gd" id="1_h4beg"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_7s0vp"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="2_lc0rj"]
 [ext_resource type="Texture2D" uid="uid://c3ky8gr7pv5d4" path="res://Assets/sprites/tilesets/cafe-decorations.png" id="3_unc73"]
@@ -615,6 +616,7 @@ sources/0 = SubResource("TileSetAtlasSource_6ipo5")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfgt6"]
 
 [node name="cafe" type="Node2D"]
+script = ExtResource("1_h4beg")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_hielw")
@@ -670,7 +672,7 @@ zoom = Vector2(4, 4)
 
 [node name="Assento_1" type="Marker2D" parent="."]
 z_index = 10
-position = Vector2(-4, 89)
+position = Vector2(-1, 87)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_1"]
 position = Vector2(-3, -1)
@@ -678,7 +680,7 @@ texture = ExtResource("7_q4n0d")
 
 [node name="Assento_2" type="Marker2D" parent="."]
 z_index = 10
-position = Vector2(33, 89)
+position = Vector2(31, 87)
 scale = Vector2(-1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_2"]
@@ -687,7 +689,7 @@ texture = ExtResource("7_q4n0d")
 
 [node name="Assento_3" type="Marker2D" parent="."]
 z_index = 10
-position = Vector2(55, 89)
+position = Vector2(55, 87)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_3"]
 position = Vector2(-3, -1)
@@ -695,7 +697,7 @@ texture = ExtResource("7_q4n0d")
 
 [node name="Assento_4" type="Marker2D" parent="."]
 z_index = 10
-position = Vector2(91, 89)
+position = Vector2(89, 87)
 scale = Vector2(-1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_4"]
@@ -704,7 +706,7 @@ texture = ExtResource("7_q4n0d")
 
 [node name="Assento_5" type="Marker2D" parent="."]
 z_index = 10
-position = Vector2(112, 89)
+position = Vector2(112, 87)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_5"]
 position = Vector2(-3, -1)
@@ -712,8 +714,8 @@ texture = ExtResource("7_q4n0d")
 
 [node name="Assento_6" type="Marker2D" parent="."]
 z_index = 10
-position = Vector2(150, 89)
-scale = Vector2(-1.05184, 1.05184)
+position = Vector2(148, 87)
+scale = Vector2(-1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_6"]
 position = Vector2(-3, -1)

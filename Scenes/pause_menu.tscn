@@ -1,15 +1,71 @@
-[gd_scene load_steps=9 format=3 uid="uid://b5yyix8n88df3"]
+[gd_scene load_steps=22 format=3 uid="uid://b5yyix8n88df3"]
 
 [ext_resource type="Script" path="res://Scripts/PauseMenu.gd" id="1_sg8mw"]
-[ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_0vket"]
-[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_x8xwp"]
+[ext_resource type="Texture2D" uid="uid://7wn805d55b7k" path="res://Assets/sprites/ui/Ajustes/uichanoar-04 (2).png" id="3_5rhu2"]
 [ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="4_addoo"]
-[ext_resource type="PackedScene" uid="uid://c7x7ovvm4cx1d" path="res://Scenes/ajustes.tscn" id="5_kuq82"]
+[ext_resource type="PackedScene" uid="uid://cvbq828jqt541" path="res://Scenes/ajustes.tscn" id="5_kuq82"]
 [ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="6_71lsa"]
 [ext_resource type="AudioStream" uid="uid://cmh44bwauf7dp" path="res://Assets/audio/mainMenuTesteLoop.mp3" id="7_6h1p6"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8yof8"]
-bg_color = Color(0.321569, 0.337255, 0.360784, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w1uxo"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(641, 184, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5xpwc"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1074, 184, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t3mha"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1496, 184, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dn5jw"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(641, 279, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ppthx"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1074, 279, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pclh3"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1496, 279, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fw5jt"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(641, 374, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_06myf"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1074, 374, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hm6rc"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1496, 374, 393, 68)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_77j0g"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(641, 468, 393, 69)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2qal7"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1074, 468, 393, 69)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qx1b6"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1496, 468, 393, 69)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t687d"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(641, 563, 393, 69)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eheio"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1074, 563, 393, 69)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fycva"]
+texture = ExtResource("3_5rhu2")
+region_rect = Rect2(1496, 563, 393, 69)
 
 [node name="Control" type="Control"]
 process_mode = 3
@@ -17,10 +73,6 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -34.0
-offset_top = -43.0
-offset_right = -32.98
-offset_bottom = -43.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sg8mw")
@@ -30,30 +82,17 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 35.0
-offset_top = 44.0
-offset_right = 35.0
-offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.172549, 0.172549, 0.172549, 0.564706)
 
-[node name="TextureRect" type="TextureRect" parent="."]
-texture_filter = 2
-layout_mode = 0
-offset_left = 446.0
-offset_top = 152.0
-offset_right = 2966.0
-offset_bottom = 3292.0
-scale = Vector2(0.127, 0.127)
-texture = ExtResource("2_0vket")
-
 [node name="Pause" type="Control" parent="."]
+z_index = 5
 anchors_preset = 0
-offset_left = 509.0
-offset_top = 257.0
-offset_right = 549.0
-offset_bottom = 297.0
+offset_left = 559.0
+offset_top = 204.0
+offset_right = 2479.0
+offset_bottom = 1284.0
 
 [node name="CenterContainer" type="CenterContainer" parent="Pause"]
 texture_filter = 2
@@ -61,69 +100,70 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -38.0
-offset_top = -55.0
-offset_right = 192.0
-offset_bottom = 125.0
+offset_left = -1358.0
+offset_top = -685.0
+offset_right = -1358.0
+offset_bottom = -685.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.87089, 1.87089)
 
 [node name="PauseMenu" type="VBoxContainer" parent="Pause/CenterContainer"]
 texture_filter = 2
 layout_mode = 2
-
-[node name="PausedLabel" type="Label" parent="Pause/CenterContainer/PauseMenu"]
-modulate = Color(0.321569, 0.337255, 0.360784, 1)
-texture_filter = 2
-layout_mode = 2
-theme_override_fonts/font = ExtResource("3_x8xwp")
-theme_override_font_sizes/font_size = 65
-text = "✦Pause✦"
-horizontal_alignment = 1
+theme_override_constants/separation = 10
 
 [node name="Salvar" type="Button" parent="Pause/CenterContainer/PauseMenu"]
+z_index = 6
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_addoo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
-text = "Salvar"
+theme_override_styles/normal = SubResource("StyleBoxTexture_w1uxo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5xpwc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_t3mha")
+text = " "
 
 [node name="ResumeButton" type="Button" parent="Pause/CenterContainer/PauseMenu"]
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_addoo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
-text = "Resumir"
+theme_override_styles/normal = SubResource("StyleBoxTexture_dn5jw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ppthx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pclh3")
+text = " "
 
 [node name="Menu principal" type="Button" parent="Pause/CenterContainer/PauseMenu"]
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_addoo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
-text = "Menu principal"
+theme_override_styles/normal = SubResource("StyleBoxTexture_fw5jt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_06myf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hm6rc")
+text = " "
 
 [node name="Configurações" type="Button" parent="Pause/CenterContainer/PauseMenu"]
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_addoo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
-text = "Ajustes
+theme_override_styles/normal = SubResource("StyleBoxTexture_77j0g")
+theme_override_styles/hover = SubResource("StyleBoxTexture_2qal7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qx1b6")
+text = " 
 "
-
-[node name="Label5" type="Label" parent="Pause/CenterContainer/PauseMenu"]
-layout_mode = 2
 
 [node name="QuitButton" type="Button" parent="Pause/CenterContainer/PauseMenu"]
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_addoo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_8yof8")
-text = "Sair do jogo"
+theme_override_styles/normal = SubResource("StyleBoxTexture_t687d")
+theme_override_styles/hover = SubResource("StyleBoxTexture_eheio")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fycva")
+text = "                                  "
 
 [node name="Ajustes" parent="." instance=ExtResource("5_kuq82")]
 visible = false
@@ -140,6 +180,13 @@ stream = ExtResource("6_71lsa")
 stream = ExtResource("7_6h1p6")
 autoplay = true
 bus = &"music"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 2
+position = Vector2(996, 481)
+texture = ExtResource("3_5rhu2")
+region_enabled = true
+region_rect = Rect2(25, 32, 584, 733)
 
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Salvar" to="." method="_on_salvar_pressed"]
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/ResumeButton" to="." method="_on_resume_button_pressed"]

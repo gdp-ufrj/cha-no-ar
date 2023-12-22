@@ -50,6 +50,7 @@ func _on_voltar_pressed():
 	troca_visibilidade("CenterContainer/Aviso")
 func _on_créditos_pressed():
 	toca_som_botao2()
+	_teste_dictionary()
 	troca_visibilidade("Créditos")
 func _on_voltar_creditos_pressed():
 	toca_som_botao()
@@ -72,3 +73,28 @@ func _on_opções_pressed():
 	troca_visibilidade("Ajustes")
 	toca_som_botao2()
 
+func _teste_dictionary():
+	var assentos_dictionary = {
+	"Assento_1":{"ocupado": false,"local":"cafe","customer": NPC_Resource},
+	"Assento_2":{"ocupado": false,"local":"cafe","customer": NPC_Resource},
+	"Assento_3":{"ocupado": false,"local":"cafe","customer": NPC_Resource},
+	"Assento_4":{"ocupado": false,"local":"cafe","customer": NPC_Resource},
+	"Assento_5":{"ocupado": false,"local":"cafe","customer": NPC_Resource},
+	"Assento_6":{"ocupado": false,"local":"cafe","customer": NPC_Resource},
+	"Assento_7":{"ocupado": false,"local":"varanda","customer": NPC_Resource},
+	"Assento_8":{"ocupado": false,"local":"varanda","customer": NPC_Resource},
+	"Assento_9":{"ocupado": false,"local":"varanda","customer": NPC_Resource},
+	"Assento_10":{"ocupado": false,"local":"varanda","customer": NPC_Resource},
+	"Assento_11":{"ocupado": false,"local":"varanda","customer": NPC_Resource},
+	"Assento_12":{"ocupado": false,"local":"varanda","customer": NPC_Resource}
+	}
+	#print(NPC_Resource)
+	#assentos_dictionary["Assento_1"]["local"] = "ainnn"
+#	print(assentos_dictionary["Assento_1"]["local"])
+#	var zap = assentos_dictionary["Assento_1"]["ocupado"]
+#	zap = true
+#	print(zap)
+#	var doidera = assentos_dictionary.keys()
+#	print(doidera[0])
+#	if assentos_dictionary[doidera[0]] == zap:{"Assento_1"}:
+#		print("RAPAIZZZ")

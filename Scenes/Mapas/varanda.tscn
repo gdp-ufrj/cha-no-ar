@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://qgj48ejwhm17"]
+[gd_scene load_steps=7 format=3 uid="uid://qgj48ejwhm17"]
 
 [ext_resource type="Texture2D" uid="uid://d0cx01nf1k4yq" path="res://Assets/sprites/tilesets/varanda.png" id="1_t8412"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="2_88mbr"]
+[ext_resource type="Texture2D" uid="uid://bg30skwqpoeme" path="res://Assets/sprites/npcs/NPC_1_.png" id="3_786ce"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5jbjt"]
 texture = ExtResource("1_t8412")
@@ -587,3 +588,54 @@ position = Vector2(-113, 41)
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, 64)
 zoom = Vector2(4, 4)
+
+[node name="Assento_7" type="Marker2D" parent="."]
+z_index = 10
+position = Vector2(-69, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="Assento_7"]
+position = Vector2(-3, -1)
+texture = ExtResource("3_786ce")
+
+[node name="Assento_8" type="Marker2D" parent="."]
+z_index = 10
+position = Vector2(-35, 71)
+scale = Vector2(-1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Assento_8"]
+position = Vector2(-3, -1)
+texture = ExtResource("3_786ce")
+
+[node name="Assento_9" type="Marker2D" parent="."]
+z_index = 10
+position = Vector2(11, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="Assento_9"]
+position = Vector2(-3, -1)
+texture = ExtResource("3_786ce")
+
+[node name="Assento_10" type="Marker2D" parent="."]
+z_index = 10
+position = Vector2(45, 71)
+scale = Vector2(-1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Assento_10"]
+position = Vector2(-3, -1)
+texture = ExtResource("3_786ce")
+
+[node name="Assento_11" type="Marker2D" parent="."]
+z_index = 10
+position = Vector2(91, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="Assento_11"]
+position = Vector2(-3, -1)
+texture = ExtResource("3_786ce")
+
+[node name="Assento_12" type="Marker2D" parent="."]
+z_index = 10
+position = Vector2(125, 71)
+scale = Vector2(-1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Assento_12"]
+position = Vector2(-3, -1)
+texture = ExtResource("3_786ce")
