@@ -675,6 +675,7 @@ z_index = 10
 position = Vector2(-1, 87)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_1"]
+visible = false
 position = Vector2(-3, -1)
 texture = ExtResource("7_q4n0d")
 
@@ -684,6 +685,7 @@ position = Vector2(31, 87)
 scale = Vector2(-1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_2"]
+visible = false
 position = Vector2(-3, -1)
 texture = ExtResource("7_q4n0d")
 
@@ -692,6 +694,7 @@ z_index = 10
 position = Vector2(55, 87)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_3"]
+visible = false
 position = Vector2(-3, -1)
 texture = ExtResource("7_q4n0d")
 
@@ -701,6 +704,7 @@ position = Vector2(89, 87)
 scale = Vector2(-1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_4"]
+visible = false
 position = Vector2(-3, -1)
 texture = ExtResource("7_q4n0d")
 
@@ -709,6 +713,7 @@ z_index = 10
 position = Vector2(112, 87)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_5"]
+visible = false
 position = Vector2(-3, -1)
 texture = ExtResource("7_q4n0d")
 
@@ -718,5 +723,6 @@ position = Vector2(148, 87)
 scale = Vector2(-1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Assento_6"]
+visible = false
 position = Vector2(-3, -1)
 texture = ExtResource("7_q4n0d")

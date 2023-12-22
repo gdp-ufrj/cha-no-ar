@@ -21,8 +21,20 @@ var assentos_dictionary = {
 	"Assento_11":{"ocupado": false,"local":"varanda","customer": NPC_Resource},
 	"Assento_12":{"ocupado": false,"local":"varanda","customer": NPC_Resource}
 }
+########Tentando fazer funcionar
+var npc_1 = load("res://Resources/NPCS/NPC_1.tres")
+var npc_2 = load("res://Resources/NPCS/NPC_2.tres")
+var npc_3 = load("res://Resources/NPCS/NPC_3.tres")
+var npc_4 = load("res://Resources/NPCS/NPC_4.tres")
+var npc_5 = load("res://Resources/NPCS/NPC_5.tres")
+var npc_6 = load("res://Resources/NPCS/NPC_6.tres")
+var npc_7 = load("res://Resources/NPCS/NPC_7.tres")
+var npc_8 = load("res://Resources/NPCS/NPC_8.tres")
+var npc_array= [npc_1,npc_2,npc_3,npc_4,npc_5,npc_6,npc_7,npc_8]
 
-var npc_resource = load("res://Resources/npc_resource.gd")
+###############
+var npc_resource = load("res://Resources/npc_	resource.gd")
+var Assento_Marker
 var current_scene = "fase"
 var transition_scene = false
 @onready var player = get_node("Player")
@@ -37,15 +49,34 @@ var emocao_count: int = 0
 
 var comparation: int = 0
 
+func spawn_npc():
+	var npc_image = Sprite2D.new()
+	
+	
 func assento_assigner(customer_resource: NPC_Resource):
+	#customer_resource: recebe um NPC_Resource
+	#atribui a var assento_keys os assentos_dictionary keys, ou seja
+	#assento_1, assento_2
 	var assento_keys = assentos_dictionary.keys()
+	#cria um array com os assentos livres
 	var assentos_livres = []
+	#para x no numero de assento_keys(12)>
 	for assento in assento_keys:
+		#se, ao checar assentos_dictionary[x] ter uma string diferente de "ocupado'
+		#>
 		if !assentos_dictionary[assento]["ocupado"]:
+			#adiciona ao array assentos_livres > assentos_livres[3]
 			assentos_livres.append(assento)
+	#cria variavel qtd_assentos_livres com base no tamanho do array assentos_livres
 	var qtd_assentos_livres = assentos_livres.size()
+	#cria var assento_escolhido e com faz um numero aleatorio
+	#ex assentos_livres[2]
+	#esse numero aleatorio vai de 0 até a qtd_assentos_livres-1
 	var assento_escolhido = assentos_livres[randi_range(0,qtd_assentos_livres-1)]
+	#então, pega assentos_dictionary e acessa a chave customer
+	#ex: assentos_dictionary[3][NPC_1]
 	assentos_dictionary[assento_escolhido]["customer"] = customer_resource
+	#muda ex: assentos_dictionary[3]["ocupado"] pra true
 	assentos_dictionary[assento_escolhido]["ocupado"] = true
 	
 func free_assento(assento_key):
@@ -55,10 +86,8 @@ func free_assento(assento_key):
 func get_assentos():
 	return assentos_dictionary
 
-#func troca_sprite():
-#	assentos_dictionary[.]
-#	pass
-
+func troca_sprite():
+	pass
 func update_sprite():
 	pass
 func compare_tags(tags_asked: Array):
@@ -106,3 +135,4 @@ func load_data():
 	if FileAccess.file_exists(SAVE_GAME_PATH):
 		var file = FileAccess.open(SAVE_GAME_PATH, FileAccess.READ)
 		estado = file.get_var()
+
