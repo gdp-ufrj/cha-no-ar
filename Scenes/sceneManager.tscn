@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cqe0gbev5r2gl"]
 
 [ext_resource type="Script" path="res://Scripts/sceneManager.gd" id="1_tmmck"]
-[ext_resource type="PackedScene" uid="uid://73jm5qjy52vq" path="res://Scenes/dialogue_balloon.tscn" id="2_3o8n8"]
+[ext_resource type="PackedScene" uid="uid://73jm5qjy52vq" path="res://addons/dialogue_manager/example_balloon/example_balloon.tscn" id="2_3o8n8"]
 
 [node name="sceneManager" type="Node"]
 script = ExtResource("1_tmmck")

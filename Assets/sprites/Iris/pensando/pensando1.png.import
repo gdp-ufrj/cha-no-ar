@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duukhsqcshqe"
-path="res://.godot/imported/pensando1.png-bb647ceb4d14a81f946316c7fdc26cc4.ctex"
+path="res://.godot/imported/pensando1.png-7b83175f39e6206a7249f2bc4bc15404.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/Iris/pensando/pensando1.png"
-dest_files=["res://.godot/imported/pensando1.png-bb647ceb4d14a81f946316c7fdc26cc4.ctex"]
+source_file="res://Assets/sprites/iris/pensando/pensando1.png"
+dest_files=["res://.godot/imported/pensando1.png-7b83175f39e6206a7249f2bc4bc15404.ctex"]
 
 [params]
 

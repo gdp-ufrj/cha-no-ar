@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bngx6xyevu7ut"
-path="res://.godot/imported/feliz5.png-4fa585d4fb9625fd556e11d572992d4c.ctex"
+path="res://.godot/imported/feliz5.png-15809fb5483d14629d2e8d5bebbf33ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/Iris/feliz/feliz5.png"
-dest_files=["res://.godot/imported/feliz5.png-4fa585d4fb9625fd556e11d572992d4c.ctex"]
+source_file="res://Assets/sprites/iris/feliz/feliz5.png"
+dest_files=["res://.godot/imported/feliz5.png-15809fb5483d14629d2e8d5bebbf33ba.ctex"]
 
 [params]
 

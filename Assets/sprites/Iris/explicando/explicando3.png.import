@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dny10d6w3qefh"
-path="res://.godot/imported/explicando3.png-37ec6524deb8c08bfd3cc3a29aa7e940.ctex"
+path="res://.godot/imported/explicando3.png-775c32306db0ae5d3172a9d0b451a582.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/Iris/explicando/explicando3.png"
-dest_files=["res://.godot/imported/explicando3.png-37ec6524deb8c08bfd3cc3a29aa7e940.ctex"]
+source_file="res://Assets/sprites/iris/explicando/explicando3.png"
+dest_files=["res://.godot/imported/explicando3.png-775c32306db0ae5d3172a9d0b451a582.ctex"]
 
 [params]
 

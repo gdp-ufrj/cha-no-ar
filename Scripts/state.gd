@@ -13,12 +13,14 @@ var transition_scene = false
 @onready var player = get_node("Player")
 var talking_to
 var drink_resource: Resource
-var dialogue_dictionary: Dictionary
+var dialogue_dictionary = {}
 
 var held_drink_tags: Array
 
 var capuccino_count: int = 1
 var emocao_count: int = 0
+
+var dialogue_resource = load("res://Dialogo/main.dialogue")
 
 var comparation: int = 0
 	
@@ -47,9 +49,7 @@ func consult_fork_result(character_title: String, fork_key: String):
 	
 func check_fork_exists(character_title: String, fork_key: String):
 	return dialogue_dictionary[character_title]["forks"].has(fork_key)
-	
-func getEmocao():
-	return emocao_count
+
 
 #SALVAMENTO
 const SAVE_GAME_PATH =  "user://progresso.save"

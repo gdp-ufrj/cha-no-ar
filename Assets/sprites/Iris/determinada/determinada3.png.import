@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx4ym3nl14ay2"
-path="res://.godot/imported/determinada3.png-ebfa52567899555a75b9c410f369bacd.ctex"
+path="res://.godot/imported/determinada3.png-6cbada8ff282ae31cd298358d5ff71b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/Iris/determinada/determinada3.png"
-dest_files=["res://.godot/imported/determinada3.png-ebfa52567899555a75b9c410f369bacd.ctex"]
+source_file="res://Assets/sprites/iris/determinada/determinada3.png"
+dest_files=["res://.godot/imported/determinada3.png-6cbada8ff282ae31cd298358d5ff71b6.ctex"]
 
 [params]
 

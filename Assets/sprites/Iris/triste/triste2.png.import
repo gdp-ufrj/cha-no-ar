@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba24d6irh5818"
-path="res://.godot/imported/triste2.png-ceb5eb214b9aadedbdc47a6fb647bba4.ctex"
+path="res://.godot/imported/triste2.png-17f267cb0124c1606ccc10f50d8a2d9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/Iris/triste/triste2.png"
-dest_files=["res://.godot/imported/triste2.png-ceb5eb214b9aadedbdc47a6fb647bba4.ctex"]
+source_file="res://Assets/sprites/iris/triste/triste2.png"
+dest_files=["res://.godot/imported/triste2.png-17f267cb0124c1606ccc10f50d8a2d9c.ctex"]
 
 [params]
 
