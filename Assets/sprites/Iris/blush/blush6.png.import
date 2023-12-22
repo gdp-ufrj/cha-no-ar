@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlu32slbyudq2"
-path="res://.godot/imported/blush6.png-dd0cc5dcd4076e440b38dfcb2cf81a77.ctex"
+path="res://.godot/imported/blush6.png-4f6ba854a44a0b413aaa40dcd061afec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/iris/blush/blush6.png"
-dest_files=["res://.godot/imported/blush6.png-dd0cc5dcd4076e440b38dfcb2cf81a77.ctex"]
+source_file="res://Assets/sprites/Iris/blush/blush6.png"
+dest_files=["res://.godot/imported/blush6.png-4f6ba854a44a0b413aaa40dcd061afec.ctex"]
 
 [params]
 

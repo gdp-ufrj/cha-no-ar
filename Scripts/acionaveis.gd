@@ -1,4 +1,4 @@
-extends Area2D
+eeextends Area2D
 
 @export_enum("Dialogue", "Door", "Carry") var type: String
 
@@ -41,8 +41,13 @@ func character_emotion(dialogue_line):
 	return characterEmotion
 	
 #pega um personagem e uma emoção e retorna um path da imagem respectiva
-func choose_path_image(character:String, characterEmotion : Dictionary):
-	return "res://Assets/sprites/"+character+"/"+characterEmotion[character]+"/"+characterEmotion[character]+"1"
-func select_image(moldura_player,character:String, characterEmotion : Dictionary):
-	var path = choose_path_image(character, characterEmotion)
-	moldura_player.texture = load(path)
+func paths_images(dialogue_line):
+	var characterEmotion : Dictionary = character_emotion(dialogue_line)
+	var list_names : Array = characterEmotion.keys()
+	var array_paths : Array = ["res://Assets/sprites/"+list_names[0]+"/"+characterEmotion[list_names[0]]+"/"+characterEmotion[list_names[0]]+"1","res://Assets/sprites/"+list_names[1]+"/"+characterEmotion[list_names[1]]+"/"+characterEmotion[list_names[1]]+"1" ]
+	return array_paths
+func substitute_image(sprite_leia:Sprite2D, sprite_npc : Sprite2D , dialogue_line):
+	var array_paths : Array = paths_images(dialogue_line)
+	sprite_leia.texture = load(array_paths[0])
+	sprite_npc.texture = load(array_paths[0])
+	return
