@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://vxpxigk7rtqx" path="res://Assets/sprites/tilesets/seats.png" id="4_nf6fp"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="6_sbh5f"]
 [ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="8_8d1xx"]
-[ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="9_hwaug"]
+[ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_0lrq4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ipo5"]
 texture = ExtResource("1_1xogh")
@@ -684,8 +684,8 @@ position = Vector2(64, 43)
 
 [node name="acionaveis" parent="NPC" instance=ExtResource("6_sbh5f")]
 type = "Dialogue"
-dialogue_resource = ExtResource("9_hwaug")
-dialogue_owner = "Adonis_Day_1"
+dialogue_resource = ExtResource("9_0lrq4")
+dialogue_owner = "Leticia_Day_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis"]
 position = Vector2(0, 0.5)

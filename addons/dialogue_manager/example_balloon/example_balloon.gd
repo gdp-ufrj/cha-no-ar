@@ -5,7 +5,8 @@ extends CanvasLayer
 @onready var character_label: RichTextLabel = %CharacterLabel
 @onready var dialogue_label: DialogueLabel = %DialogueLabel
 @onready var responses_menu: DialogueResponsesMenu = %ResponsesMenu
-
+@onready var moldura_player: Sprite2D = $MolduraPlayer
+@onready var moldura_npc: Sprite2D = $MolduraNPC
 ## The dialogue resource
 var resource: DialogueResource
 
@@ -17,16 +18,20 @@ var is_waiting_for_input: bool = false
 
 ## See if we are running a long mutation and should hide the balloon
 var will_hide_balloon: bool = false
-
+var prefix : String = "res://Assets/sprites/"
 ## The current line
 var dialogue_line: DialogueLine:
 	set(next_dialogue_line):
 		is_waiting_for_input = false
-
-		# The dialogue has finished so close the balloon
 		if not next_dialogue_line:
 			queue_free()
 			return
+		var dict_emotion : Dictionary = character_emotion(next_dialogue_line)
+		print(prefix + "iris/" + dict_emotion["leia"])
+		moldura_player.texture = load(prefix + "iris/" + dict_emotion["leia"]+".png")
+		moldura_npc.texture = load(prefix + "iris/" + dict_emotion["iris"]+".png")
+		print(next_dialogue_line.tags)
+		# The dialogue has finished so close the balloon
 
 		# If the node isn't ready yet then none of the labels will be ready yet either
 		if not is_node_ready():
@@ -66,7 +71,14 @@ var dialogue_line: DialogueLine:
 			balloon.grab_focus()
 	get:
 		return dialogue_line
-
+		
+func character_emotion(dialogue_line):
+	var characterEmotion : Dictionary
+	var array: Array
+	for tag in dialogue_line.tags:
+		array = tag.split(":")
+		characterEmotion[array[0]] = array[1]
+	return characterEmotion
 
 func _ready() -> void:
 	balloon.hide()

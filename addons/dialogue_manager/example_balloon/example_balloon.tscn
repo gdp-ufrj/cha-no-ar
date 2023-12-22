@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=15 format=3 uid="uid://73jm5qjy52vq"]
 
-[ext_resource type="Script" path="res://Scripts/acionaveis.gd" id="1_pw46v"]
-[ext_resource type="Texture2D" uid="uid://de1gk6coy4duo" path="res://Assets/sprites/Iris/normal/normal1.png" id="2_nt3a5"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_aerml"]
 [ext_resource type="Texture2D" uid="uid://bavy27af7dlxp" path="res://Assets/sprites/ui/uichanoar-02 (1).png" id="3_goc4n"]
 [ext_resource type="FontFile" uid="uid://d3stl27lla7y2" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY.otf" id="5_qw5pn"]
 [ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/LibreBaskerville-Regular.ttf" id="6_ds50q"]
@@ -75,17 +74,15 @@ region_rect = Rect2(116, 600, 1688, 356)
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
-script = ExtResource("1_pw46v")
+script = ExtResource("1_aerml")
 
 [node name="MolduraNPC" type="Sprite2D" parent="."]
 position = Vector2(1626.59, 652.53)
 scale = Vector2(0.491515, 0.491515)
-texture = ExtResource("2_nt3a5")
 
 [node name="MolduraPlayer" type="Sprite2D" parent="."]
 position = Vector2(289, 652.53)
 scale = Vector2(0.492, 0.492)
-texture = ExtResource("2_nt3a5")
 flip_h = true
 
 [node name="Balloon" type="Panel" parent="."]
