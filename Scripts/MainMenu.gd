@@ -14,7 +14,7 @@ func _ready():
 func _on_jogar_pressed():
 	toca_som_botao()
 	if State.save_exists():
-		troca_visibilidade("CenterContainer/Aviso")
+		troca_visibilidade("Aviso")
 	else:
 		get_tree().change_scene_to_file(scene_manager)
 
@@ -47,7 +47,7 @@ func _on_sair_pressed():
 #############Trocas de visibilidade
 func _on_voltar_pressed():
 	toca_som_botao2()
-	troca_visibilidade("CenterContainer/Aviso")
+	troca_visibilidade("Aviso")
 func _on_créditos_pressed():
 	toca_som_botao2()
 	_teste_dictionary()
