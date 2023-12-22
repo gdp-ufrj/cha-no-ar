@@ -1,4 +1,4 @@
-eeextends Area2D
+extends Area2D
 
 @export_enum("Dialogue", "Door", "Carry") var type: String
 
@@ -28,6 +28,7 @@ func start_dialogue() -> void:
 	
 	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_marker)
 	var dialogue_line = await dialogue_resource.get_next_dialogue_line("Adonis_Day_1_0")
+	substitute_image(dialogue_line)
 	if !dialogue_dictionary[dialogue_owner]["finished"]:
 		dialogue_dictionary[dialogue_owner]["spot"] = dialogue_dictionary[dialogue_owner]["spot"] + 1
 	
@@ -46,8 +47,13 @@ func paths_images(dialogue_line):
 	var list_names : Array = characterEmotion.keys()
 	var array_paths : Array = ["res://Assets/sprites/"+list_names[0]+"/"+characterEmotion[list_names[0]]+"/"+characterEmotion[list_names[0]]+"1","res://Assets/sprites/"+list_names[1]+"/"+characterEmotion[list_names[1]]+"/"+characterEmotion[list_names[1]]+"1" ]
 	return array_paths
-func substitute_image(sprite_leia:Sprite2D, sprite_npc : Sprite2D , dialogue_line):
+func substitute_image(dialogue_line):
 	var array_paths : Array = paths_images(dialogue_line)
+	print(array_paths[0])
+	print_tree()
+	var sprite_leia = get_node("res://addons/dialogue_manager/example_balloon/example_balloon.tscn/ExampleBalloon/MolduraPlayer")
+	print(sprite_leia)
+	var sprite_npc = get_node("MolduraNPC")
 	sprite_leia.texture = load(array_paths[0])
-	sprite_npc.texture = load(array_paths[0])
+	sprite_npc.texture = load(array_paths[1])
 	return
