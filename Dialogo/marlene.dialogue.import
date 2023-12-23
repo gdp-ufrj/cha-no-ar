@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://d4hwkdcxkntk3"
+path="res://.godot/imported/marlene.dialogue-2050da74d72297eadcfd67bd17150d79.tres"
+
+[deps]
+
+source_file="res://Dialogo/marlene.dialogue"
+dest_files=["res://.godot/imported/marlene.dialogue-2050da74d72297eadcfd67bd17150d79.tres"]
+
+[params]
+
+defaults=true

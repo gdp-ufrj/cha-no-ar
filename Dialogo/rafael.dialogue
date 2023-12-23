@@ -1,0 +1,44 @@
+~ Rafael_Day_2_0
+Rafael: Opa, fala! To indo para o treino de surf, mas to meio desanimado... Não tenho ido tão bem depois que tive a lesão... Tem alguma coisa refrescante para me dar uma animada?
+
+=> END
+
+~ Rafael_Day_2_1
+do mark_last_speaking_for_day("Rafael_Day_2")
+if check_fork_exists("Rafael_Day_2", "given_drink_reaction"):
+	set comparation = consult_fork_result("Rafael_Day_2", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Energético", "Refrescante"])
+	do mark_new_fork("Rafael_Day_2", "given_drink_reaction", comparation)
+if comparation == 0:
+	Rafael: Uh, não sei se isso vai me ajudar muito...
+if comparation == 1:
+	Rafael: Valeu!
+if comparation == 2:
+	Rafael: Opa! Ótimo, muito obrigado!
+	
+
+Leia: Você sabe quem é Adonis, Rafa?
+Rafael: Sim, conheço o Adonis! Ele surfa lá no mesmo lugar que eu, de vez em quando. Mas não profissionalmente não.
+Rafael: É um cara gente boa, para cima, mas me parece um pouco sozinho, não sei... Ele é meio bobo também, a gente tira sarro, mas ele sempre leva na esportiva.
+Rafael: Que horas são? Talvez ele esteja voltando de lá por agora. Ele mora aqui perto, se você esperar lá fora pode dar de cara com ele. Cabelão, bonito... Não tem como errar.
+
+=> END
+
+~ Rafael_Day_4_0
+Rafael: Opa! Muito bom ter conseguido dar uma passada aqui hoje de novo... To com um recém nascido em casa que tem me deixado acordado a noite toda. Topa fazer alguma coisa simples para eu poder relaxar e tirar um cochilo de tarde?
+
+~ Rafael_Day_4_1
+do mark_last_speaking_for_day("Rafael_Day_4")
+if check_fork_exists("Rafael_Day_4", "given_drink_reaction"):
+	set comparation = consult_fork_result("Rafael_Day_4", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Calmante", "Tradicional"])
+	do mark_new_fork("Rafael_Day_4", "given_drink_reaction", comparation)
+if comparation == 0:
+	Rafael: Uh, não sei se isso vai me ajudar muito...
+if comparation == 1:
+	Rafael: Valeu!
+if comparation == 2:
+	Rafael: Opa! Ótimo, muito obrigado!
+=> END

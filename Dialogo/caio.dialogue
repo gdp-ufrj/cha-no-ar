@@ -1,0 +1,38 @@
+~ Caio_Day_1_0
+Caio: Tudo bom, diva? To indo para um evento agora de tarde, mas passei a madrugada toda em uma festa...Pode me ver uma bebida chique para me dar uma acordada?
+
+=> END
+
+~ Caio_Day_1_1
+do mark_last_speaking_for_day("Caio_Day_1")
+if check_fork_exists("Caio_Day_1", "given_drink_reaction"):
+	set comparation = consult_fork_result("Caio_Day_1", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Energético", "Refrescante"])
+	do mark_new_fork("Caio_Day_1", "given_drink_reaction", comparation)
+if comparation == 0:
+	Caio: Diva, você não me ouviu? Não queria isso não.
+if comparation == 1:
+	Caio: Dá pro gasto. Obrigado!
+if comparation == 2:
+	Caio: Tudo! Exatamente o que eu tava precisando!
+
+=> END
+
+~ Caio_Day_5_0
+Caio: Bom te ver de novo dia! Acredita que no dia que eu consigo uma folga e decido ir pra praia, o tempo muda do nada e começa a ventar? Tive que ir embora... Tem algo bom para me aquecer e me dar um pique para continuar a aproveitar o dia?
+
+~ Caio_Day_5_1
+do mark_last_speaking_for_day("Caio_Day_5")
+if check_fork_exists("Caio_Day_5", "given_drink_reaction"):
+	set comparation = consult_fork_result("Caio_Day_5", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Tradicional", "Energético"])
+	do mark_new_fork("Caio_Day_5", "given_drink_reaction", comparation)
+if comparation == 0:
+	Caio: Diva, você não me ouviu? Não queria isso não.
+if comparation == 1:
+	Caio: Dá pro gasto. Obrigado!
+if comparation == 2:
+	Caio: Tudo! Exatamente o que eu tava precisando!
+=> END
