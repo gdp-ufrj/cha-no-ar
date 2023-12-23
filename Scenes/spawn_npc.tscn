@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://djec0tk58185v"]
+
+[ext_resource type="Script" path="res://Scripts/spawn_npc.gd" id="1_xf5tl"]
+
+[node name="SpawnNPC" type="Node2D"]
+scale = Vector2(1.13031, 0.949341)
+script = ExtResource("1_xf5tl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

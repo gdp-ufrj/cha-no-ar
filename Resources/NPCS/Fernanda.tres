@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://cfocpo20s61pl"]
+
+[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_cehrh"]
+[ext_resource type="Resource" uid="uid://tiseixbdylha" path="res://Dialogo/Fernanda.dialogue" id="1_uqu6l"]
+
+[resource]
+script = ExtResource("1_cehrh")
+sprite_folder = "Female Sprite"
+NPC_Dialogue = ExtResource("1_uqu6l")
+NPC_key_name = "Fernanda"
+NPC_Sprite = "res://Assets/sprites/npcs/Female Sprite/NPC_6.png"

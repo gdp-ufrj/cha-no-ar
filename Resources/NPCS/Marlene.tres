@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://dig3131lyux2j"]
+
+[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_injxg"]
+[ext_resource type="Resource" uid="uid://nqau32clmp05" path="res://Dialogo/Marlene.dialogue" id="1_ty2ql"]
+
+[resource]
+script = ExtResource("1_injxg")
+sprite_folder = "Female Sprite"
+NPC_Dialogue = ExtResource("1_ty2ql")
+NPC_key_name = "Marlene"
+NPC_Sprite = "res://Assets/sprites/npcs/Female Sprite/NPC_1.png"

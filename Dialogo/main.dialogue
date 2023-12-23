@@ -1,11 +1,20 @@
-~ Adonis_Day_1_0
-#do mark_last_speaking_for_day("Adonis_Day_1")
-#do getEmotion()
-Iris:[#leia:normal1,#iris:feliz3] Bom dia querida! Sabe , a gente realmente devia marcar de se ver mais vezes. Eu sei que toda vez que a gente se vê eu falo isso mas... Sei lá, ser adulto é um saco né?
-- É péssimo...
-	Leia:[#leia:explicando1,#iris:feliz3] É péssimo...
-- Mas não é pior que ser adolescente
-	Leia:[#leia:desafio1,#iris:feliz3] Mas não é pior que ser adolescente
-	Iris:[#leia:desafio1,#iris:feliz5] É... justo. Tipo eu dei um glow up total desde aquela época graças a deus.
-Iris:[#leia:blush1,#iris:blush7] E você tá tão linda hoje! Fez alguma coisa diferente no cabelo?
+~ start
+Adonis: Um capuccino.
+if estado["capuccino_count"] == 1:
+	set estado["emocao_count"] = 1
+	Leia: Só tenho um... 
+	- Dar o Capuccino
+		set estado["capuccino_count"] = 0
+		Leia: Aqui está
+		Adonis: Valeus
+		set estado["emocao_count"] = 0
+	- Oferecer aguinha
+		Leia: Quer aguinha não?
+		Adonis: Tá bom
+		
+else:
+	Leia: Só tem água agora
+	set estado["emocao_count"] = 2
+	Adonis: Droga
+	set estado["emocao_count"] = 0
 => END

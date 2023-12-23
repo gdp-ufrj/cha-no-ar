@@ -96,7 +96,7 @@ func start(dialogue_resource: DialogueResource, title: String, extra_game_states
 	self.dialogue_line = await resource.get_next_dialogue_line(title, temporary_game_states)
 
 
-## Go to the next line
+## Go to the next linez
 func next(next_id: String) -> void:
 	self.dialogue_line = await resource.get_next_dialogue_line(next_id, temporary_game_states)
 

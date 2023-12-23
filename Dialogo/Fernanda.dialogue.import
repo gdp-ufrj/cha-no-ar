@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://tiseixbdylha"
+path="res://.godot/imported/Fernanda.dialogue-60d83a7a8d0579f83ce64ada9abf2f0b.tres"
+
+[deps]
+
+source_file="res://Dialogo/Fernanda.dialogue"
+dest_files=["res://.godot/imported/Fernanda.dialogue-60d83a7a8d0579f83ce64ada9abf2f0b.tres"]
+
+[params]
+
+defaults=true

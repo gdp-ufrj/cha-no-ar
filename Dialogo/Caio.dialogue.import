@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://btlnn38w87cp5"
+path="res://.godot/imported/Caio.dialogue-32dd0d3cd04ab8ff051e02532e107e1c.tres"
+
+[deps]
+
+source_file="res://Dialogo/Caio.dialogue"
+dest_files=["res://.godot/imported/Caio.dialogue-32dd0d3cd04ab8ff051e02532e107e1c.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://dhob030xdy7e2"]
+
+[ext_resource type="Resource" uid="uid://dx7khpp47bs2" path="res://Dialogo/Maria.dialogue" id="1_jlpk0"]
+[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_u0o8q"]
+
+[resource]
+script = ExtResource("1_u0o8q")
+sprite_folder = "Female Sprite"
+NPC_Dialogue = ExtResource("1_jlpk0")
+NPC_key_name = "Maria"
+NPC_Sprite = "res://Assets/sprites/npcs/Female Sprite/NPC_6.png"

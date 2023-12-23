@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://qgj48ejwhm17"]
+[gd_scene load_steps=8 format=3 uid="uid://qgj48ejwhm17"]
 
 [ext_resource type="Texture2D" uid="uid://d0cx01nf1k4yq" path="res://Assets/sprites/tilesets/varanda.png" id="1_t8412"]
-[ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="1_ygtc7"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="2_88mbr"]
+[ext_resource type="Script" path="res://Scripts/varanda_seating_group.gd" id="3_3xpa3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5jbjt"]
 texture = ExtResource("1_t8412")
@@ -543,16 +543,9 @@ sources/0 = SubResource("TileSetAtlasSource_5jbjt")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dvp4"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8m6pp"]
+
 [node name="varanda" type="Node2D"]
-
-[node name="Spawn-1" type="Marker2D" parent="."]
-position = Vector2(-113, 41)
-
-[node name="PauseMenu" type="CanvasLayer" parent="."]
-
-[node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("1_ygtc7")]
-visible = false
-z_index = 999
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_m7r5t")
@@ -591,6 +584,111 @@ position = Vector2(-113, 38)
 shape = SubResource("RectangleShape2D_7dvp4")
 debug_color = Color(0.756863, 0.454902, 0, 0.419608)
 
+[node name="Spawn-1" type="Marker2D" parent="."]
+position = Vector2(-113, 41)
+
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, 64)
-zoom = Vector2(3, 3)
+zoom = Vector2(4, 4)
+
+[node name="seating_group" type="Node2D" parent="."]
+script = ExtResource("3_3xpa3")
+
+[node name="Assento_7" type="Marker2D" parent="seating_group"]
+z_index = 10
+position = Vector2(-69, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="seating_group/Assento_7"]
+position = Vector2(-3, -1)
+
+[node name="acionaveis" parent="seating_group/Assento_7" instance=ExtResource("2_88mbr")]
+type = "Dialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="seating_group/Assento_7/acionaveis"]
+position = Vector2(0, -10.195)
+rotation = 3.14159
+scale = Vector2(1.06, 1.43)
+shape = SubResource("RectangleShape2D_8m6pp")
+
+[node name="Assento_8" type="Marker2D" parent="seating_group"]
+z_index = 10
+position = Vector2(-35, 71)
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="seating_group/Assento_8"]
+position = Vector2(-3, -1)
+
+[node name="acionaveis" parent="seating_group/Assento_8" instance=ExtResource("2_88mbr")]
+type = "Dialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="seating_group/Assento_8/acionaveis"]
+position = Vector2(-3.05176e-05, -10.195)
+scale = Vector2(1.06, 1.43)
+shape = SubResource("RectangleShape2D_8m6pp")
+
+[node name="Assento_9" type="Marker2D" parent="seating_group"]
+z_index = 10
+position = Vector2(11, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="seating_group/Assento_9"]
+position = Vector2(-3, -1)
+
+[node name="acionaveis" parent="seating_group/Assento_9" instance=ExtResource("2_88mbr")]
+type = "Dialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="seating_group/Assento_9/acionaveis"]
+position = Vector2(0, -10.195)
+rotation = 3.14159
+scale = Vector2(1.06, 1.43)
+shape = SubResource("RectangleShape2D_8m6pp")
+
+[node name="Assento_10" type="Marker2D" parent="seating_group"]
+z_index = 10
+position = Vector2(45, 71)
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="seating_group/Assento_10"]
+position = Vector2(-3, -1)
+
+[node name="acionaveis" parent="seating_group/Assento_10" instance=ExtResource("2_88mbr")]
+type = "Dialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="seating_group/Assento_10/acionaveis"]
+position = Vector2(-3.05176e-05, -10.195)
+scale = Vector2(1.06, 1.43)
+shape = SubResource("RectangleShape2D_8m6pp")
+
+[node name="Assento_11" type="Marker2D" parent="seating_group"]
+z_index = 10
+position = Vector2(91, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="seating_group/Assento_11"]
+position = Vector2(-3, -1)
+
+[node name="acionaveis" parent="seating_group/Assento_11" instance=ExtResource("2_88mbr")]
+type = "Dialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="seating_group/Assento_11/acionaveis"]
+position = Vector2(0, -10.195)
+rotation = 3.14159
+scale = Vector2(1.06, 1.43)
+shape = SubResource("RectangleShape2D_8m6pp")
+
+[node name="Assento_12" type="Marker2D" parent="seating_group"]
+z_index = 10
+position = Vector2(125, 71)
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="seating_group/Assento_12"]
+position = Vector2(-3, -1)
+
+[node name="acionaveis" parent="seating_group/Assento_12" instance=ExtResource("2_88mbr")]
+type = "Dialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="seating_group/Assento_12/acionaveis"]
+position = Vector2(-1.00003, -10.195)
+scale = Vector2(1.06, 1.43)
+shape = SubResource("RectangleShape2D_8m6pp")

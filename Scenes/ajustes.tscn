@@ -1,24 +1,23 @@
-[gd_scene load_steps=26 format=3 uid="uid://c7x7ovvm4cx1d"]
+[gd_scene load_steps=23 format=3 uid="uid://cvbq828jqt541"]
 
 [ext_resource type="Script" path="res://Scripts/ajustes.gd" id="1_gibxo"]
-[ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_nmd0q"]
-[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY (2).otf" id="3_3m2s0"]
-[ext_resource type="Texture2D" uid="uid://cup3qpiwoig51" path="res://Assets/sprites/ui/barraSlider1.png" id="3_tnjqy"]
+[ext_resource type="Texture2D" uid="uid://evmyoh0espqw" path="res://Assets/sprites/ui/Ajustes/AJUSTES.png" id="4_ue2ht"]
 [ext_resource type="Texture2D" uid="uid://b7svns2sxi5rb" path="res://Assets/sprites/ui/svgui/uiEstrela32.svg" id="7_l46dy"]
-[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="9_8ox06"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="9_8ox06"]
 [ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="10_8fdqh"]
 [ext_resource type="Texture2D" uid="uid://c04uwb4f7g7bo" path="res://Assets/sprites/ui/svgui/uiUncheckedButton1.svg" id="10_35k6t"]
 [ext_resource type="Texture2D" uid="uid://d1am1epdytgh7" path="res://Assets/sprites/ui/svgui/uiButtonChecked.svg" id="10_ju820"]
-[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/fonts/LibreBaskerville-Regular.ttf" id="11_bhsi6"]
+[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/LibreBaskerville-Regular.ttf" id="11_bhsi6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rw3yt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dka5c"]
 resource_local_to_scene = true
-texture = ExtResource("3_tnjqy")
-texture_margin_top = 30.0
+texture = ExtResource("4_ue2ht")
+texture_margin_top = 20.0
 axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
+region_rect = Rect2(781, 167, 322, 18)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_orfmg"]
 resource_local_to_scene = true
@@ -26,14 +25,17 @@ modulate_color = Color(1, 1, 1, 0)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkd2r"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g0ogu"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b1nam"]
+texture = ExtResource("4_ue2ht")
+region_rect = Rect2(789, 451, 321, 68)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k41vr"]
-bg_color = Color(0.321569, 0.337255, 0.360784, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b0pel"]
+texture = ExtResource("4_ue2ht")
+region_rect = Rect2(789, 561, 321, 68)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gmshj"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ervy3"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_18461"]
+texture = ExtResource("4_ue2ht")
+region_rect = Rect2(789, 670, 321, 68)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_boo4n"]
 
@@ -53,43 +55,21 @@ bg_color = Color(0.321569, 0.337255, 0.360784, 1)
 texture_filter = 1
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1016.0
-offset_bottom = 571.0
-scale = Vector2(1.13149, 1.13149)
+offset_left = 472.0
+offset_top = 87.0
+offset_right = 2392.0
+offset_bottom = 1167.0
 script = ExtResource("1_gibxo")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-z_index = 3
-texture_filter = 2
-layout_mode = 0
-offset_left = 347.33
-offset_top = 98.9845
-offset_right = 2867.33
-offset_bottom = 3238.99
-scale = Vector2(0.126512, 0.126512)
-texture = ExtResource("2_nmd0q")
-
-[node name="Label2" type="Label" parent="."]
-z_index = 4
-texture_filter = 2
-layout_mode = 0
-offset_left = 380.193
-offset_top = 112.428
-offset_right = 633.193
-offset_bottom = 199.428
-theme_override_colors/font_color = Color(0.321569, 0.337255, 0.360784, 1)
-theme_override_fonts/font = ExtResource("3_3m2s0")
-theme_override_font_sizes/font_size = 55
-text = "✦Ajustes✦"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 z_index = 4
+texture_filter = 2
 layout_mode = 0
-offset_left = 393.637
-offset_top = 216.245
-offset_right = 799.637
-offset_bottom = 571.245
-scale = Vector2(0.582, 0.582)
+offset_left = 341.391
+offset_top = 230.589
+offset_right = 687.391
+offset_bottom = 585.589
+theme_override_constants/separation = 11
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 texture_filter = 2
@@ -97,9 +77,9 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.321569, 0.337255, 0.360784, 1)
 theme_override_fonts/font = ExtResource("11_bhsi6")
 theme_override_font_sizes/font_size = 33
-text = "Volume Geral"
 
 [node name="VolSliderMaster" type="HSlider" parent="VBoxContainer"]
+texture_filter = 2
 layout_mode = 2
 theme_override_icons/grabber = ExtResource("7_l46dy")
 theme_override_icons/grabber_highlight = ExtResource("7_l46dy")
@@ -112,15 +92,15 @@ min_value = -30.0
 max_value = -12.0
 value = -12.0
 
-[node name="Label2" type="Label" parent="VBoxContainer"]
+[node name="Label5" type="Label" parent="VBoxContainer"]
 texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0.321569, 0.337255, 0.360784, 1)
 theme_override_fonts/font = ExtResource("11_bhsi6")
 theme_override_font_sizes/font_size = 33
-text = "Volume Efeitos Sonoros"
 
 [node name="VolSliderSFX" type="HSlider" parent="VBoxContainer"]
+texture_filter = 2
 layout_mode = 2
 theme_override_constants/center_grabber = 0
 theme_override_constants/grabber_offset = 0
@@ -139,9 +119,9 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.321569, 0.337255, 0.360784, 1)
 theme_override_fonts/font = ExtResource("11_bhsi6")
 theme_override_font_sizes/font_size = 33
-text = "Volume Música"
 
 [node name="VolSliderMusic" type="HSlider" parent="VBoxContainer"]
+texture_filter = 2
 layout_mode = 2
 theme_override_constants/center_grabber = 0
 theme_override_constants/grabber_offset = 0
@@ -158,44 +138,30 @@ max_value = 2.0
 texture_filter = 2
 layout_mode = 2
 
-[node name="TextureRect7" type="TextureRect" parent="."]
-visible = false
-z_index = 4
-texture_filter = 2
-layout_mode = 0
-offset_left = 319.796
-offset_top = 305.846
-offset_right = 1049.8
-offset_bottom = 421.846
-scale = Vector2(0.127, 0.127)
-texture = SubResource("CompressedTexture2D_g0ogu")
-
 [node name="VoltarOpçoes" type="Button" parent="."]
 z_index = 4
 texture_filter = 2
 layout_mode = 2
-offset_left = 409.321
-offset_top = 415.662
-offset_right = 794.321
-offset_bottom = 481.662
-scale = Vector2(0.505554, 0.505554)
+offset_left = 360.0
+offset_top = 608.0
+offset_right = 679.0
+offset_bottom = 675.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("9_8ox06")
 theme_override_font_sizes/font_size = 46
-theme_override_styles/normal = SubResource("StyleBoxFlat_k41vr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_gmshj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ervy3")
-text = "Voltar"
+theme_override_styles/normal = SubResource("StyleBoxTexture_b1nam")
+theme_override_styles/hover = SubResource("StyleBoxTexture_b0pel")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_18461")
 
 [node name="Fullscreen" type="CheckButton" parent="."]
 z_index = 4
 texture_filter = 2
 layout_mode = 2
-offset_left = 580.357
-offset_top = 379.065
-offset_right = 965.357
-offset_bottom = 562.065
-scale = Vector2(0.13473, 0.13473)
+offset_left = 609.0
+offset_top = 537.0
+offset_right = 994.0
+offset_bottom = 720.0
+scale = Vector2(0.197192, 0.197192)
 theme_override_icons/checked = ExtResource("10_ju820")
 theme_override_icons/unchecked = ExtResource("10_35k6t")
 theme_override_styles/normal = SubResource("StyleBoxTexture_boo4n")
@@ -206,20 +172,12 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_8ihxy")
 theme_override_styles/focus = SubResource("StyleBoxTexture_ldmnq")
 icon = SubResource("ImageTexture_rbm2c")
 
-[node name="Label" type="Label" parent="."]
-z_index = 4
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 2
-layout_mode = 0
-offset_left = 392.143
-offset_top = 379.065
-offset_right = 626.143
-offset_bottom = 424.065
-scale = Vector2(0.582, 0.582)
-theme_override_colors/font_color = Color(0.321569, 0.337255, 0.360784, 1)
-theme_override_fonts/font = ExtResource("11_bhsi6")
-theme_override_font_sizes/font_size = 33
-text = "Tela cheia
-"
+position = Vector2(508.343, 397.541)
+texture = ExtResource("4_ue2ht")
+region_enabled = true
+region_rect = Rect2(128, 83, 584, 734)
 
 [node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_8fdqh")

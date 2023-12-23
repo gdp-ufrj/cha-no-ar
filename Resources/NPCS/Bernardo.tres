@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://be6y3h8jlnh86"]
+
+[ext_resource type="Resource" uid="uid://51fkoer1newy" path="res://Dialogo/Bernardo.dialogue" id="1_2dkxy"]
+[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_ev2f7"]
+
+[resource]
+script = ExtResource("1_ev2f7")
+sprite_folder = "Male Sprite"
+NPC_Dialogue = ExtResource("1_2dkxy")
+NPC_key_name = "Bernardo"
+NPC_Sprite = "res://Assets/sprites/npcs/Male Sprite/NPC_8.png"

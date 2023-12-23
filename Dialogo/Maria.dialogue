@@ -1,0 +1,18 @@
+~ Maria_Day_1_0
+do assento_assigner()
+Maria: Oi ami! Tava me exercitando em uma corrida lá fora, mas tá muito quente! Tem alguma coisa aí para me refrescar e relaxar?
+=> END
+
+~ Maria_Day_1_1
+do mark_last_speaking_for_day("Maria")
+if check_fork_exists("Maria", "given_drink_reaction"):
+	set comparation = consult_fork_result("Maria", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Calmante", "Refrescante"])
+    do mark_new_fork("Maria", "given_drink_reaction", comparation)
+if comparation == 0:
+	Maria: Que isso?! Ah, não... Não foi isso que eu pedi.
+if comparation == 1:
+	Maria: É... Vai ter que servir,
+if comparation == 2:
+	Maria: Hmmm... Muito bom! Finalmente os refrescos.

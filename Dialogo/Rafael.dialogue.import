@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://x3tbbljug6m6"
+path="res://.godot/imported/Rafael.dialogue-da2690f9bbf24ac2c26c2c1a4c28e087.tres"
+
+[deps]
+
+source_file="res://Dialogo/Rafael.dialogue"
+dest_files=["res://.godot/imported/Rafael.dialogue-da2690f9bbf24ac2c26c2c1a4c28e087.tres"]
+
+[params]
+
+defaults=true
