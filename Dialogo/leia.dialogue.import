@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://d7chan0cf2cn"
+path="res://.godot/imported/leia.dialogue-c537912bf447a146d7b6e8f47eec21f3.tres"
+
+[deps]
+
+source_file="res://Dialogo/leia.dialogue"
+dest_files=["res://.godot/imported/leia.dialogue-c537912bf447a146d7b6e8f47eec21f3.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,85 @@
+~ Leia_Day_1_0
+Loja de Chá Gato Preto!: [#leia:normal1,#vazio:normal1] Aberta de 9:00 até 16:00. Nos especializamos em blends de chás gelados e quentes totalmente artesanais, além de outras bebidas, feitas todas com muito cuidado. Aqui no Gato Preto promovemos o consumo de bebidas com propriedades benéficas à saúde e escolhemos à mão bebidas calmantes ou energizantes conforme a necessidade do cliente. Qualquer tipo de discriminação não será tolerada! Sejam gentis um com os outros.
+Leia: [#leia:normal1,#vazio:normal1] Estar no Gato Preto sempre foi a melhor parte do meu dia. Minha avó e todas as outras mulheres de gerações anteriores da nossa família criaram um ambiente mágico e aconchegante, onde nós podemos mostrar nosso gosto excêntrico e paixão pelo esoterismo.
+Leia: [#leia:normal1,#vazio:normal1] No Gato Preto, nós precisamos ouvir o que os clientes procuram nas bebidas e com tudo o que servimos, deixamos um pedaço de nós em troca de um pedaço do outro.
+Leia: [#leia:desconfiada3,#vazio:normal1] Será que eu dormi demais? Vou checar a hora... Ah não, tá de boa, dá até para ficar mais uns minutinhos...
+Leia: [#leia:normal1,#vazio:normal1] ...
+Leia: [#leia:pensando1,#vazio:normal1] Aii, porque eu fiz isso? Agora com certeza dormi demais... Espero que a vovó não fique muito chateada, eu tinha prometido de cuidar da loja hoje.
+Leia: [#leia:desconfiada3,#malvafone:malvafone1] Mas acho difícil, ela já tá me ligando...
+- Atender Malva [#leia:normal1, #malvafone:malvafone1]
+	Malva: [#leia:normal1, #malvafone:malvafone2] Garota, por que ainda não acordou? Eu falei que precisava de você hoje na loja... É importante!
+	- Desculpa, desculpa, já to indo [#leia:explicando7, #malvafone:malvafone2]
+		Malva: [#leia:normal1, #malvafone:malvafone2] Anda, anda, anda. Se não vou ter que voltar e te puxar pelos cabelos...
+	- Mas porque? O que tem hoje?  [#leia:pergunta1, #malvafone:malvafone2]
+		Malva: [#leia:normal1, #malvafone:malvafone2] Tive um compromisso e vou passar o dia todo fora. Então preciso que você segure as pontas para mim!
+Malva: [#leia:normal1, #malvafone:malvafone2] Quem vai comandar a loja hoje vai ser totalmente você, tá preparada?
+- Vish, ok... Pode deixar, vai dar tudo certo, não precisa se preocupar. [#leia:feliz2, #malvafone:malvafone2]
+	Malva: [#leia:feliz2, #malvafone:malvafone2] Boa! É essa a atitude. Não to preocupada! Você é mais competente que eu nessa idade. Bem mais...
+- Tem certeza? E se eu fizer alguma besteira? [#leia:pergunta1, #malvafone:malvafone2]
+	Malva: [#leia:pergunta1, #malvafone:malvafone2] Desfaça a besteira, ué! Mas vai dar tudo certo, eu confio em você, garota!
+Malva: [#leia:normal1, #malvafone:malvafone2] Eu vou morrer um dia você sabe, né? E ainda bem, porque viver para sempre deve ser um saco.
+- Credo, vira essa boca pra lá... Porque isso do nada? [#leia:desconfiada4, #malvafone:malvafone2]
+	Malva: [#leia:desconfiada4, #malvafone:malvafone2] Ué, é normal! Tem que normalizar falar de morte.
+	Malva: [#leia:normal1, #malvafone:malvafone2] Povo bota um peso... Para mim é algo leve! Talvez até um livramento.
+- Que pena, porque você vai viver para sempre sim... [#leia:desafio1, #malvafone:malvafone2]
+	Malva: [#leia:desafio1, #malvafone:malvafone2] Hmmm... Talvez por você eu considere a proposta.
+Malva: [#leia:normal1, #malvafone:malvafone3] Mas não é um assunto para agora! Você não tem uma loja para abrir não, garota? Vambora!
+
+=> END
+
+~ Leia_Day_1_1
+Leia: [#leia:feliz2, #vazio:vazio1] Hm... É sempre bom descer e ser recepcionada pelo cheiro das ervas e das especiarias; capim limão, canela, gengibre, hortelã...
+Leia: [#leia:pensando2, #vazio:vazio1] A loja se tornou minha segunda casa, e eu comecei a passar as tardes após a escola lá, fazendo companhia para a vovó. Quando minha mãe foi contratada para trabalhar para a corporação Poca-Pola, ela começou a ficar bastante ocupada, e então mais ocupada, e aí mais ocupada. Então ela só me desovava com a vovó e ia seguia para o que interessa...
+Leia: [#leia:pensando2, #vazio:vazio1] E a vovó ficou feliz de ter alguém interessado nas tradições de família, diferente da minha mãe, que sempre tentou se distanciar... Mas eu sempre me interessei por tudo.
+Leia: [#leia:deboche2, #vazio:vazio1] Existem poucas coisas que eu gosto de fazer mais do que o ritual para preparo, seja recriando clássicos ou tentando misturas novas. Eu me sinto quase uma feiticeira, fazendo uma poção.
+Leia: [#leia:explicando1, #malvafone:malvafone1] Ah... E olha quem tá me ligando de novo.
+Leia: [#leia:explicando1, #malvafone:malvafone2] Garota, você provalmente já sabe disso mas só por precaução... Não esquece de checar o seu caderno para ver cardápio e a receita de cada bebida!
+Leia: [#leia:explicando1, #malvafone:malvafone3] 
+
+=> END
+
+~ Leia_Day_1_2
+Leia: [#leia:pensando1, #vazio:vazio1] Agora decisões importantes, eu janto vendo uma série ou vendo  um video no joutube... ?
+Leia: [#leia:desconfiada1, #malvafone:malvafone1] Vai ter que esperar,  de qualquer forma. Vovó tá me ligando de novo...
+Leia: [#leia:normal, #malvafone:malvafone2] E ai? Como foi hoje?
+ - Más noticias... [#leia:desprezo1, #malvafone:malvafone2]
+	Leia: [#leia:desafio1, #malvafone:malvafone2] Houve um incêndio enorme, mas felizmente eu consegui salvar os clientes e carregá-los para fora com a força dos meus músculos.
+	Malva: [#leia:normal, #malvafone:malvafone2] Que piadista ela! Nem brinca com isso...
+- Tudo certo, foi tranquilo! [#leia:feliz1, #malvafone:malvafone2]
+Malva: [#leia:normal, #malvafone:malvafone2] Papo sério agora garota, eu tenho uma novidade. Uma grande novidade...
+- Ah não... Tá tudo bem? É alguma coisa ruim? [#leia:triste5, #malvafone:malvafone2]
+- O que? Roubou outra planta da vizinha? [#leia:deboche1, #malvafone:malvafone2]
+	Malva:  Aquela mulher não cuida direito e você sabe! [#leia:deboche1, #malvafone:malvafone2]
+Malva: [#leia:normal, #malvafone:malvafone2] Não! Nada disso... Você sabe como eu sempre digo que eu quero deixar a loja para você um dia, né?
+- Uhum, sei... Lá vem...[#leia:desconfiada1, #malvafone:malvafone2]
+	Malva : [#leia:desconfiada1, #malvafone:malvafone2] Acabou que isso vai ter que acontecer um pouco antes do esperado... Muito antes do esperado! Amanhã, na verdade!
+- Sim... Por que? Mudou de ideia? [#leia:desconfiada5, #malvafone:malvafone2]
+	Malva: [#leia:desconfiada5, #malvafone:malvafone2] Acabou que isso vai ter que acontecer um pouco antes do esperado... Muito antes do esperado! Amanhã, na verdade!
+Malva: [#leia:normal1, #malvafone:malvafone2] Eu vou tirar férias! Férias Permanentes!
+- Oi? Isso não seria uma aposentadoria? [#leia:normal1, #malvafone:malvafone2]
+	Malva: [#leia:desconfiada2, #malvafone:malvafone2] Esse termo é tão chato... Parece que eu vou ficar em casa fazendo nada! Eu quero me divertir e ver o mundo.
+- Ok... Feliz por você, mas tem certeza que eu estou pronta? [#leia:desprezo2, #malvafone:malvafone2]
+	Malva: [#leia:desprezo2, #malvafone:malvafone2]Ninguém fica 100% pronto, eu mesma faço várias burradas ainda!
+	Malva: [#leia:normal1, #malvafone:malvafone2]Mas esse capítulo para mim acabou, agora eu quero novidades, aproveitar antes de tudo acabar!
+Malva: [#leia:normal1, #malvafone:malvafone2] Por isso eu estou indo embora da cidade. E do país. E do continente! Vou embarcar na minha peregrinação pela busca do conhecimento pelo chá!
+- Então... Eu nunca mais vou ver você? [#leia:desprezo2, #malvafone:malvafone2]
+	Malva: [#leia:triste5, #malvafone:malvafone2] É... Talvez sim, talvez não! Você pode me visitar, me ligar, a gente dá um jeito! É só notícia boa, não tem porque lamentar, garota!
+	Malva: [#leia:triste5, #malvafone:malvafone2] Odeio despedidas. Eu sabia que se fizesse isso pessoalmente ia ser mais difícil então...
+- Você está decida então? E a mamãe tá ok com isso? [#leia:triste5, #malvafone:malvafone2]
+	Malva: [#leia:perguntando2, #malvafone:malvafone2] Sua mãe não tem que achar nada! Óbvio que eu falei com ela e ela achou que era maluquice, para variar, mas eu também não aprovo várias decisões dela e tá tudo certo!
+	Malva: [#leia:perguntando2, #malvafone:malvafone2] Odeio despedidas. Eu sabia que se fizesse isso pessoalmente ia ser mais difícil então...
+Malva: [#leia:normal1, #malvafone:malvafone2] Então não vamos tornar isso em uma sessão de chororô, por favor.! Só tenho uma coisa a dizer, que me preocupa.
+Malva: [#leia:normal1, #malvafone:malvafone2] Me promete que você não vai se fechar. Lembra do propósito da loja..
+Malva: [#leia:normal1, #malvafone:malvafone2] É um lugar para se conectar e empatizar com o outro! Olhar além do que está na superfície... Você sabe bem do que eu estou falando.
+- Sim, entendo... Pode confiar em mim! E boa sorta na sua viagem, vó! [#leia:normal1, #malvafone:malvafone2]
+- Vou ter que acabar descobrindo de qualquer forma, né? Ainda me preocupo com você mas... Vou dar um jeito [#leia:normal1, #malvafone:malvafone2]
+Malva: [#leia:normal1, #malvafone:malvafone2] Ótimo então! Preciso arrumar minhas malas. Boa noite...
+Malva: [#leia:normal1, #malvafone:malvafone3] E se abra para o mundo, garota!
+Leia: [#leia:desconfiada3, #vazio:vazio1] A loja toda sob a minha responsabilidade... Espero não decepcionar a vovó.
+Leia: [#leia:semjeito2, #vazio:vazio1] Eu sei que ela acredita em mim, mas ainda assim dá um frio na barriga. O Gato Preto significa tanto para nós duas, espero fazer jus a ele...
+Leia: [#leia:desafio1, #vazio:vazio1] Sendo sincera, eu adoro trabalhar com a vovó mas... Fico feliz por ter a oportunidade de fazer minha própria parada, sabe? Uma sensação de independência.
+Leia: [#leia:desprezo2, #vazio:vazio1] Mas não consigo parar de pensar no que ela falou sobre eu não me fechar, não me isolar... Eu falo com as pessoas! Tem os clientes regulares... A galera das lojas aqui do lado... Os fornecedores... Eu falo com todos eles. Mais ou menos.
+Leia: [#leia:desprezo1, #vazio:vazio1] Ok, eu consigo entender o problema ai.
+Leia: [#leia:explicando7, #vazio:vazio1] Mas eu poderia falar mais se eu quisesse! E sempre tem a Iris...
+Leia: [#leia:desconfiada4, #vazio:vazio1] Enfim, não dá para resolver nada disso agora. Eu aprendi isso para parar me preocupar com as coisas antes de dormir. Dá para resolver agora? Não? Então vai dormir.
+=> END

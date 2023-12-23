@@ -14,12 +14,12 @@ if comparation == 0:
 	Claudio: [#leia:normal1,#Claudio:normal1] Nossa. Acho que nunca mais volto aqui. Obrigado?
 if comparation == 1:
 	Claudio: [#leia:normal1,#Claudio:normal1] Okay, até que eu gostei, poderia ser melhor.
-	- Pedir informações
-		Eu reconheço esse nome, está na ponta da língua... A sim. O Adonis do ensino fundamental, minha nossa, só lembro de ele falando do novo cachorrinho.
-		Mostrava pra todos próximos, esse cachorrinho que se chama Luke. Acho que você sabe de onde ele tirou esse nome. Além disso, ele tem um lado de gosto muito variado, pode ser que ele jogue 'Dom' ao som de 'shake it off' ou jogue 'Still Valley' ao som de 'Chop Suey', vai depender do dia. Tudo isso sozinho, o 'porquê' eu não sei, ele é muito desse jeito.
+	- Pedir informações [#leia:normal1,#Claudio:normal1]
+		Claudio: [#leia:normal1,#Claudio:normal1] Eu reconheço esse nome, está na ponta da língua... A sim. O Adonis do ensino fundamental, minha nossa, só lembro de ele falando do novo cachorrinho.
+		Claudio: [#leia:normal1,#Claudio:normal1] Mostrava pra todos próximos, esse cachorrinho que se chama Luke. Acho que você sabe de onde ele tirou esse nome. Além disso, ele tem um lado de gosto muito variado, pode ser que ele jogue 'Dom' ao som de 'shake it off' ou jogue 'Still Valley' ao som de 'Chop Suey', vai depender do dia. Tudo isso sozinho, o 'porquê' eu não sei, ele é muito desse jeito.
 if comparation == 2:
 	Claudio: [#leia:normal1,#Claudio:normal1] É disso que eu estava falando! Agora sou o Agustus Gloop desse lago de chá!
-	- Pedir informações
-		Eu reconheço esse nome, está na ponta da língua... A sim. O Adonis do ensino fundamental, minha nossa, só lembro de ele falando do novo cachorrinho.
-		Mostrava pra todos próximos, esse cachorrinho que se chama Luke. Acho que você sabe de onde ele tirou esse nome. Além disso, ele tem um lado de gosto muito variado, pode ser que ele jogue 'Dom' ao som de 'shake it off' ou jogue 'Still Valley' ao som de 'Chop Suey', vai depender do dia. Tudo isso sozinho, o 'porquê' eu não sei, ele é muito desse jeito.
+	- Pedir informações [#leia:normal1,#Claudio:normal1]
+		Claudio: [#leia:normal1,#Claudio:normal1] Eu reconheço esse nome, está na ponta da língua... A sim. O Adonis do ensino fundamental, minha nossa, só lembro de ele falando do novo cachorrinho.
+		Claudio: [#leia:normal1,#Claudio:normal1] Mostrava pra todos próximos, esse cachorrinho que se chama Luke. Acho que você sabe de onde ele tirou esse nome. Além disso, ele tem um lado de gosto muito variado, pode ser que ele jogue 'Dom' ao som de 'shake it off' ou jogue 'Still Valley' ao som de 'Chop Suey', vai depender do dia. Tudo isso sozinho, o 'porquê' eu não sei, ele é muito desse jeito.
 => END
