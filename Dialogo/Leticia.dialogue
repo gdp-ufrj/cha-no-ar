@@ -1,6 +1,5 @@
 ~ Leticia_Day_1_0
-do assento_assigner()
-Leticia: Oi ami! Tava me exercitando em uma corrida lá fora, mas tá muito quente! Tem alguma coisa aí para me refrescar e relaxar?
+Leticia: [#leia:normal1,#iris:normal1] Oi ami! Tava me exercitando em uma corrida lá fora, mas tá muito quente! Tem alguma coisa aí para me refrescar e relaxar?
 => END
 
 ~ Leticia_Day_1_1
@@ -9,10 +8,10 @@ if check_fork_exists("Leticia_Day_1", "given_drink_reaction"):
 	set comparation = consult_fork_result("Leticia_Day_1", "given_drink_reaction")
 else:
 	set comparation = compare_tags(["Calmante", "Refrescante"])
-    do mark_new_fork("Leticia_Day_1", "given_drink_reaction", comparation)
+	do mark_new_fork("Leticia_Day_1", "given_drink_reaction", comparation)
 if comparation == 0:
-	Leticia: Que isso?! Ah, não... Não foi isso que eu pedi.
+	Leticia:[#leia:triste1,#iris:normal1] Que isso?! Ah, não... Não foi isso que eu pedi.
 if comparation == 1:
-	Leticia: É... Vai ter que servir,
+	Leticia:[#leia:blush1,#iris:normal1] É... Vai ter que servir,
 if comparation == 2:
-	Leticia: Hmmm... Muito bom! Finalmente os refrescos.
+	Leticia:[#leia:normal1,#iris:normal1] Hmmm... Muito bom! Finalmente os refrescos.

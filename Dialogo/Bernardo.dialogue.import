@@ -2,13 +2,13 @@
 
 importer="dialogue_manager_compiler_11"
 type="Resource"
-uid="uid://51fkoer1newy"
-path="res://.godot/imported/Bernardo.dialogue-de880c368d1d8f3a9966270f025be753.tres"
+uid="uid://bhucojjpyg4y6"
+path="res://.godot/imported/bernardo.dialogue-e8fb856b3657ef9725d433697b2f7ccb.tres"
 
 [deps]
 
-source_file="res://Dialogo/Bernardo.dialogue"
-dest_files=["res://.godot/imported/Bernardo.dialogue-de880c368d1d8f3a9966270f025be753.tres"]
+source_file="res://Dialogo/bernardo.dialogue"
+dest_files=["res://.godot/imported/bernardo.dialogue-e8fb856b3657ef9725d433697b2f7ccb.tres"]
 
 [params]
 

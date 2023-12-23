@@ -2,13 +2,13 @@
 
 importer="dialogue_manager_compiler_11"
 type="Resource"
-uid="uid://nqau32clmp05"
-path="res://.godot/imported/Marlene.dialogue-a4c64841372656086861a9ae0dacfe2e.tres"
+uid="uid://d4hwkdcxkntk3"
+path="res://.godot/imported/marlene.dialogue-2050da74d72297eadcfd67bd17150d79.tres"
 
 [deps]
 
-source_file="res://Dialogo/Marlene.dialogue"
-dest_files=["res://.godot/imported/Marlene.dialogue-a4c64841372656086861a9ae0dacfe2e.tres"]
+source_file="res://Dialogo/marlene.dialogue"
+dest_files=["res://.godot/imported/marlene.dialogue-2050da74d72297eadcfd67bd17150d79.tres"]
 
 [params]
 

@@ -1,18 +1,41 @@
-~ Maria_Day_1_0
-do assento_assigner()
-Maria: Oi ami! Tava me exercitando em uma corrida lá fora, mas tá muito quente! Tem alguma coisa aí para me refrescar e relaxar?
+~ Maria_Day_2_0
+Maria: [#leia:normal1,#maria:normal1] Bom dia colega! Só vim dar uma passada rápída mesmo, saber as novas... Você viu que ontem teve um assalto aqui perto? Horrível... Enfim queria algo bem básico para me dar um up antes de voltar para o trabalho...
+
 => END
 
-~ Maria_Day_1_1
-do mark_last_speaking_for_day("Maria")
-if check_fork_exists("Maria", "given_drink_reaction"):
-	set comparation = consult_fork_result("Maria", "given_drink_reaction")
+~ Maria_Day_2_1
+do mark_last_speaking_for_day("Maria_Day_2")
+if check_fork_exists("Maria_Day_2", "given_drink_reaction"):
+	set comparation = consult_fork_result("Maria_Day_2", "given_drink_reaction")
 else:
-	set comparation = compare_tags(["Calmante", "Refrescante"])
-    do mark_new_fork("Maria", "given_drink_reaction", comparation)
+	set comparation = compare_tags(["Energético", "Tradicional"])
+	do mark_new_fork("Maria_Day_2", "given_drink_reaction", comparation)
 if comparation == 0:
-	Maria: Que isso?! Ah, não... Não foi isso que eu pedi.
+	Maria: [#leia:normal1,#maria:normal1] Oi? Acho que você me confundiu com alguém
 if comparation == 1:
-	Maria: É... Vai ter que servir,
+	Maria: [#leia:normal1,#maria:normal1] Tá, pode ser.
 if comparation == 2:
-	Maria: Hmmm... Muito bom! Finalmente os refrescos.
+	Maria: [#leia:normal1,#maria:normal1] Perfeito!
+	Leia: [#leia:normal1,#maria:normal1] Ei Maria, você por acaso conhece um tal do Adonis?
+	Maria: [#leia:normal1,#maria:normal1] Huh? Adonis? Conheço sim... Ele já trabalhou como modelo lá na firma, mas poucos jobs. O que é uma pena porque ele é, tipo, uma das pessoas mais bonitas que já vi!
+	Maria: [#leia:normal1,#maria:normal1] Mas me parece que ele não quer entrar nessa vida de modelo, tava só precisando do dinheiro mesmo. Não cheguei a falar muito com ele, parece que ele só anda com uma galera mais nariz empinado...
+=> END
+
+~ Maria_Day_5_0
+Maria: [#leia:normal1,#maria:normal1] Oi amiga... Tive uma baita noticia agora... To grávida! Não sei o que pensar... Mas a perspectiva de ser mãe me deixa ansiosa, tem algo para me relaxar? Acho que talvez eu já esteja até tendo desejos porque queira muito algo amargo agora também.
+
+~ Maria_Day_5_1
+do mark_last_speaking_for_day("Maria_Day_5")
+if check_fork_exists("Maria_Day_5", "given_drink_reaction"):
+	set comparation = consult_fork_result("Maria_Day_5", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Calmante", "Amargo"])
+	do mark_new_fork("Maria_Day_5", "given_drink_reaction", comparation)
+if comparation == 0:
+	Maria: [#leia:normal1,#maria:normal1] Oi? Acho que você me confundiu com alguém.
+if comparation == 1:
+	Maria: [#leia:normal1,#maria:normal1] Tá, pode ser.
+if comparation == 2:
+	Maria: [#leia:normal1,#maria:normal1] Perfeito!
+
+=> END

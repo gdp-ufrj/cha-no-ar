@@ -1,18 +1,38 @@
 ~ Marlene_Day_1_0
-do assento_assigner()
-Marlene: Oi ami! Tava me exercitando em uma corrida lá fora, mas tá muito quente! Tem alguma coisa aí para me refrescar e relaxar?
+Marlene: [#leia:normal1,#marlene:normal1] Oi querida, estou indo aplicar uma prova para meus alunos, queria aquela bebida clássica para me manter atenta!
+
 => END
 
 ~ Marlene_Day_1_1
-do mark_last_speaking_for_day("Marlene")
-if check_fork_exists("Marlene", "given_drink_reaction"):
-	set comparation = consult_fork_result("Marlene", "given_drink_reaction")
+do mark_last_speaking_for_day("Marlene_Day_1")
+if check_fork_exists("Marlene_Day_1", "given_drink_reaction"):
+	set comparation = consult_fork_result("Marlene_Day_1", "given_drink_reaction")
 else:
-	set comparation = compare_tags(["Calmante", "Refrescante"])
-    do mark_new_fork("Marlene", "given_drink_reaction", comparation)
+	set comparation = compare_tags(["Energético", "Tradicional"])
+	do mark_new_fork("Marlene_Day_1", "given_drink_reaction", comparation)
 if comparation == 0:
-	Marlene: Que isso?! Ah, não... Não foi isso que eu pedi.
+	Marlene: [#leia:normal1,#marlene:normal1] Absurdo! Você precisa prestar mais atenção.
 if comparation == 1:
-	Marlene: É... Vai ter que servir,
+	Marlene: [#leia:normal1,#marlene:normal1] Ok, pode ser...
 if comparation == 2:
-	Marlene: Hmmm... Muito bom! Finalmente os refrescos.
+	Marlene: [#leia:normal1,#marlene:normal1] Perfeito! Que delícia! Obrigada querida...
+
+=> END
+
+~ Marlene_Day_3_0
+Marlene: [#leia:normal1,#marlene:normal1] Oi querida... Está tendo um bom dia? O meu está péssimo... Minha mãe de 80 anos foi internada. Passei a noite nervosa ao lado dela, mas agora queria algo doce para relaxar, que nem o que ela fazia em casa.
+
+~ Marlene_Day_3_1
+do mark_last_speaking_for_day("Marlene_Day_3")
+if check_fork_exists("Marlene_Day_3", "given_drink_reaction"):
+	set comparation = consult_fork_result("Marlene_Day_3", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Calmante", "Tradicional", "Doce"])
+	do mark_new_fork("Marlene_Day_3", "given_drink_reaction", comparation)
+if comparation == 0:
+	Marlene: [#leia:normal1,#marlene:normal1] Absurdo! Você precisa prestar mais atenção.
+if comparation == 1:
+	Marlene: [#leia:normal1,#marlene:normal1] Ok, pode ser...
+if comparation == 2:
+	Marlene: [#leia:normal1,#marlene:normal1] Perfeito! Que delícia! Obrigada querida...
+=> END

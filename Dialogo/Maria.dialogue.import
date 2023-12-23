@@ -2,13 +2,13 @@
 
 importer="dialogue_manager_compiler_11"
 type="Resource"
-uid="uid://dx7khpp47bs2"
-path="res://.godot/imported/Maria.dialogue-ebd0bf411bdb4b307021ff6756f6d4d1.tres"
+uid="uid://d0dbt65tr62g7"
+path="res://.godot/imported/maria.dialogue-407e3eff5930cd8a815196cc691258b9.tres"
 
 [deps]
 
-source_file="res://Dialogo/Maria.dialogue"
-dest_files=["res://.godot/imported/Maria.dialogue-ebd0bf411bdb4b307021ff6756f6d4d1.tres"]
+source_file="res://Dialogo/maria.dialogue"
+dest_files=["res://.godot/imported/maria.dialogue-407e3eff5930cd8a815196cc691258b9.tres"]
 
 [params]
 
