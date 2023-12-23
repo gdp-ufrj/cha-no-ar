@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crpqk3b5dtl5m"
-path="res://.godot/imported/chá_4.png-9a7d67e748d15f3466cbf7f7cc21490b.ctex"
+uid="uid://c5ig2mjq8augs"
+path="res://.godot/imported/Modinha_Café.png-44bccdff74f66b6a176957716f34184c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/drinks_sprite/chá_4.png"
-dest_files=["res://.godot/imported/chá_4.png-9a7d67e748d15f3466cbf7f7cc21490b.ctex"]
+source_file="res://Assets/sprites/drinks_sprite/Modinha_Café.png"
+dest_files=["res://.godot/imported/Modinha_Café.png-44bccdff74f66b6a176957716f34184c.ctex"]
 
 [params]
 

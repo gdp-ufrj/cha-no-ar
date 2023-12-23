@@ -7,4 +7,4 @@ script = ExtResource("1_arku7")
 Drink_Name = "Cruela Cruel"
 Drink_Tags = ["Energético", "Refrescante"]
 Drink_Description = "Chá Preto com Hibisco e Limão"
-Drink_Image = null
+Drink_Image = "res://Assets/sprites/drinks_sprite/Cruela_Cruel_Chá.png"

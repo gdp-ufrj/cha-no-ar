@@ -14,8 +14,8 @@ var current_scene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	luz_ambiente.set_energy(1.4)
-	luz_ambiente.set_color(valores_luz_ambiente[0])
+	#luz_ambiente.set_energy(1.4)
+	#luz_ambiente.set_color(valores_luz_ambiente[0])
 	
 	var quarto = load("res://Scenes/Mapas/quarto.tscn").instantiate()
 	maps["quarto"] = quarto
@@ -52,11 +52,11 @@ func position_player(portal_num):
 
 
 ##### INTERACAO
-func _on_time_pressed(index):
-	print("input fdp")
-	luz_ambiente.set_color(valores_luz_ambiente[index])
-	if index in[2, 3]:
-		current_scene.get_node("LuzesFocais").visible = true
-	else:
-		current_scene.get_node("LuzesFocais").visible = false
-		
+#func _on_time_pressed(index):
+#	print("input fdp")
+#	luz_ambiente.set_color(valores_luz_ambiente[index])
+#	if index in[2, 3]:
+#		current_scene.get_node("LuzesFocais").visible = true
+#	else:
+#		current_scene.get_node("LuzesFocais").visible = false
+#

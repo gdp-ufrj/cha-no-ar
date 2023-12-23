@@ -7,4 +7,4 @@ script = ExtResource("1_15foj")
 Drink_Name = "Mamãe Natureza"
 Drink_Tags = ["Calmante", "Tradicional"]
 Drink_Description = "Chá de Jasmim, Erva Cidreira, Gengibre"
-Drink_Image = "<null>"
+Drink_Image = "res://Assets/sprites/drinks_sprite/Mãe_Natureza_Chá_.png"

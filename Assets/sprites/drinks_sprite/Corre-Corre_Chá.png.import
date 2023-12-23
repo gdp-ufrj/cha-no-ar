@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgp1khxyr7kvn"
-path="res://.godot/imported/Chá_2.png-5ec4cc5218a3ea4bc75dcf73592b85e8.ctex"
+uid="uid://bfrj2sxs2i42s"
+path="res://.godot/imported/Corre-Corre_Chá.png-9096f167974d99c47aa9360f61ff627f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/drinks_sprite/Chá_2.png"
-dest_files=["res://.godot/imported/Chá_2.png-5ec4cc5218a3ea4bc75dcf73592b85e8.ctex"]
+source_file="res://Assets/sprites/drinks_sprite/Corre-Corre_Chá.png"
+dest_files=["res://.godot/imported/Corre-Corre_Chá.png-9096f167974d99c47aa9360f61ff627f.ctex"]
 
 [params]
 

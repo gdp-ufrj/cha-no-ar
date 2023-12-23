@@ -10,6 +10,9 @@ var dialogue_spot
 @export var portal: String = ""
 @export var number: int = 1
 
+@export_group("Carry")
+@export var drink_resource : Drink_Resource
+
 @onready var moldura_player = $"."
 
 

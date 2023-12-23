@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpa3js8rp0mmh"
-path="res://.godot/imported/Chá_5.png-1c545bf25f8e8671f887bde4951bf944.ctex"
+uid="uid://dlplgdc0ku27a"
+path="res://.godot/imported/Xuxuzinha_Café.png-ed1311ce13b87c49222dd9329985df33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/drinks_sprite/Chá_5.png"
-dest_files=["res://.godot/imported/Chá_5.png-1c545bf25f8e8671f887bde4951bf944.ctex"]
+source_file="res://Assets/sprites/drinks_sprite/Xuxuzinha_Café.png"
+dest_files=["res://.godot/imported/Xuxuzinha_Café.png-ed1311ce13b87c49222dd9329985df33.ctex"]
 
 [params]
 

@@ -7,4 +7,4 @@ script = ExtResource("1_8i0jv")
 Drink_Name = "Ovelha Negra"
 Drink_Tags = ["Energético", "Tradicional"]
 Drink_Description = "Chá Preto, Canela, Cardamomo, Baunilha"
-Drink_Image = null
+Drink_Image = "res://Assets/sprites/drinks_sprite/Ovelha_Negra_Chá_.png"
