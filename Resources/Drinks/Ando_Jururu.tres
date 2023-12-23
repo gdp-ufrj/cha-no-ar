@@ -7,4 +7,4 @@ script = ExtResource("1_y64dq")
 Drink_Name = "Ando Jururu"
 Drink_Tags = ["Calmante", "Tradicional"]
 Drink_Description = "Chá de Camomila, Melissa, Laranja"
-Drink_Image = null
+Drink_Image = "<null>"
