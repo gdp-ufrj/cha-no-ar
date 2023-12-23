@@ -82,7 +82,7 @@ scale = Vector2(0.491515, 0.491515)
 
 [node name="MolduraPlayer" type="Sprite2D" parent="."]
 position = Vector2(289, 652.53)
-scale = Vector2(0.492, 0.492)
+scale = Vector2(-0.492, 0.492)
 flip_h = true
 
 [node name="Balloon" type="Panel" parent="."]
