@@ -9,9 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://dhrb78rbt853b" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
 [ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_ah5rm"]
-[ext_resource type="PackedScene" uid="uid://d0tw14utntjkc" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
+[ext_resource type="PackedScene" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
 [ext_resource type="PackedScene" uid="uid://d3noddnmhi4dg" path="res://Scenes/carriable_object.tscn" id="10_3jcdk"]
-[ext_resource type="PackedScene" path="res://Scenes/spawn_npc.tscn" id="13_bhmq6"]
+[ext_resource type="PackedScene" uid="uid://djec0tk58185v" path="res://Scenes/spawn_npc.tscn" id="13_bhmq6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v8xkm"]
 texture = ExtResource("2_8gomm")

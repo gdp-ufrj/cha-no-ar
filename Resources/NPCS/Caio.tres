@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://bx0t4mx7rbsof"]
+
+[ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_2w2p0"]
+[ext_resource type="Resource" uid="uid://btlnn38w87cp5" path="res://Dialogo/Caio.dialogue" id="1_y6iw3"]
+
+[resource]
+script = ExtResource("1_2w2p0")
+sprite_folder = "Male Sprite"
+NPC_Dialogue = ExtResource("1_y6iw3")
+NPC_key_name = "Caio"
+NPC_Sprite = "res://Assets/sprites/npcs/Male Sprite/NPC_7.png"

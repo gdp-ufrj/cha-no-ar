@@ -23,6 +23,8 @@ func _unhandled_input(_event: InputEvent) -> void:
 		var acionaveis = detector.get_overlapping_areas()
 		if acionaveis.size()>0:
 			var interacting = acionaveis[0]
+			if interacting.should_ignore_interaction:
+				return
 			if interacting.type == "Door":
 				get_parent().go_to_scene(interacting.portal, interacting.number)
 			elif interacting.type == "Dialogue":

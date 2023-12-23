@@ -33,15 +33,23 @@ func start_game():
 	self.add_child(player_instance)
 	player = get_node("Player")
 	go_to_scene("quarto", 1)
+	
+	State.assign_all_day_NPCs()
 
 func go_to_scene(nome, portal_num):
 	if current_scene:
 		self.remove_child(current_scene)
 	
+	
 	self.add_child(maps.get(nome))
 	current_scene = get_node(nome)
 	current_scene.get_node("Camera").make_current()
-	print("Vou pra cena: " + str(current_scene))
+	
+	if nome == "cafe":
+		State.spawn_npcs_cafe()
+		
+	if nome == "varanda":
+		State.spawn_npcs_varanda()
 	
 	position_player(portal_num)
 
@@ -53,7 +61,6 @@ func position_player(portal_num):
 
 ##### INTERACAO
 func _on_time_pressed(index):
-	print("input fdp")
 	luz_ambiente.set_color(valores_luz_ambiente[index])
 	if index in[2, 3]:
 		current_scene.get_node("LuzesFocais").visible = true

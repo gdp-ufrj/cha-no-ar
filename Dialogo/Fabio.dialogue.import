@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bo85h6bcmf4vv"
+path="res://.godot/imported/Fabio.dialogue-a7175687cbbb25fe5607b3654a324261.tres"
+
+[deps]
+
+source_file="res://Dialogo/Fabio.dialogue"
+dest_files=["res://.godot/imported/Fabio.dialogue-a7175687cbbb25fe5607b3654a324261.tres"]
+
+[params]
+
+defaults=true

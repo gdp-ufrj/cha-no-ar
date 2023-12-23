@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Spawn_Resource" load_steps=2 format=3 uid="uid://ckeqi1j4v54ya"]
+
+[ext_resource type="Script" path="res://Resources/spawn_list.gd" id="1_u7vqy"]
+
+[resource]
+script = ExtResource("1_u7vqy")
+Day_Number = "Day_1"
+Day_NPCs_Paths = Array[String](["res://Resources/NPCS/Bernardo.tres", "res://Resources/NPCS/Caio.tres", "res://Resources/NPCS/Fabio.tres", "res://Resources/NPCS/Fernanda.tres", "res://Resources/NPCS/Leticia.tres", "res://Resources/NPCS/Maria.tres", "res://Resources/NPCS/Marlene.tres", "res://Resources/NPCS/Rafael.tres"])

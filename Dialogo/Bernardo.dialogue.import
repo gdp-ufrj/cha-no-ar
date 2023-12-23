@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://51fkoer1newy"
+path="res://.godot/imported/Bernardo.dialogue-de880c368d1d8f3a9966270f025be753.tres"
+
+[deps]
+
+source_file="res://Dialogo/Bernardo.dialogue"
+dest_files=["res://.godot/imported/Bernardo.dialogue-de880c368d1d8f3a9966270f025be753.tres"]
+
+[params]
+
+defaults=true

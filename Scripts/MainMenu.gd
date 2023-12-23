@@ -50,7 +50,6 @@ func _on_voltar_pressed():
 	troca_visibilidade("Aviso")
 func _on_créditos_pressed():
 	toca_som_botao2()
-	_teste_dictionary()
 	troca_visibilidade("Créditos")
 func _on_voltar_creditos_pressed():
 	toca_som_botao()
