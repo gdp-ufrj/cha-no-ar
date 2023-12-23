@@ -28,10 +28,8 @@ var dialogue_line: DialogueLine:
 			return
 		var dict_emotion : Dictionary = character_emotion(next_dialogue_line)
 		var list_names : Array = dict_emotion.keys()
-		print(prefix + list_names[0] + dict_emotion[list_names[0]]+".png")
 		moldura_player.texture = load(prefix + list_names[0] +"/"+ dict_emotion[list_names[0]]+".png")
 		moldura_npc.texture = load(prefix + list_names[1] +"/"+ dict_emotion[list_names[1]]+".png")
-		# The dialogue has finished so close the balloon
 
 		# If the node isn't ready yet then none of the labels will be ready yet either
 		if not is_node_ready():

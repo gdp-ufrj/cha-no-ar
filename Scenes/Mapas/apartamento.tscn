@@ -461,6 +461,9 @@ sources/1 = SubResource("TileSetAtlasSource_tvr54")
 
 [node name="apartamento" type="Node2D"]
 
+[node name="Spawn-1" type="Marker2D" parent="."]
+position = Vector2(0, -24)
+
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("1_nlmam")]
@@ -504,9 +507,6 @@ portal = "cafe"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="acionaveis2"]
 shape = SubResource("RectangleShape2D_af5sl")
 debug_color = Color(0.756863, 0.454902, 0.00392157, 0.419608)
-
-[node name="Spawn-1" type="Marker2D" parent="."]
-position = Vector2(0, -24)
 
 [node name="Spawn-2" type="Marker2D" parent="."]
 position = Vector2(-32, 74)

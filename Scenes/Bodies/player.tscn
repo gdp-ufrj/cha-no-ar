@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://cpigfiam60w0l"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_afgj6"]
-[ext_resource type="Texture2D" uid="uid://dyxsigjknvcjk" path="res://Assets/sprites/characters/player.png" id="1_qd0nh"]
+[ext_resource type="Texture2D" uid="uid://nw153yn2dw1x" path="res://Assets/sprites/inMap/Léa_Versão_Final.png" id="2_u7ksb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7pnrq"]
 size = Vector2(12, 4)
@@ -68,10 +68,10 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0, 1, 2, 3, 4, 5]
+"values": [0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -121,14 +121,14 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [6, 7, 8, 9, 10, 11]
+"values": [6]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("Sprite:flip_h")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -174,14 +174,14 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [6, 7, 8, 9, 10, 11]
+"values": [9]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/path = NodePath("Sprite:flip_h")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -280,10 +280,10 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [18, 19, 20, 21, 22, 23]
+"values": [0, 1, 2]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -325,7 +325,7 @@ tracks/3/keys = {
 [sub_resource type="Animation" id="Animation_0uo6c"]
 resource_name = "walkLeft"
 length = 0.6
-loop_mode = 2
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -333,10 +333,10 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [24, 25, 26, 27, 28, 29]
+"values": [6, 7, 8]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -378,7 +378,7 @@ tracks/3/keys = {
 [sub_resource type="Animation" id="Animation_xxvkr"]
 resource_name = "walkRight"
 length = 0.6
-loop_mode = 2
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -386,14 +386,14 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [24, 25, 26, 27, 28, 29]
+"values": [9, 10, 11]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/path = NodePath("Sprite:flip_h")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -431,6 +431,7 @@ tracks/3/keys = {
 [sub_resource type="Animation" id="Animation_b1ryw"]
 resource_name = "walkUp"
 length = 0.6
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -438,10 +439,10 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [30, 31, 32, 33, 34, 35]
+"values": [3, 4, 5]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -515,9 +516,9 @@ blend_point_1/pos = Vector2(0, 0)
 blend_point_2/node = SubResource("AnimationNodeAnimation_uccf5")
 blend_point_2/pos = Vector2(0, -1)
 blend_point_3/node = SubResource("AnimationNodeAnimation_47fyr")
-blend_point_3/pos = Vector2(1, 0)
+blend_point_3/pos = Vector2(-1, 0)
 blend_point_4/node = SubResource("AnimationNodeAnimation_16cfe")
-blend_point_4/pos = Vector2(-1, 0)
+blend_point_4/pos = Vector2(1, 0)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_48qd4"]
@@ -538,9 +539,9 @@ blend_point_0/pos = Vector2(0, 1)
 blend_point_1/node = SubResource("AnimationNodeAnimation_6hl01")
 blend_point_1/pos = Vector2(0, -1)
 blend_point_2/node = SubResource("AnimationNodeAnimation_rdnbu")
-blend_point_2/pos = Vector2(1, 0)
+blend_point_2/pos = Vector2(-1, 0)
 blend_point_3/node = SubResource("AnimationNodeAnimation_w2rfx")
-blend_point_3/pos = Vector2(-1, 0)
+blend_point_3/pos = Vector2(1, 0)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ncjh8"]
@@ -552,17 +553,21 @@ states/walk/position = Vector2(653.333, 72.963)
 [sub_resource type="CircleShape2D" id="CircleShape2D_igcbd"]
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("_animation_tree")]
+position = Vector2(3, -3)
 script = ExtResource("1_afgj6")
 _animation_tree = NodePath("AnimationTree")
 
 [node name="HitBox" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -2)
 shape = SubResource("RectangleShape2D_7pnrq")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(-0.5, -17)
-texture = ExtResource("1_qd0nh")
-hframes = 6
-vframes = 10
+texture = ExtResource("2_u7ksb")
+hframes = 3
+vframes = 4
+region_enabled = true
+region_rect = Rect2(24, 16, 76, 180)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -574,11 +579,13 @@ tree_root = SubResource("AnimationNodeStateMachine_ncjh8")
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/idle/blend_position = Vector2(0.00232017, 0.955224)
-parameters/walk/blend_position = Vector2(0, 0)
+parameters/walk/blend_position = Vector2(-0.9984, 0.0393014)
 
 [node name="direcao" type="Marker2D" parent="."]
+position = Vector2(0, -4)
 
 [node name="Area2D" type="Area2D" parent="direcao"]
+position = Vector2(-2, -4)
 collision_layer = 0
 collision_mask = 16
 
@@ -588,6 +595,7 @@ shape = SubResource("CircleShape2D_igcbd")
 debug_color = Color(0.996078, 0, 0, 0.419608)
 
 [node name="Camera" type="Camera2D" parent="."]
+position = Vector2(-2, -16)
 zoom = Vector2(2.5, 2.5)
 limit_left = -80
 limit_top = -80
@@ -596,4 +604,4 @@ limit_bottom = 176
 position_smoothing_enabled = true
 
 [node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(-2, -5)
