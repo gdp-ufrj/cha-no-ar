@@ -1,5 +1,5 @@
 ~ Maria_Day_2_0
-Maria: Bom dia colega! Só vim dar uma passada rápída mesmo, saber as novas... Você viu que ontem teve um assalto aqui perto? Horrível... Enfim queria algo bem básico para me dar um up antes de voltar para o trabalho...
+Maria: [#leia:normal1,#maria:normal1] Bom dia colega! Só vim dar uma passada rápída mesmo, saber as novas... Você viu que ontem teve um assalto aqui perto? Horrível... Enfim queria algo bem básico para me dar um up antes de voltar para o trabalho...
 
 => END
 
@@ -11,16 +11,18 @@ else:
 	set comparation = compare_tags(["Energético", "Tradicional"])
 	do mark_new_fork("Maria_Day_2", "given_drink_reaction", comparation)
 if comparation == 0:
-	Maria: Oi? Acho que você me confundiu com alguém
+	Maria: [#leia:normal1,#maria:normal1] Oi? Acho que você me confundiu com alguém
 if comparation == 1:
-	Maria: Tá, pode ser.
+	Maria: [#leia:normal1,#maria:normal1] Tá, pode ser.
 if comparation == 2:
-	Maria: Perfeito!
-
+	Maria: [#leia:normal1,#maria:normal1] Perfeito!
+	Leia: [#leia:normal1,#maria:normal1] Ei Maria, você por acaso conhece um tal do Adonis?
+	Maria: [#leia:normal1,#maria:normal1] Huh? Adonis? Conheço sim... Ele já trabalhou como modelo lá na firma, mas poucos jobs. O que é uma pena porque ele é, tipo, uma das pessoas mais bonitas que já vi!
+	Maria: [#leia:normal1,#maria:normal1] Mas me parece que ele não quer entrar nessa vida de modelo, tava só precisando do dinheiro mesmo. Não cheguei a falar muito com ele, parece que ele só anda com uma galera mais nariz empinado...
 => END
 
 ~ Maria_Day_5_0
-Maria: Oi amiga... Tive uma baita noticia agora... To grávida! Não sei o que pensar... Mas a perspectiva de ser mãe me deixa ansiosa, tem algo para me relaxar? Acho que talvez eu já esteja até tendo desejos porque queira muito algo amargo agora também.
+Maria: [#leia:normal1,#maria:normal1] Oi amiga... Tive uma baita noticia agora... To grávida! Não sei o que pensar... Mas a perspectiva de ser mãe me deixa ansiosa, tem algo para me relaxar? Acho que talvez eu já esteja até tendo desejos porque queira muito algo amargo agora também.
 
 ~ Maria_Day_5_1
 do mark_last_speaking_for_day("Maria_Day_5")
@@ -30,14 +32,10 @@ else:
 	set comparation = compare_tags(["Calmante", "Amargo"])
 	do mark_new_fork("Maria_Day_5", "given_drink_reaction", comparation)
 if comparation == 0:
-	Maria: Oi? Acho que você me confundiu com alguém.
+	Maria: [#leia:normal1,#maria:normal1] Oi? Acho que você me confundiu com alguém.
 if comparation == 1:
-	Maria: Tá, pode ser.
+	Maria: [#leia:normal1,#maria:normal1] Tá, pode ser.
 if comparation == 2:
-	Maria: Perfeito!
-if comparation==3:
-	Leia: Ei Maria, você por acaso conhece um tal do Adonis?
-	Maria: Huh? Adonis? Conheço sim... Ele já trabalhou como modelo lá na firma, mas poucos jobs. O que é uma pena porque ele é, tipo, uma das pessoas mais bonitas que já vi!
-	Maria: Mas me parece que ele não quer entrar nessa vida de modelo, tava só precisando do dinheiro mesmo. Não cheguei a falar muito com ele, parece que ele só anda com uma galera mais nariz empinado...
+	Maria: [#leia:normal1,#maria:normal1] Perfeito!
 
 => END

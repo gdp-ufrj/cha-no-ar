@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://djfdwvermlbeh"
+path="res://.godot/imported/leticia.dialogue-f5e66cfbb0896d969aef279f39a57817.tres"
+
+[deps]
+
+source_file="res://Dialogo/leticia.dialogue"
+dest_files=["res://.godot/imported/leticia.dialogue-f5e66cfbb0896d969aef279f39a57817.tres"]
+
+[params]
+
+defaults=true

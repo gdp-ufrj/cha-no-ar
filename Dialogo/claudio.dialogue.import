@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dqb0iwbeykr7v"
+path="res://.godot/imported/claudio.dialogue-6a8e1580e8d27995f7ef9748292efecd.tres"
+
+[deps]
+
+source_file="res://Dialogo/claudio.dialogue"
+dest_files=["res://.godot/imported/claudio.dialogue-6a8e1580e8d27995f7ef9748292efecd.tres"]
+
+[params]
+
+defaults=true

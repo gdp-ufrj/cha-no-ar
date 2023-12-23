@@ -1,0 +1,38 @@
+~ Bernardo_Day_3_0
+Bernardo: [#leia:normal1,#Bernardo:normal1] Bom dia... Adoro vir aqui, mas tenho evitado desde que comecei a dieta... Inclusive to nervoso com a consulta hoje, tem algo para me acalmar que não seja doce?
+
+=> END
+
+~ Bernardo_Day_3_1
+do mark_last_speaking_for_day("Bernardo_Day_3")
+if check_fork_exists("Bernardo_Day_3", "given_drink_reaction"):
+	set comparation = consult_fork_result("Bernardo_Day_3", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Calmante", "Amargo"])
+	do mark_new_fork("Bernardo_Day_3", "given_drink_reaction", comparation)
+if comparation == 0:
+	Bernardo: [#leia:normal1,#Bernardo:normal1] Não, não, não... Todo errado.
+if comparation == 1:
+	Bernardo: [#leia:normal1,#Bernardo:normal1] Não, não, não... Todo errado.
+if comparation == 2:
+	Bernardo: [#leia:normal1,#Bernardo:normal1] Exatamente o que eu queria!
+
+=> END
+
+~ Bernardo_Day_5_0
+Bernardo: [#leia:normal1,#Bernardo:normal1] Bom dia! Estive aqui anteontem... Mas tava de dieta então tive que maneirar no pedido. Só que dessa vez não, a dieta que se dane, desisti de tudo! Me vê aí a bebida mais doce que você tem para compensar todos os dias que eu me privei.
+
+~ Bernardo_Day_5_1
+do mark_last_speaking_for_day("Bernardo_Day_5")
+if check_fork_exists("Bernardo_Day_5", "given_drink_reaction"):
+	set comparation = consult_fork_result("Bernardo_Day_5", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Doce"])
+	do mark_new_fork("Bernardo_Day_5", "given_drink_reaction", comparation)
+if comparation == 0:
+	Bernardo: [#leia:normal1,#Bernardo:normal1] Não, não, não... Todo errado.
+if comparation == 1:
+	Bernardo: [#leia:normal1,#Bernardo:normal1] Não, não, não... Todo errado.
+if comparation == 2:
+	Bernardo: [#leia:normal1,#Bernardo:normal1] Exatamente o que eu queria!
+=> END

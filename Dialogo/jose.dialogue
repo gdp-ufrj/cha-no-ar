@@ -1,0 +1,27 @@
+~ Jose_Day_3_0
+Jose: [#leia:normal1,#Jose:normal1] José Bom dia! Me chamo José, e NOSSA, eu estou com muito medo de apresentar o TCC hoje. Não sei como vai ser... Nunca cheguei nessa parte. Teria como entregar algo rápido para me ajudar?
+
+=> END
+
+~ Jose_Day_3_1
+do mark_last_speaking_for_day("Jose_Day_3")
+if check_fork_exists("Jose_Day_3", "given_drink_reaction"):
+	set comparation = consult_fork_result("Jose_Day_3", "given_drink_reaction")
+else:
+	set comparation = compare_tags(["Calmante", "Tradicional"])
+	do mark_new_fork("Jose_Day_3", "given_drink_reaction", comparation)
+if comparation == 0:
+	Jose: [#leia:normal1,#Jose:normal1] MEU DEUS. MEU TRABALHO ESTÁ UM HORROR, VOU RECONSTRUIR TUDO AQUI? NÃO VAI DAAAR.
+	- Pedir informações
+		Jose: [#leia:normal1,#Jose:normal1] Adonis? Desculpa, tenho que reconstruir meu trabalho aqui
+if comparation == 1:
+	Jose: [#leia:normal1,#Jose:normal1] Tá, até que me ajudou um pouco.
+	- Pedir informações
+		Jose: [#leia:normal1,#Jose:normal1] AAAA o Adonis! Quanto tempo que não ouço o nome dele. Sim, eu conheço, a gente estudava junto. Ele adorava conversar comigo sobre 'espadas', desde de verdade até da mitologia.
+		Jose: [#leia:normal1,#Jose:normal1] Mas tem uma específica que é a do Herácles que ele, a muuuuito tempo, me contou que queria comprar uma réplica, não lembro direito o que aconteceu depois disso, mas é um ótimo assunto pra puxar.
+if comparation == 2:
+	Jose: [#leia:normal1,#Jose:normal1] Isso aí! Magnifíque!
+	- Pedir informações
+		Jose: [#leia:normal1,#Jose:normal1] AAAA o Adonis! Quanto tempo que não ouço o nome dele. Sim, eu conheço, a gente estudava junto. Ele adorava conversar comigo sobre 'espadas', desde de verdade até da mitologia.
+		Jose: [#leia:normal1,#Jose:normal1] Mas tem uma específica que é a do Herácles que ele, a muuuuito tempo, me contou que queria comprar uma réplica, não lembro direito o que aconteceu depois disso, mas é um ótimo assunto pra puxar.
+=> END
