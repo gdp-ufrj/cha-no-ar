@@ -711,6 +711,9 @@ fill_from = Vector2(0.5, 0.5)
 [node name="quarto" type="Node2D"]
 script = ExtResource("1_pb8pg")
 
+[node name="Spawn-1" type="Marker2D" parent="."]
+position = Vector2(-36, 11)
+
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("7_io7h3")]
@@ -757,9 +760,6 @@ portal = "apartamento"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="acionaveis"]
 shape = SubResource("RectangleShape2D_3c76q")
 debug_color = Color(0.729412, 0.470588, 0, 0.419608)
-
-[node name="Spawn-1" type="Marker2D" parent="."]
-position = Vector2(-36, 11)
 
 [node name="Spawn-2" type="Marker2D" parent="."]
 position = Vector2(-32, 107)

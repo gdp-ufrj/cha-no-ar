@@ -545,6 +545,9 @@ sources/0 = SubResource("TileSetAtlasSource_5jbjt")
 
 [node name="varanda" type="Node2D"]
 
+[node name="Spawn-1" type="Marker2D" parent="."]
+position = Vector2(-113, 41)
+
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("1_ygtc7")]
@@ -587,9 +590,6 @@ number = 2
 position = Vector2(-113, 38)
 shape = SubResource("RectangleShape2D_7dvp4")
 debug_color = Color(0.756863, 0.454902, 0, 0.419608)
-
-[node name="Spawn-1" type="Marker2D" parent="."]
-position = Vector2(-113, 41)
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, 64)
