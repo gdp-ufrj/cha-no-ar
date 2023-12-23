@@ -1,0 +1,19 @@
+~ Adonis_Day_1_0
+if estado["capuccino_count"] == 1:
+	set estado["emocao_count"] = 1
+	Leia:[#leia:explicando1,#iris:feliz1] Só tenho um... 
+	- Dar o Capuccino
+		set estado["capuccino_count"] = 0
+		Leia:[#leia:normal1,#iris:normal1] Aqui está
+		Adonis:[#leia:feliz1,#iris:normal1] Valeus
+		set estado["emocao_count"] = 0
+	- Oferecer aguinha
+		Leia:[#leia:feliz1,#iris:normal1] Quer aguinha não?
+		Adonis:[#leia:feliz1,#iris:normal1] Tá bom
+		
+else:
+	Leia:[#leia:triste1,#iris:normal1] Só tem água agora
+	set estado["emocao_count"] = 2
+	Adonis:[#leia:blush1,#iris:normal1] Droga
+	set estado["emocao_count"] = 0
+=> END
