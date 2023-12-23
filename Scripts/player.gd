@@ -8,7 +8,6 @@ var _state_machine
 
 @export_category("Objects")
 @export var _animation_tree: AnimationTree = null
-
 @onready var detector: Area2D = $direcao/Area2D
 
 var can_pick = true
@@ -27,6 +26,8 @@ func _unhandled_input(_event: InputEvent) -> void:
 				get_parent().go_to_scene(interacting.portal, interacting.number)
 			elif interacting.type == "Dialogue":
 				interacting.start_dialogue()
+			elif interacting.type == "Carry":
+				pass
 			return
 		
 func _physics_process(_delta: float) -> void:

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://knx7vhlfh62g"
-path="res://.godot/imported/Cafés_.png-e4c385750d17fd7a57ea15c07b732b7c.ctex"
+uid="uid://cpo3odbh8554b"
+path="res://.godot/imported/Benzadeus_Chá.png-d789035c054e74fba407ab769de9e44d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/drinks_sprite/Cafés_.png"
-dest_files=["res://.godot/imported/Cafés_.png-e4c385750d17fd7a57ea15c07b732b7c.ctex"]
+source_file="res://Assets/sprites/drinks_sprite/Benzadeus_Chá.png"
+dest_files=["res://.godot/imported/Benzadeus_Chá.png-d789035c054e74fba407ab769de9e44d.ctex"]
 
 [params]
 

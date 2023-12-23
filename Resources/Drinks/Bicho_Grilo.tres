@@ -7,4 +7,4 @@ script = ExtResource("1_753m3")
 Drink_Name = "Bicho Grilo"
 Drink_Tags = ["Calmante", "Refrescante"]
 Drink_Description = "Chá Verde com Hortelã e Gengibre"
-Drink_Image = null
+Drink_Image = "res://Assets/sprites/drinks_sprite/Bicho_Grilo_Chá.png"

@@ -7,4 +7,4 @@ script = ExtResource("1_qsafj")
 Drink_Name = "Xuxuzinho"
 Drink_Tags = ["Energético", "Tradicional"]
 Drink_Description = "Café Preto Expresso"
-Drink_Image = null
+Drink_Image = "res://Assets/sprites/drinks_sprite/Xuxuzinha_Café.png"

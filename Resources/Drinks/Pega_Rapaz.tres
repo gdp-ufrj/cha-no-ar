@@ -7,4 +7,4 @@ script = ExtResource("1_i8b66")
 Drink_Name = "Pega Rapaz"
 Drink_Tags = ["Energético", "Refrescante"]
 Drink_Description = "Mocha"
-Drink_Image = null
+Drink_Image = "res://Assets/sprites/drinks_sprite/Pega_Rapaz_Café.png"

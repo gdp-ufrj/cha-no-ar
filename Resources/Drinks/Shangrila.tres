@@ -7,4 +7,4 @@ script = ExtResource("1_xewqa")
 Drink_Name = "Shangrila"
 Drink_Tags = ["Calmante", "Refrescante"]
 Drink_Description = "Chá de Camomila com Abacaxi e Hortelã"
-Drink_Image = null
+Drink_Image = "res://Assets/sprites/drinks_sprite/Shangrila_Chá.png"

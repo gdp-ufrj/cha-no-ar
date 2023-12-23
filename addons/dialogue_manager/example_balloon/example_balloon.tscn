@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_aerml"]
 [ext_resource type="Texture2D" uid="uid://bavy27af7dlxp" path="res://Assets/sprites/ui/uichanoar-02 (1).png" id="3_goc4n"]
+[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/fonts/LibreBaskerville-Regular.ttf" id="5_1b2e1"]
 [ext_resource type="FontFile" uid="uid://d3stl27lla7y2" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY.otf" id="5_qw5pn"]
-[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/LibreBaskerville-Regular.ttf" id="6_ds50q"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="6_shopr"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="6_v5aim"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="7_5olvw"]
-[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="7_7e5w5"]
-[ext_resource type="FontFile" uid="uid://cmg7fiw4n40cx" path="res://Assets/LibreBaskerville-Italic.ttf" id="8_dxgqw"]
+[ext_resource type="FontFile" uid="uid://cmg7fiw4n40cx" path="res://Assets/fonts/LibreBaskerville-Italic.ttf" id="7_lu30y"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -144,9 +144,9 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("6_ds50q")
-theme_override_fonts/bold_font = ExtResource("7_7e5w5")
-theme_override_fonts/italics_font = ExtResource("8_dxgqw")
+theme_override_fonts/normal_font = ExtResource("5_1b2e1")
+theme_override_fonts/bold_font = ExtResource("6_v5aim")
+theme_override_fonts/italics_font = ExtResource("7_lu30y")
 theme_override_font_sizes/normal_font_size = 28
 text = "Dialogue..."
 
@@ -176,6 +176,7 @@ response_template = NodePath("ResponseExample")
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_1b2e1")
 text = "Response example"
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]

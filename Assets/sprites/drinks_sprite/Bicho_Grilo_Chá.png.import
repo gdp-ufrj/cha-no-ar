@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbyyt3wum6rx"
-path="res://.godot/imported/Chá_3.png-329510cd4a4d14573a3095fcab50855d.ctex"
+uid="uid://d3kr3kcor4afe"
+path="res://.godot/imported/Bicho_Grilo_Chá.png-5cae7b5ceecb1f2f26c6f2fb66f97810.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/drinks_sprite/Chá_3.png"
-dest_files=["res://.godot/imported/Chá_3.png-329510cd4a4d14573a3095fcab50855d.ctex"]
+source_file="res://Assets/sprites/drinks_sprite/Bicho_Grilo_Chá.png"
+dest_files=["res://.godot/imported/Bicho_Grilo_Chá.png-5cae7b5ceecb1f2f26c6f2fb66f97810.ctex"]
 
 [params]
 

@@ -7,4 +7,4 @@ script = ExtResource("1_48kdj")
 Drink_Name = "Modinha"
 Drink_Tags = ["Energético", "Refrescante"]
 Drink_Description = "Frappé"
-Drink_Image = null
+Drink_Image = "res://Assets/sprites/drinks_sprite/Modinha_Café.png"

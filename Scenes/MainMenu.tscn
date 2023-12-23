@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_68c6x"]
 [ext_resource type="Texture2D" uid="uid://crysitwohkk41" path="res://Assets/sprites/ui/pngtree-tea-cup-tea-mountain-green-chinese-style-zen-tea-image_805332.jpg" id="2_uap85"]
-[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_l01os"]
+[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY (2).otf" id="3_6vfe8"]
 [ext_resource type="AudioStream" uid="uid://cmh44bwauf7dp" path="res://Assets/audio/mainMenuTesteLoop.mp3" id="3_o0wvw"]
 [ext_resource type="PackedScene" uid="uid://c7x7ovvm4cx1d" path="res://Scenes/ajustes.tscn" id="4_26u3q"]
-[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="4_mjuhi"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="4_qg5tx"]
 [ext_resource type="Texture2D" uid="uid://ci8gqhuuipgd0" path="res://Assets/sprites/ui/Créditos_.svg" id="7_kmjgc"]
 [ext_resource type="AudioStream" uid="uid://c5b1gannkmw3y" path="res://Assets/audio/Uepa Ratinho Sound Effect .mp3" id="8_w3ppj"]
 [ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="9_ttcrf"]
@@ -53,21 +53,21 @@ layout_mode = 2
 [node name="Nome" type="Label" parent="CenterContainer/MainMenu"]
 modulate = Color(0.376471, 0.4, 0.2, 1)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_l01os")
+theme_override_fonts/font = ExtResource("3_6vfe8")
 theme_override_font_sizes/font_size = 100
 text = "✦Chá No Ar✦"
 horizontal_alignment = 1
 
 [node name="Começar" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 text = "Começar"
 
 [node name="Continuar" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 disabled = true
@@ -75,21 +75,21 @@ text = "Continuar"
 
 [node name="Opções" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 text = "Ajustes"
 
 [node name="Créditos" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 text = "Créditos"
 
 [node name="Sair" type="Button" parent="CenterContainer/MainMenu"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_30rlh")
 text = "Sair"
@@ -101,7 +101,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CenterContainer/Aviso"]
 modulate = Color(0.666667, 0.592157, 0, 1)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 34
 text = "Atenção: Ao continuar, qualquer progresso será perdido"
 
@@ -111,7 +111,7 @@ size_flags_horizontal = 4
 
 [node name="Aceitar" type="Button" parent="CenterContainer/Aviso/Container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_fwyjp")
 text = "  Aceitar  "
@@ -122,7 +122,7 @@ text = "             "
 
 [node name="Voltar" type="Button" parent="CenterContainer/Aviso/Container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_fwyjp")
 text = "  Voltar  "
@@ -165,7 +165,7 @@ offset_left = 24.0
 offset_top = 246.0
 offset_right = 285.0
 offset_bottom = 296.0
-theme_override_fonts/font = ExtResource("4_mjuhi")
+theme_override_fonts/font = ExtResource("4_qg5tx")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_386wr")
 text = "Voltar

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ca5eo1sl4e48b"
-path="res://.godot/imported/HabitaScenic_PERSONAL_USE_ONLY.otf-5b2ffb587c7748985565a9a2ce44a533.fontdata"
+path="res://.godot/imported/HabitaScenic_PERSONAL_USE_ONLY (2).otf-1fb30483b35532609a2e460c4f8250cd.fontdata"
 
 [deps]
 
-source_file="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf"
-dest_files=["res://.godot/imported/HabitaScenic_PERSONAL_USE_ONLY.otf-5b2ffb587c7748985565a9a2ce44a533.fontdata"]
+source_file="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY (2).otf"
+dest_files=["res://.godot/imported/HabitaScenic_PERSONAL_USE_ONLY (2).otf-1fb30483b35532609a2e460c4f8250cd.fontdata"]
 
 [params]
 

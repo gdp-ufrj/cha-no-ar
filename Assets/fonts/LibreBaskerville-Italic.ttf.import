@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cr6w2cpg566wo"
-path="res://.godot/imported/LibreBaskerville-Regular.ttf-f4d19ea729645cf1aa3aa489b255ff83.fontdata"
+uid="uid://cmg7fiw4n40cx"
+path="res://.godot/imported/LibreBaskerville-Italic.ttf-c6a8cd0a66190197b8803ea37d977dab.fontdata"
 
 [deps]
 
-source_file="res://Assets/LibreBaskerville-Regular.ttf"
-dest_files=["res://.godot/imported/LibreBaskerville-Regular.ttf-f4d19ea729645cf1aa3aa489b255ff83.fontdata"]
+source_file="res://Assets/fonts/LibreBaskerville-Italic.ttf"
+dest_files=["res://.godot/imported/LibreBaskerville-Italic.ttf-c6a8cd0a66190197b8803ea37d977dab.fontdata"]
 
 [params]
 

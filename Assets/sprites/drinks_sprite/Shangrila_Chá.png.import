@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjr6cxbpw3jak"
-path="res://.godot/imported/Chá_1.png-5210be0d9d2c58bdef1666ab1c61d05e.ctex"
+uid="uid://cpfs5k7q33xos"
+path="res://.godot/imported/Shangrila_Chá.png-ee304349c999c7aef0796d01b2a4ab22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/drinks_sprite/Chá_1.png"
-dest_files=["res://.godot/imported/Chá_1.png-5210be0d9d2c58bdef1666ab1c61d05e.ctex"]
+source_file="res://Assets/sprites/drinks_sprite/Shangrila_Chá.png"
+dest_files=["res://.godot/imported/Shangrila_Chá.png-ee304349c999c7aef0796d01b2a4ab22.ctex"]
 
 [params]
 
