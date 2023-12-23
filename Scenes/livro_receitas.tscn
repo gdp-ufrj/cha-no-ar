@@ -1,9 +1,9 @@
 [gd_scene load_steps=17 format=3 uid="uid://cupeccbog8svo"]
 
 [ext_resource type="Script" path="res://Scripts/recipe_book.gd" id="1_sb185"]
-[ext_resource type="Texture2D" uid="uid://c7air4tt8c4qo" path="res://Assets/sprites/ui/Chá.png" id="2_1smdv"]
 [ext_resource type="Texture2D" uid="uid://dhwtjk5jxbw8j" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-01.png" id="2_m148v"]
 [ext_resource type="Theme" uid="uid://ctx52f5e17dcf" path="res://Assets/themes/titles.tres" id="3_5m8qc"]
+[ext_resource type="Texture2D" uid="uid://crpqk3b5dtl5m" path="res://Assets/sprites/drinks_sprite/chá_4.png" id="3_sw2kf"]
 [ext_resource type="Theme" uid="uid://w1km7g474tf3" path="res://Assets/themes/text.tres" id="4_i3brd"]
 [ext_resource type="Texture2D" uid="uid://do181v0bmh7ch" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-02.png" id="6_qb22c"]
 
@@ -71,22 +71,25 @@ texture = ExtResource("2_m148v")
 expand_mode = 1
 
 [node name="Drink Sprite" type="Sprite2D" parent="Background"]
-position = Vector2(426, 286)
-scale = Vector2(0.40625, 0.40625)
-texture = ExtResource("2_1smdv")
+texture_filter = 2
+position = Vector2(478.266, 309.379)
+scale = Vector2(0.255722, 0.255722)
+texture = ExtResource("3_sw2kf")
+region_enabled = true
+region_rect = Rect2(105, 522, 1056, 613)
 
 [node name="Drink Name" type="Label" parent="Background"]
 layout_mode = 2
-offset_left = 489.0
-offset_top = 182.0
-offset_right = 921.0
-offset_bottom = 398.0
+offset_left = 635.0
+offset_top = 200.0
+offset_right = 871.0
+offset_bottom = 416.0
 theme = ExtResource("3_5m8qc")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
 text = "Mamãe Natureza"
-horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Ingredients Label" type="Label" parent="Background"]
 layout_mode = 2
