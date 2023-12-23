@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" path="res://Scripts/ajustes.gd" id="1_gibxo"]
 [ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_nmd0q"]
-[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_3m2s0"]
+[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY (2).otf" id="3_3m2s0"]
 [ext_resource type="Texture2D" uid="uid://cup3qpiwoig51" path="res://Assets/sprites/ui/barraSlider1.png" id="3_tnjqy"]
 [ext_resource type="Texture2D" uid="uid://b7svns2sxi5rb" path="res://Assets/sprites/ui/svgui/uiEstrela32.svg" id="7_l46dy"]
-[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="9_8ox06"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="9_8ox06"]
 [ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="10_8fdqh"]
 [ext_resource type="Texture2D" uid="uid://c04uwb4f7g7bo" path="res://Assets/sprites/ui/svgui/uiUncheckedButton1.svg" id="10_35k6t"]
 [ext_resource type="Texture2D" uid="uid://d1am1epdytgh7" path="res://Assets/sprites/ui/svgui/uiButtonChecked.svg" id="10_ju820"]
-[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/LibreBaskerville-Regular.ttf" id="11_bhsi6"]
+[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/fonts/LibreBaskerville-Regular.ttf" id="11_bhsi6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rw3yt"]
 

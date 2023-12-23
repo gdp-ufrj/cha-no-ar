@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/PauseMenu.gd" id="1_sg8mw"]
 [ext_resource type="Texture2D" uid="uid://jmvcvsteeyrc" path="res://Assets/sprites/ui/backgroundAjustes1.png" id="2_0vket"]
-[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/HabitaScenic_PERSONAL_USE_ONLY.otf" id="3_x8xwp"]
-[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="4_addoo"]
+[ext_resource type="FontFile" uid="uid://ca5eo1sl4e48b" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY (2).otf" id="3_x8xwp"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="4_addoo"]
 [ext_resource type="PackedScene" uid="uid://c7x7ovvm4cx1d" path="res://Scenes/ajustes.tscn" id="5_kuq82"]
 [ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="6_71lsa"]
 [ext_resource type="AudioStream" uid="uid://cmh44bwauf7dp" path="res://Assets/audio/mainMenuTesteLoop.mp3" id="7_6h1p6"]
