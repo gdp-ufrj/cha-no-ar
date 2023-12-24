@@ -18,6 +18,7 @@ if comparation == 1:
 if comparation == 2:
 	Caio: [#leia:normal1,#caio:normal1] Tudo! Exatamente o que eu tava precisando!
 
+do remove_npc("Caio")
 => END
 
 ~ Caio_Day_5_0

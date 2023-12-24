@@ -16,6 +16,7 @@ var drink_in_hand: Resource
 
 func _ready() -> void:
 	_state_machine = _animation_tree["parameters/playback"]
+	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 	pass
 
 func _on_dialogue_ended(_resource: DialogueResource):

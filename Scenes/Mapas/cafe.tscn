@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=21 format=3 uid="uid://bsr4i8u0khvh8"]
 
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
 [ext_resource type="Script" path="res://Scenes/Mapas/cafe.gd" id="1_v8q0y"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://vxpxigk7rtqx" path="res://Assets/sprites/tilesets/seats.png" id="4_nf6fp"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="6_sbh5f"]
 [ext_resource type="Script" path="res://Scripts/cafe_seating_group.gd" id="9_en8f2"]
+[ext_resource type="Resource" uid="uid://d7chan0cf2cn" path="res://Dialogo/leia.dialogue" id="11_fhnjp"]
 [ext_resource type="PackedScene" uid="uid://cupeccbog8svo" path="res://Scenes/livro_receitas.tscn" id="11_vg0ah"]
 [ext_resource type="Script" path="res://Scenes/Mapas/Area2D.gd" id="13_261o8"]
 
@@ -622,6 +623,8 @@ size = Vector2(14, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgtlr"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uramx"]
+
 [node name="cafe" type="Node2D"]
 script = ExtResource("1_v8q0y")
 
@@ -798,3 +801,18 @@ script = ExtResource("13_261o8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_kgtlr")
+
+[node name="TriggerDialogue2" type="Area2D" parent="."]
+position = Vector2(64, 7)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDialogue2"]
+shape = SubResource("RectangleShape2D_uramx")
+debug_color = Color(0.760784, 0.176471, 1, 0.419608)
+
+[node name="acionaveis" parent="TriggerDialogue2" instance=ExtResource("6_sbh5f")]
+type = "Dialogue"
+dialogue_resource = ExtResource("11_fhnjp")
+dialogue_owner = "Leia"
+
+[connection signal="body_entered" from="TriggerDialogue2" to="." method="_on_trigger_dialogue_2_body_entered"]

@@ -17,6 +17,7 @@ if comparation == 1:
 if comparation == 2:
 	Marlene: [#leia:normal1,#marlene:normal1] Perfeito! Que delícia! Obrigada querida...
 
+do remove_npc("Marlene")
 => END
 
 ~ Marlene_Day_3_0

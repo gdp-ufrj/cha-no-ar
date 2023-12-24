@@ -48,6 +48,7 @@ var emocao_count: int = 0
 var comparation: int = 0
 
 var dialogue1_foi: bool = false
+var dialogue2_foi: bool = false
 var pausa_dialogo: bool = false
 
 signal pausa_dialogue_changed()
@@ -98,12 +99,16 @@ func free_cafe_assentos():
 	
 	if !cafe_assentos_ocupados.is_empty():
 		for assento in cafe_assentos_ocupados:
-			assentos_dictionary[assento]["ocupado"] = false
-			var npc_sprite = cafe_seating_group.get_node(assento + "/Sprite2D")
-			npc_sprite.texture = null
-			var assento_interactor = cafe_seating_group.get_node(assento + "/acionaveis")
-			assento_interactor.should_ignore_interaction = true
-			
+			free_assento(assento)
+
+func free_assento(assento):
+	assentos_dictionary[assento]["ocupado"] = false
+	var npc_sprite = cafe_seating_group.get_node(assento + "/Sprite2D")
+	npc_sprite.texture = null
+	var assento_interactor = cafe_seating_group.get_node(assento + "/acionaveis")
+	assento_interactor.should_ignore_interaction = true
+	
+
 func free_varanda_assentos():
 	var assento_keys = assentos_dictionary.keys()
 	
@@ -218,6 +223,16 @@ func compare_tags(tags_asked: Array):
 			if delivered == asked:
 				score = score + 1
 	return score
+
+func remove_npc(nome_npc: String):
+	#var assento_keys = assentos_dictionary.keys()
+	
+	#var assento_npc = assento_keys.filter(func (key):
+	#	return assentos_dictionary[key]["customer"].NPC_key_name == nome_npc
+	#	)
+		
+	#free_assento(assento_npc)
+	pass
 
 func get_dialogue_dictionary():
 	return dialogue_dictionary
