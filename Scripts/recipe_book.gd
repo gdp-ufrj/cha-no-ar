@@ -21,7 +21,7 @@ var current_page: int = 0
 
 func _ready():
 	get_drink_resources()
-	set_info(drinks[0])a
+	set_info(drinks[0])
 	check_buttons()
 		
 func get_drink_resources():
