@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://cfocpo20s61pl"]
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_cehrh"]
-[ext_resource type="Resource" uid="uid://tiseixbdylha" path="res://Dialogo/Fernanda.dialogue" id="1_uqu6l"]
+[ext_resource type="Resource" path="res://Dialogo/Fernanda.dialogue" id="1_uqu6l"]
 
 [resource]
 script = ExtResource("1_cehrh")

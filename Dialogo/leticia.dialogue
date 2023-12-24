@@ -3,12 +3,12 @@ Leticia: [#leia:normal1,#iris:normal1] Oi ami! Tava me exercitando em uma corrid
 => END
 
 ~ Leticia_Day_1_1
-do mark_last_speaking_for_day("Leticia_Day_1")
-if check_fork_exists("Leticia_Day_1", "given_drink_reaction"):
-	set comparation = consult_fork_result("Leticia_Day_1", "given_drink_reaction")
+do mark_last_speaking_for_day("Leticia")
+if check_fork_exists("Leticia", "given_drink_reaction"):
+	set comparation = consult_fork_result("Leticia", "given_drink_reaction")
 else:
 	set comparation = compare_tags(["Calmante", "Refrescante"])
-	do mark_new_fork("Leticia_Day_1", "given_drink_reaction", comparation)
+	do mark_new_fork("Leticia", "given_drink_reaction", comparation)
 if comparation == 0:
 	Leticia:[#leia:triste1,#iris:normal1] Que isso?! Ah, não... Não foi isso que eu pedi.
 if comparation == 1:

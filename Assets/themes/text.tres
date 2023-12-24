@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://w1km7g474tf3"]
+
+[ext_resource type="FontFile" uid="uid://p2fuh2yf0a6" path="res://Assets/fonts/baskvl.ttf" id="1_uumdb"]
+
+[resource]
+default_font = ExtResource("1_uumdb")

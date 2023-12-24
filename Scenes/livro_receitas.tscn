@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scripts/recipe_book.gd" id="1_sb185"]
 [ext_resource type="Texture2D" uid="uid://dhwtjk5jxbw8j" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-01.png" id="2_m148v"]
 [ext_resource type="Texture2D" uid="uid://d0empciyue8ug" path="res://Assets/sprites/drinks_sprite/Mãe_Natureza_Chá_.png" id="3_1o3vg"]
-[ext_resource type="Theme" uid="uid://ctx52f5e17dcf" path="res://Assets/themes/titles.tres" id="3_5m8qc"]
-[ext_resource type="Theme" uid="uid://w1km7g474tf3" path="res://Assets/themes/text.tres" id="4_i3brd"]
+[ext_resource type="Theme" path="res://Assets/themes/titles.tres" id="3_5m8qc"]
+[ext_resource type="Theme" path="res://Assets/themes/text.tres" id="4_i3brd"]
 [ext_resource type="Texture2D" uid="uid://do181v0bmh7ch" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-02.png" id="6_qb22c"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_45w2d"]

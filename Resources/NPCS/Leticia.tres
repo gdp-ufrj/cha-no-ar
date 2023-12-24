@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://cxvvn85altcic"]
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3]
 
-[ext_resource type="Resource" uid="uid://dl4oc3glrx2xy" path="res://Dialogo/Leticia.dialogue" id="1_dn3qe"]
 [ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_rcmpm"]
+[ext_resource type="Resource" path="res://Dialogo/leticia.dialogue" id="1_st5ro"]
 
 [resource]
 script = ExtResource("1_rcmpm")
 sprite_folder = "Female Sprite"
-NPC_Dialogue = ExtResource("1_dn3qe")
+NPC_Dialogue = ExtResource("1_st5ro")
 NPC_key_name = "Leticia"
-NPC_Sprite = "res://Assets/sprites/npcs/Female Sprite/NPC_2.png"
+NPC_Sprite = "res://Assets/sprites/npcs/Female Sprite/NPC_1.png"

@@ -1,13 +1,13 @@
 [gd_scene load_steps=23 format=3 uid="uid://cvbq828jqt541"]
 
 [ext_resource type="Script" path="res://Scripts/ajustes.gd" id="1_gibxo"]
-[ext_resource type="Texture2D" uid="uid://evmyoh0espqw" path="res://Assets/sprites/ui/Ajustes/AJUSTES.png" id="4_ue2ht"]
+[ext_resource type="Texture2D" uid="uid://b20w30sbqhcnq" path="res://Assets/sprites/ui/Ajustes/AJUSTES.png" id="4_ue2ht"]
 [ext_resource type="Texture2D" uid="uid://b7svns2sxi5rb" path="res://Assets/sprites/ui/svgui/uiEstrela32.svg" id="7_l46dy"]
-[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="9_8ox06"]
-[ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="10_8fdqh"]
+[ext_resource type="AudioStream" uid="uid://1dtykq1g7ta3" path="res://Assets/audio/botão.mp3" id="8_ola05"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="9_8ox06"]
 [ext_resource type="Texture2D" uid="uid://c04uwb4f7g7bo" path="res://Assets/sprites/ui/svgui/uiUncheckedButton1.svg" id="10_35k6t"]
 [ext_resource type="Texture2D" uid="uid://d1am1epdytgh7" path="res://Assets/sprites/ui/svgui/uiButtonChecked.svg" id="10_ju820"]
-[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/LibreBaskerville-Regular.ttf" id="11_bhsi6"]
+[ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/fonts/LibreBaskerville-Regular.ttf" id="11_bhsi6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rw3yt"]
 
@@ -180,7 +180,7 @@ region_enabled = true
 region_rect = Rect2(128, 83, 584, 734)
 
 [node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("10_8fdqh")
+stream = ExtResource("8_ola05")
 bus = &"sfx"
 
 [connection signal="value_changed" from="VBoxContainer/VolSliderMaster" to="." method="_on_vol_slider_master_value_changed"]

@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/sprites/iris/explicando2.png.import
-uid="uid://d0krderp22wtn"
+uid="uid://b8kyqbr4miu1i"
 path="res://.godot/imported/explicando2.png-0e4a133b1f1eb32544dd9977547d0aec.ctex"
-========
-uid="uid://cydm6ysfqh6xa"
-path="res://.godot/imported/uichanoar-06 (1).png-bfceb1bc98a369777b20549ef539071b.ctex"
->>>>>>>> spawnNPC:Assets/sprites/ui/Ajustes/uichanoar-06 (1).png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/sprites/iris/explicando2.png.import
 source_file="res://Assets/sprites/iris/explicando2.png"
 dest_files=["res://.godot/imported/explicando2.png-0e4a133b1f1eb32544dd9977547d0aec.ctex"]
-========
-source_file="res://Assets/sprites/ui/Ajustes/uichanoar-06 (1).png"
-dest_files=["res://.godot/imported/uichanoar-06 (1).png-bfceb1bc98a369777b20549ef539071b.ctex"]
->>>>>>>> spawnNPC:Assets/sprites/ui/Ajustes/uichanoar-06 (1).png.import
 
 [params]
 

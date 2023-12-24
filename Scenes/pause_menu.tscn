@@ -1,11 +1,11 @@
 [gd_scene load_steps=22 format=3 uid="uid://b5yyix8n88df3"]
 
 [ext_resource type="Script" path="res://Scripts/PauseMenu.gd" id="1_sg8mw"]
-[ext_resource type="Texture2D" uid="uid://7wn805d55b7k" path="res://Assets/sprites/ui/Ajustes/uichanoar-04 (2).png" id="3_5rhu2"]
-[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/LibreBaskerville-Bold.ttf" id="4_addoo"]
+[ext_resource type="Texture2D" uid="uid://c8osncht6ylno" path="res://Assets/sprites/ui/Ajustes/uichanoar-04 (2).png" id="3_5rhu2"]
+[ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="4_addoo"]
+[ext_resource type="AudioStream" uid="uid://1dtykq1g7ta3" path="res://Assets/audio/botão.mp3" id="5_3xq47"]
 [ext_resource type="PackedScene" uid="uid://cvbq828jqt541" path="res://Scenes/ajustes.tscn" id="5_kuq82"]
-[ext_resource type="AudioStream" uid="uid://drofeh6g0f85h" path="res://Assets/audio/xaropinho-ratinho-rapaz.mp3" id="6_71lsa"]
-[ext_resource type="AudioStream" uid="uid://cmh44bwauf7dp" path="res://Assets/audio/mainMenuTesteLoop.mp3" id="7_6h1p6"]
+[ext_resource type="AudioStream" uid="uid://bfbxk2xsjk42y" path="res://Assets/audio/cafe(padrao).mp3" id="6_74v6u"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w1uxo"]
 texture = ExtResource("3_5rhu2")
@@ -174,10 +174,10 @@ offset_bottom = 527.0
 scale = Vector2(1.05935, 1.05935)
 
 [node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_71lsa")
+stream = ExtResource("5_3xq47")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_6h1p6")
+stream = ExtResource("6_74v6u")
 autoplay = true
 bus = &"music"
 

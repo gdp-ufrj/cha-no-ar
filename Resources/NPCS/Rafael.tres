@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3 uid="uid://ergx2tmugdne"]
+[gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3]
 
-[ext_resource type="Resource" uid="uid://x3tbbljug6m6" path="res://Dialogo/Rafael.dialogue" id="1_7ardi"]
+[ext_resource type="Resource" path="res://Dialogo/rafael.dialogue" id="1_7ardi"]
 [ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_mkjb5"]
 
 [resource]
@@ -8,4 +8,4 @@ script = ExtResource("1_mkjb5")
 sprite_folder = "Male Sprite"
 NPC_Dialogue = ExtResource("1_7ardi")
 NPC_key_name = "Rafael"
-NPC_Sprite = "res://Assets/sprites/npcs/Male Sprite/NPC_8.png"
+NPC_Sprite = "res://Assets/sprites/npcs/Male Sprite/NPC_3.png"

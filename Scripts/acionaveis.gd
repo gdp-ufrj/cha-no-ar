@@ -3,7 +3,6 @@ extends Area2D
 @export_enum("Dialogue", "Door", "Carry") var type: String
 
 var should_ignore_interaction = false
-
 @export_group("Dialogue")
 @export var dialogue_resource: DialogueResource
 @export var dialogue_owner: String
@@ -15,6 +14,8 @@ var dialogue_day: String
 @export var number: int = 1
 
 func start_dialogue() -> void:
+	if should_ignore_interaction:
+		return
 	dialogue_day = State.current_day
 	var dialogue_dictionary = State.get_dialogue_dictionary()
 

@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/sprites/iris/blush4.png.import
-uid="uid://bpkq6b2714b0k"
-path="res://.godot/imported/blush4.png-5afbed96d728a2f19cc0d7a03e11310e.ctex"
-========
-uid="uid://dbygiglt23i8a"
+uid="uid://dfe3l7ftvy8w6"
 path="res://.godot/imported/NPC_4.png-86333eab43d25c2c6f79a63e8e5acb0c.ctex"
->>>>>>>> spawnNPC:Assets/sprites/npcs/Male Sprite/NPC_4.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/sprites/iris/blush4.png.import
-source_file="res://Assets/sprites/iris/blush4.png"
-dest_files=["res://.godot/imported/blush4.png-5afbed96d728a2f19cc0d7a03e11310e.ctex"]
-========
 source_file="res://Assets/sprites/npcs/Male Sprite/NPC_4.png"
 dest_files=["res://.godot/imported/NPC_4.png-86333eab43d25c2c6f79a63e8e5acb0c.ctex"]
->>>>>>>> spawnNPC:Assets/sprites/npcs/Male Sprite/NPC_4.png.import
 
 [params]
 

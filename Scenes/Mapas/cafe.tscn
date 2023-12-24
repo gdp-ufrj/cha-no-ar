@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=20 format=3 uid="uid://bsr4i8u0khvh8"]
 
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_7s0vp"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="8_8o3hl"]
 [ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_2wrbb"]
 [ext_resource type="Script" path="res://Scripts/cafe_seating_group.gd" id="9_en8f2"]
+[ext_resource type="Script" path="res://Scripts/show_menu.gd" id="10_rxpfy"]
+[ext_resource type="PackedScene" uid="uid://cupeccbog8svo" path="res://Scenes/livro_receitas.tscn" id="11_vg0ah"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ipo5"]
 texture = ExtResource("1_1xogh")
@@ -788,3 +790,23 @@ position = Vector2(-3.05176e-05, -12.9997)
 rotation = 3.14159
 scale = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_gohld")
+
+[node name="TSpawn_Spot" type="Marker2D" parent="."]
+position = Vector2(-106, 21)
+script = ExtResource("10_rxpfy")
+
+[node name="acionaveis" parent="TSpawn_Spot" instance=ExtResource("6_sbh5f")]
+type = "Carry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TSpawn_Spot/acionaveis"]
+position = Vector2(37, 41)
+shape = SubResource("RectangleShape2D_okngq")
+
+[node name="Recipes" parent="TSpawn_Spot" instance=ExtResource("11_vg0ah")]
+visible = false
+z_index = 11
+offset_left = -164.0
+offset_top = -114.0
+offset_right = 1756.0
+offset_bottom = 966.0
+scale = Vector2(0.220648, 0.220648)

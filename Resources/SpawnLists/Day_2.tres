@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Spawn_Resource" load_steps=2 format=3 uid="uid://bilbftojehxkb"]
+
+[ext_resource type="Script" path="res://Resources/spawn_list.gd" id="1_iwht6"]
+
+[resource]
+script = ExtResource("1_iwht6")
+Day_Number = "Day_2"
+Day_NPCs_Paths = Array[String](["", "", ""])
