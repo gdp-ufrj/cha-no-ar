@@ -17,7 +17,7 @@ var current_page: int = 0
 @onready var previous_drink_button: Button = get_node("Background/Previous Tea")
 @onready var make_tea_button: Button = get_node("Background/Make Tea")
 
-@onready var coffe_counter_tea_spawn_location = get_node("../../TeaSpawnPosition").global_position
+@onready var coffe_counter_tea_spawn_location = get_node("/root/sceneManager/cafe/TeaSpawnPosition").global_position
 
 func _ready():
 	get_drink_resources()
@@ -74,5 +74,3 @@ func make_tea():
 func toggle_recipe_book():
 	self.visible = !aberto
 	aberto = !aberto
-
-	
