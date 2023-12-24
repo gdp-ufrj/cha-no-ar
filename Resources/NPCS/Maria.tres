@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3]
 
-[ext_resource type="Resource" path="res://Dialogo/Maria.dialogue" id="1_jlpk0"]
+[ext_resource type="Resource" path="res://Dialogo/maria.dialogue" id="1_jlpk0"]
 [ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_u0o8q"]
 
 [resource]

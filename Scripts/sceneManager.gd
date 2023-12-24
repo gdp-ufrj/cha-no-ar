@@ -12,6 +12,7 @@ var current_scene
 @onready var valores_luz_ambiente = [Color(0, 0.26, 0.34, 1), Color(0, 0, 0, 1),
 									Color(0.28, 0.37, 0.26, 1), Color(0.58, 0.58, 0.58, 1)];
 
+	
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	luz_ambiente.set_energy(1.4)
@@ -25,8 +26,13 @@ func _ready():
 	maps["apartamento"] = ap
 	var varanda = load("res://Scenes/Mapas/varanda.tscn").instantiate()
 	maps["varanda"] = varanda
+	
+	State.pausa_dialogue_changed.connect(change_pause_dialogue_visible)
 	start_game()
 
+
+func change_pause_dialogue_visible():
+	get_node("Pausa-Dialogo").visible = State.pausa_dialogo
 
 ##### INICIALIZACAO
 func start_game():

@@ -47,6 +47,15 @@ var emocao_count: int = 0
 
 var comparation: int = 0
 
+var dialogue1_foi: bool = false
+var pausa_dialogo: bool = false
+
+signal pausa_dialogue_changed()
+
+func change_pausa_dialogo(pausa):
+	pausa_dialogo = pausa
+	pausa_dialogue_changed.emit()
+
 func has_assigned_sprites():
 	return estado.assigned_sprites
 

@@ -53,6 +53,16 @@ scale = Vector2(0.5, 0.5)
 text = "Noite
 "
 
+[node name="Pausa-Dialogo" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Pausa-Dialogo"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
 [connection signal="pressed" from="CanvasLayer/Manha" to="." method="_on_time_pressed" binds= [0]]
 [connection signal="pressed" from="CanvasLayer/Dia" to="." method="_on_time_pressed" binds= [1]]
 [connection signal="pressed" from="CanvasLayer/Tarde" to="." method="_on_time_pressed" binds= [2]]

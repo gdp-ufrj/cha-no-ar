@@ -8,4 +8,4 @@ script = ExtResource("1_cehrh")
 sprite_folder = "Female Sprite"
 NPC_Dialogue = ExtResource("1_uqu6l")
 NPC_key_name = "Fernanda"
-NPC_Sprite = "res://Assets/sprites/npcs/Female Sprite/NPC_2.png"
+NPC_Sprite = "res://Assets/sprites/npcs/Female Sprite/NPC_5.png"
