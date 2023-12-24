@@ -1,9 +1,11 @@
 ~ Leia_Day_1_0
+do change_pausa_dialogo(true)
 Loja de Chá Gato Preto!: [#leia:normal1,#vazio:normal1] Aberta de 9:00 até 16:00. Nos especializamos em blends de chás gelados e quentes totalmente artesanais, além de outras bebidas, feitas todas com muito cuidado. Aqui no Gato Preto promovemos o consumo de bebidas com propriedades benéficas à saúde e escolhemos à mão bebidas calmantes ou energizantes conforme a necessidade do cliente. Qualquer tipo de discriminação não será tolerada! Sejam gentis um com os outros.
 Leia: [#leia:normal1,#vazio:normal1] Estar no Gato Preto sempre foi a melhor parte do meu dia. Minha avó e todas as outras mulheres de gerações anteriores da nossa família criaram um ambiente mágico e aconchegante, onde nós podemos mostrar nosso gosto excêntrico e paixão pelo esoterismo.
 Leia: [#leia:normal1,#vazio:normal1] No Gato Preto, nós precisamos ouvir o que os clientes procuram nas bebidas e com tudo o que servimos, deixamos um pedaço de nós em troca de um pedaço do outro.
 Leia: [#leia:desconfiada3,#vazio:normal1] Será que eu dormi demais? Vou checar a hora... Ah não, tá de boa, dá até para ficar mais uns minutinhos...
 Leia: [#leia:normal1,#vazio:normal1] ...
+do change_pausa_dialogo(false)
 Leia: [#leia:pensando1,#vazio:normal1] Aii, porque eu fiz isso? Agora com certeza dormi demais... Espero que a vovó não fique muito chateada, eu tinha prometido de cuidar da loja hoje.
 Leia: [#leia:desconfiada3,#malvafone:malvafone1] Mas acho difícil, ela já tá me ligando...
 - Atender Malva [#leia:normal1, #malvafone:malvafone1]

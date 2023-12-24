@@ -1,17 +1,15 @@
-[gd_scene load_steps=22 format=3 uid="uid://cknedyiq3v434"]
+[gd_scene load_steps=20 format=3 uid="uid://cknedyiq3v434"]
 
 [ext_resource type="Script" path="res://Scripts/fase.gd" id="1_pb8pg"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_8gomm"]
-[ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="2_sbekf"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_4uegc"]
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="3_k8864"]
-[ext_resource type="Resource" uid="uid://dng27cxin1fnn" path="res://Dialogo/main.dialogue" id="4_wfgf0"]
 [ext_resource type="Texture2D" uid="uid://dhrb78rbt853b" path="res://Assets/sprites/tilesets/quarto.png" id="4_yt7du"]
 [ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="7_io7h3"]
-[ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_ah5rm"]
 [ext_resource type="PackedScene" uid="uid://d0tw14utntjkc" path="res://Scenes/cha_amarelo.tscn" id="9_akegy"]
 [ext_resource type="PackedScene" uid="uid://d3noddnmhi4dg" path="res://Scenes/carriable_object.tscn" id="10_3jcdk"]
 [ext_resource type="PackedScene" uid="uid://djec0tk58185v" path="res://Scenes/spawn_npc.tscn" id="13_bhmq6"]
+[ext_resource type="Resource" uid="uid://d7chan0cf2cn" path="res://Dialogo/leia.dialogue" id="13_ewqob"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v8xkm"]
 texture = ExtResource("2_8gomm")
@@ -703,9 +701,6 @@ sources/0 = SubResource("TileSetAtlasSource_v8xkm")
 sources/1 = SubResource("TileSetAtlasSource_2lom3")
 sources/2 = SubResource("TileSetAtlasSource_cqbo2")
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_b3x4i"]
-radius = 8.0
-
 [sub_resource type="Gradient" id="Gradient_52u77"]
 offsets = PackedFloat32Array(0, 0.604317, 0.71223)
 colors = PackedColorArray(1, 1, 1, 1, 0.057377, 0.057377, 0.057377, 1, 0, 0, 0, 1)
@@ -718,6 +713,8 @@ fill_from = Vector2(0.5, 0.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3c76q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8m60j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7i62"]
 
 [node name="quarto" type="Node2D"]
 script = ExtResource("1_pb8pg")
@@ -755,32 +752,6 @@ visible = false
 position = Vector2(-133, 57)
 scale = Vector2(0.00465134, 0.00465134)
 metadata/_edit_pinned_properties_ = [&"position"]
-
-[node name="NPC" parent="." instance=ExtResource("2_sbekf")]
-visible = false
-position = Vector2(-98, 67)
-
-[node name="acionaveis" parent="NPC" instance=ExtResource("3_4uegc")]
-type = "Dialogue"
-dialogue_resource = ExtResource("4_wfgf0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis"]
-position = Vector2(0, 9)
-shape = SubResource("CircleShape2D_b3x4i")
-debug_color = Color(0.996078, 0, 0, 0.419608)
-
-[node name="Leticia" parent="." instance=ExtResource("2_sbekf")]
-visible = false
-position = Vector2(-149, 67)
-
-[node name="acionaveis" parent="Leticia" instance=ExtResource("3_4uegc")]
-type = "Dialogue"
-dialogue_resource = ExtResource("9_ah5rm")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Leticia/acionaveis"]
-position = Vector2(0, 9)
-shape = SubResource("CircleShape2D_b3x4i")
-debug_color = Color(0.996078, 0, 0, 0.419608)
 
 [node name="LuzesFocais" type="Node2D" parent="."]
 
@@ -826,3 +797,17 @@ type = "Dialogue"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnNPC/acionaveis"]
 shape = SubResource("CircleShape2D_8m60j")
+
+[node name="TriggerDialogue1" type="Area2D" parent="."]
+position = Vector2(-36, 11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDialogue1"]
+shape = SubResource("RectangleShape2D_t7i62")
+debug_color = Color(0.760784, 0.176471, 1, 0.419608)
+
+[node name="acionaveis" parent="TriggerDialogue1" instance=ExtResource("3_4uegc")]
+type = "Dialogue"
+dialogue_resource = ExtResource("13_ewqob")
+dialogue_owner = "Leia"
+
+[connection signal="body_entered" from="TriggerDialogue1" to="." method="_on_trigger_dialogue_1_body_entered"]

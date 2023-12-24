@@ -13,10 +13,14 @@ var _state_machine
 var can_pick = true
 var drink_in_hand: Resource
 
+
 func _ready() -> void:
 	_state_machine = _animation_tree["parameters/playback"]
 	pass
-	
+
+func _on_dialogue_ended(_resource: DialogueResource):
+	_move_speed = 128
+
 func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var acionaveis = detector.get_overlapping_areas()
@@ -27,6 +31,7 @@ func _unhandled_input(_event: InputEvent) -> void:
 			if interacting.type == "Door":
 				get_parent().go_to_scene(interacting.portal, interacting.number)
 			elif interacting.type == "Dialogue":
+				_move_speed = 0
 				interacting.start_dialogue()
 			elif interacting.type == "Carry":
 				pass
