@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cupeccbog8svo"]
+[gd_scene load_steps=18 format=3 uid="uid://cupeccbog8svo"]
 
 [ext_resource type="Script" path="res://Scripts/recipe_book.gd" id="1_sb185"]
 [ext_resource type="Texture2D" uid="uid://dhwtjk5jxbw8j" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-01.png" id="2_m148v"]
@@ -6,6 +6,7 @@
 [ext_resource type="Theme" path="res://Assets/themes/titles.tres" id="3_5m8qc"]
 [ext_resource type="Theme" path="res://Assets/themes/text.tres" id="4_i3brd"]
 [ext_resource type="Texture2D" uid="uid://do181v0bmh7ch" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-02.png" id="6_qb22c"]
+[ext_resource type="AudioStream" uid="uid://cykmmj1qtnb83" path="res://Assets/audio/Xicara sendo enchida.mp3" id="7_m27bt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_45w2d"]
 texture = ExtResource("6_qb22c")
@@ -164,6 +165,9 @@ offset_bottom = 898.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_4sw0k")
 theme_override_styles/hover = SubResource("StyleBoxTexture_ya4ka")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_m882t")
+
+[node name="FillingTea" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_m27bt")
 
 [connection signal="pressed" from="Background/Previous Tea" to="." method="previous_drink"]
 [connection signal="pressed" from="Background/Next Tea" to="." method="next_drink"]

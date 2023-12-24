@@ -226,6 +226,7 @@ func consult_fork_result(character_title: String, fork_key: String):
 	return dialogue_dictionary[character_title]["forks"][fork_key]
 
 func check_fork_exists(character_title: String, fork_key: String):
+	print("fork_key:", fork_key)
 	print("character_title:", character_title)
 	return dialogue_dictionary[character_title]["forks"].has(fork_key)
 

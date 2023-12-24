@@ -20,11 +20,10 @@ func start_dialogue() -> void:
 	var dialogue_dictionary = State.get_dialogue_dictionary()
 
 	if !dialogue_dictionary.has(dialogue_owner):
-		dialogue_dictionary[dialogue_owner] = {}
+		dialogue_dictionary[dialogue_owner] = {"forks": {}}
 		dialogue_dictionary[dialogue_owner][dialogue_day] = {
 			"spot": 0,
 			"finished": false,
-			"forks": {}
 		}
 
 	dialogue_spot = dialogue_dictionary[dialogue_owner][dialogue_day]["spot"]

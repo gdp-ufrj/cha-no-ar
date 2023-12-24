@@ -67,8 +67,10 @@ func check_buttons():
 		next_drink_button.disabled = false
 		
 func make_tea():
+	$FillingTea.play()
 	var tea = carriable_object.instantiate()
 	tea.set_object_data(drinks[current_page], coffe_counter_tea_spawn_location)
+	print(tea)
 	fase.add_child(tea)
 	
 func toggle_recipe_book():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bsr4i8u0khvh8"]
+[gd_scene load_steps=19 format=3 uid="uid://bsr4i8u0khvh8"]
 
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_1xogh"]
 [ext_resource type="Script" path="res://Scenes/Mapas/cafe.gd" id="1_v8q0y"]
@@ -7,8 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://c3ky8gr7pv5d4" path="res://Assets/sprites/tilesets/cafe-decorations.png" id="3_unc73"]
 [ext_resource type="Texture2D" uid="uid://vxpxigk7rtqx" path="res://Assets/sprites/tilesets/seats.png" id="4_nf6fp"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="6_sbh5f"]
-[ext_resource type="PackedScene" uid="uid://dtlcf13b2csi4" path="res://Scenes/Bodies/NPC.tscn" id="8_8o3hl"]
-[ext_resource type="Resource" uid="uid://bcxsphrbl0dol" path="res://Dialogo/customer.dialogue" id="9_2wrbb"]
 [ext_resource type="Script" path="res://Scripts/cafe_seating_group.gd" id="9_en8f2"]
 [ext_resource type="PackedScene" uid="uid://cupeccbog8svo" path="res://Scenes/livro_receitas.tscn" id="11_vg0ah"]
 [ext_resource type="Script" path="res://Scenes/Mapas/Area2D.gd" id="13_261o8"]
@@ -619,8 +617,6 @@ sources/0 = SubResource("TileSetAtlasSource_6ipo5")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfgt6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_okngq"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gohld"]
 size = Vector2(14, 14)
 
@@ -690,20 +686,6 @@ debug_color = Color(0.788235, 0.431373, 0.0235294, 0.419608)
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, 30)
 zoom = Vector2(4, 4)
-
-[node name="NPC" parent="." instance=ExtResource("8_8o3hl")]
-visible = false
-position = Vector2(37, 41)
-
-[node name="acionaveis3" parent="NPC" instance=ExtResource("6_sbh5f")]
-position = Vector2(-37, -41)
-type = "Dialogue"
-dialogue_resource = ExtResource("9_2wrbb")
-dialogue_owner = "Leticia_Day_1_"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/acionaveis3"]
-position = Vector2(37, 41)
-shape = SubResource("RectangleShape2D_okngq")
 
 [node name="seating_group" type="Node2D" parent="."]
 position = Vector2(31, 87)

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_aerml"]
 [ext_resource type="Texture2D" uid="uid://bavy27af7dlxp" path="res://Assets/sprites/ui/uichanoar-02 (1).png" id="3_goc4n"]
 [ext_resource type="FontFile" uid="uid://cr6w2cpg566wo" path="res://Assets/fonts/LibreBaskerville-Regular.ttf" id="5_1b2e1"]
-[ext_resource type="FontFile" uid="uid://d3stl27lla7y2" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY.otf" id="5_qw5pn"]
+[ext_resource type="FontFile" uid="uid://csbekciwi04ic" path="res://Assets/fonts/HabitaScenic_PERSONAL_USE_ONLY.otf" id="5_qw5pn"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="6_shopr"]
 [ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="6_v5aim"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="7_5olvw"]

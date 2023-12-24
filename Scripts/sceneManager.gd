@@ -14,8 +14,8 @@ var current_scene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	luz_ambiente.set_energy(1.4)
-	luz_ambiente.set_color(valores_luz_ambiente[0])
+#	luz_ambiente.set_energy(1.4)
+#	luz_ambiente.set_color(valores_luz_ambiente[0])
 	
 	var quarto = load("res://Scenes/Mapas/quarto.tscn").instantiate()
 	maps["quarto"] = quarto

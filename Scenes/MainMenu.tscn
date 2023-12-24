@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cvbq828jqt541" path="res://Scenes/ajustes.tscn" id="4_26u3q"]
 [ext_resource type="Texture2D" uid="uid://bvsk35rd53jgl" path="res://Assets/sprites/ui/Ajustes/uichanoar-06 (1).png" id="4_fpt48"]
 [ext_resource type="FontFile" uid="uid://triks3gj3uap" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="4_mjuhi"]
-[ext_resource type="Texture2D" uid="uid://ci8gqhuuipgd0" path="res://Assets/sprites/ui/Créditos_.svg" id="7_kmjgc"]
+[ext_resource type="Texture2D" uid="uid://b45lftv8pulie" path="res://Assets/sprites/ui/Créditos_Corrigido_2.png" id="7_cblph"]
 [ext_resource type="AudioStream" uid="uid://cc5fl50d2l8qn" path="res://Assets/audio/cafe_v2.mp3" id="8_xdsqp"]
 [ext_resource type="AudioStream" uid="uid://1dtykq1g7ta3" path="res://Assets/audio/botão.mp3" id="9_fyf0e"]
 [ext_resource type="Texture2D" uid="uid://b8gllv3qv3778" path="res://Assets/sprites/ui/Ajustes/uichanoar-05.png" id="10_ugt7i"]
@@ -131,10 +131,11 @@ expand_mode = 1
 [node name="TextureRect2" type="TextureRect" parent="."]
 texture_filter = 2
 layout_mode = 0
-offset_left = -65.0
-offset_right = 1855.0
-offset_bottom = 1081.0
-scale = Vector2(0.545043, 0.545043)
+offset_left = -179.0
+offset_top = -48.0
+offset_right = 1741.0
+offset_bottom = 1033.0
+scale = Vector2(0.723813, 0.723813)
 texture = ExtResource("10_ugt7i")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -144,10 +145,10 @@ anchor_left = -0.153646
 anchor_top = 0.267593
 anchor_right = 0.846354
 anchor_bottom = 1.26759
-offset_left = 45.0003
-offset_top = 11.9996
-offset_right = 45.0005
-offset_bottom = 11.9994
+offset_left = 62.0003
+offset_top = 82.9996
+offset_right = 62.0005
+offset_bottom = 82.9994
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.709904, 0.709904)
@@ -244,7 +245,7 @@ layout_mode = 2
 offset_top = 1.0
 offset_right = 1920.0
 offset_bottom = 1081.0
-texture = ExtResource("7_kmjgc")
+texture = ExtResource("7_cblph")
 
 [node name="VoltarCreditos" type="Button" parent="Créditos"]
 texture_filter = 2

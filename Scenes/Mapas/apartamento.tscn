@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://rb7mk3pae5bw"]
+[gd_scene load_steps=9 format=3 uid="uid://rb7mk3pae5bw"]
 
 [ext_resource type="Texture2D" uid="uid://7x3awta6g4to" path="res://Assets/sprites/tilesets/apartamento.png" id="1_y1ece"]
 [ext_resource type="Texture2D" uid="uid://brfqupln86km1" path="res://Assets/sprites/tilesets/floor-wall.png" id="2_np76e"]
 [ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="3_a72w2"]
+[ext_resource type="PackedScene" uid="uid://b5yyix8n88df3" path="res://Scenes/pause_menu.tscn" id="4_hxi1y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ierdu"]
 texture = ExtResource("1_y1ece")
@@ -507,3 +508,9 @@ position = Vector2(-32, 74)
 
 [node name="Camera" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu2" parent="PauseMenu" instance=ExtResource("4_hxi1y")]
+visible = false
+z_index = 999

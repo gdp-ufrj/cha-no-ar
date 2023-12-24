@@ -167,10 +167,11 @@ text = "                                  "
 
 [node name="Ajustes" parent="." instance=ExtResource("5_kuq82")]
 visible = false
-offset_left = 77.0
-offset_top = 45.0
-offset_right = 933.0
-offset_bottom = 527.0
+z_index = 5
+offset_left = 461.0
+offset_top = 61.0
+offset_right = 1317.0
+offset_bottom = 543.0
 scale = Vector2(1.05935, 1.05935)
 
 [node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
