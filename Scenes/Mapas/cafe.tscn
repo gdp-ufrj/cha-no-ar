@@ -692,6 +692,7 @@ position = Vector2(0, 30)
 zoom = Vector2(4, 4)
 
 [node name="NPC" parent="." instance=ExtResource("8_8o3hl")]
+visible = false
 position = Vector2(37, 41)
 
 [node name="acionaveis3" parent="NPC" instance=ExtResource("6_sbh5f")]

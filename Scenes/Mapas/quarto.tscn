@@ -749,6 +749,7 @@ visible = false
 z_index = 999
 
 [node name="SpawnCha" type="Node2D" parent="."]
+visible = false
 
 [node name="CháAmarelo" parent="SpawnCha" instance=ExtResource("9_akegy")]
 position = Vector2(-133, 57)
@@ -756,6 +757,7 @@ scale = Vector2(0.00465134, 0.00465134)
 metadata/_edit_pinned_properties_ = [&"position"]
 
 [node name="NPC" parent="." instance=ExtResource("2_sbekf")]
+visible = false
 position = Vector2(-98, 67)
 
 [node name="acionaveis" parent="NPC" instance=ExtResource("3_4uegc")]
@@ -768,6 +770,7 @@ shape = SubResource("CircleShape2D_b3x4i")
 debug_color = Color(0.996078, 0, 0, 0.419608)
 
 [node name="Leticia" parent="." instance=ExtResource("2_sbekf")]
+visible = false
 position = Vector2(-149, 67)
 
 [node name="acionaveis" parent="Leticia" instance=ExtResource("3_4uegc")]
