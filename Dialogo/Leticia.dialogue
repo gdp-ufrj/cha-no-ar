@@ -15,3 +15,6 @@ if comparation == 1:
 	Leticia:[#leia:blush1,#leticia:normal1] É... Vai ter que servir,
 if comparation == 2:
 	Leticia:[#leia:normal1,#leticia:normal1] Hmmm... Muito bom! Finalmente os refrescos.
+do remove_npc("Leticia")
+
+=> END

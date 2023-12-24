@@ -40,6 +40,7 @@ Leia: [#leia:explicando1, #malvafone:malvafone2] Garota, você provalmente já s
 => END
 
 ~ Leia_Day_1_2
+
 Leia: [#leia:pensando1, #vazio:vazio1] Agora decisões importantes, eu janto vendo uma série ou vendo  um video no joutube... ?
 Leia: [#leia:desconfiada1, #malvafone:malvafone1] Vai ter que esperar,  de qualquer forma. Vovó tá me ligando de novo...
 Leia: [#leia:normal, #malvafone:malvafone2] E ai? Como foi hoje?
@@ -83,4 +84,5 @@ Leia: [#leia:desprezo2, #vazio:vazio1] Mas não consigo parar de pensar no que e
 Leia: [#leia:desprezo1, #vazio:vazio1] Ok, eu consigo entender o problema ai.
 Leia: [#leia:explicando7, #vazio:vazio1] Mas eu poderia falar mais se eu quisesse! E sempre tem a Iris...
 Leia: [#leia:desconfiada4, #vazio:vazio1] Enfim, não dá para resolver nada disso agora. Eu aprendi isso para parar me preocupar com as coisas antes de dormir. Dá para resolver agora? Não? Então vai dormir.
+do change_pausa_dialogo(false)
 => END

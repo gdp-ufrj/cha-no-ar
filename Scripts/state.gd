@@ -276,3 +276,5 @@ func load_data():
 		var file = FileAccess.open(SAVE_GAME_PATH, FileAccess.READ)
 		estado = file.get_var()
 
+func acaba_demo():
+	
