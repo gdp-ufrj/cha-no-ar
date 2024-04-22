@@ -1,9 +1,9 @@
 extends Node
 
-var teste = "AAAA"
-
 var player_instance = load("res://Scenes/Bodies/player.tscn").instantiate()
 var player
+
+@onready var pausa_dialogo = $"Pausa-Dialogo"
 
 var maps = {}
 var current_scene
@@ -17,14 +17,14 @@ var current_scene
 func _ready():
 #	luz_ambiente.set_energy(1.4)
 #	luz_ambiente.set_color(valores_luz_ambiente[0])
-	
-	var quarto = load("res://Scenes/Mapas/quarto.tscn").instantiate()
+	State.set_scene_manager(self)
+	var quarto = load("res://Scenes/Mapas/quarto.tscn")
 	maps["quarto"] = quarto
-	var cafe = load("res://Scenes/Mapas/cafe.tscn").instantiate()
+	var cafe = load("res://Scenes/Mapas/cafe.tscn")
 	maps["cafe"] = cafe
-	var ap = load("res://Scenes/Mapas/apartamento.tscn").instantiate()
+	var ap = load("res://Scenes/Mapas/apartamento.tscn")
 	maps["apartamento"] = ap
-	var varanda = load("res://Scenes/Mapas/varanda.tscn").instantiate()
+	var varanda = load("res://Scenes/Mapas/varanda.tscn")
 	maps["varanda"] = varanda
 	
 	State.pausa_dialogue_changed.connect(change_pause_dialogue_visible)
@@ -32,22 +32,26 @@ func _ready():
 
 
 func change_pause_dialogue_visible():
-	get_node("Pausa-Dialogo").visible = State.pausa_dialogo
+	pausa_dialogo.visible = State.pausa_dialogo
 
 ##### INICIALIZACAO
 func start_game():
 	self.add_child(player_instance)
 	player = get_node("Player")
-	go_to_scene("quarto", 1)
 	
+	State.restart_game_state()
+	
+	go_to_scene("quarto", 1)
 	State.assign_all_day_NPCs()
 
 func go_to_scene(nome, portal_num):
 	if current_scene:
-		self.remove_child(current_scene)
+		current_scene.queue_free()
 	
+	var scene_instance = maps.get(nome).instantiate()
 	
-	self.add_child(maps.get(nome))
+	self.add_child(scene_instance)
+	
 	current_scene = get_node(nome)
 	current_scene.get_node("Camera").make_current()
 	
@@ -63,13 +67,3 @@ func position_player(portal_num):
 	print("Spawn-" + str(portal_num))
 	player.global_position = current_scene.get_node("Spawn-" + str(portal_num)).global_position
 	player.z_index = 2
-
-
-##### INTERACAO
-func _on_time_pressed(index):
-	luz_ambiente.set_color(valores_luz_ambiente[index])
-	if index in[2, 3]:
-		current_scene.get_node("LuzesFocais").visible = true
-	else:
-		current_scene.get_node("LuzesFocais").visible = false
-		

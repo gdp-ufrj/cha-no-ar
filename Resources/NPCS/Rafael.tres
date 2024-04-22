@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3]
 
-[ext_resource type="Resource" path="res://Dialogo/rafael.dialogue" id="1_7ardi"]
+[ext_resource type="Resource" path="res://Dialogo/Rafael.dialogue" id="1_7ardi"]
 [ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_mkjb5"]
 
 [resource]

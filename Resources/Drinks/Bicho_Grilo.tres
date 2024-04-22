@@ -6,5 +6,6 @@
 script = ExtResource("1_753m3")
 Drink_Name = "Bicho Grilo"
 Drink_Tags = ["Calmante", "Refrescante"]
-Drink_Description = "Chá Verde com Hortelã e Gengibre"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Bicho_Grilo_Chá.png"
+Drink_Ingredients = "Chá Verde com Hortelã e Gengibre"
+Drink_Description = "Uma mescla de sabores relaxantes e refrescantes, com um toque amargo, servida gelada e perfeita para todo tipo de ocasião!"
+Drink_Image = "res://Assets/sprites/drinks_sprite/Bicho_Grilo_Chá.png"

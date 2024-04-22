@@ -3,12 +3,12 @@
 importer="dialogue_manager_compiler_11"
 type="Resource"
 uid="uid://dqb0iwbeykr7v"
-path="res://.godot/imported/claudio.dialogue-6a8e1580e8d27995f7ef9748292efecd.tres"
+path="res://.godot/imported/Claudio.dialogue-3a7907a68309b9c2f815b00be12447c2.tres"
 
 [deps]
 
-source_file="res://Dialogo/claudio.dialogue"
-dest_files=["res://.godot/imported/claudio.dialogue-6a8e1580e8d27995f7ef9748292efecd.tres"]
+source_file="res://Dialogo/Claudio.dialogue"
+dest_files=["res://.godot/imported/Claudio.dialogue-3a7907a68309b9c2f815b00be12447c2.tres"]
 
 [params]
 

@@ -1,16 +1,16 @@
 ~ Jose_Day_3_0
 do assento_assigner()
 Jose: [#leia:normal1,#Jose:normal1] José Bom dia! Me chamo José, e NOSSA, eu estou com muito medo de apresentar o TCC hoje. Não sei como vai ser... Nunca cheguei nessa parte. Teria como entregar algo rápido para me ajudar?
-
+do set_assento_waiting_for_drink("Jose")
 => END
 
 ~ Jose_Day_3_1
-do mark_last_speaking_for_day("Jose_Day_3")
-if check_fork_exists("Jose_Day_3", "given_drink_reaction"):
-	set comparation = consult_fork_result("Jose_Day_3", "given_drink_reaction")
+do mark_last_speaking_for_day("Jose")
+if check_fork_exists("Jose_Day_3", "given_drink_reaction_1"):
+	set comparation = consult_fork_result("Jose", "given_drink_reaction_1")
 else:
 	set comparation = compare_tags(["Calmante", "Tradicional"])
-	do mark_new_fork("Jose_Day_3", "given_drink_reaction", comparation)
+	do mark_new_fork("Jose", "given_drink_reaction_1", comparation)
 if comparation == 0:
 	Jose: [#leia:normal1,#Jose:normal1] MEU DEUS. MEU TRABALHO ESTÁ UM HORROR, VOU RECONSTRUIR TUDO AQUI? NÃO VAI DAAAR.
 	- Pedir informações

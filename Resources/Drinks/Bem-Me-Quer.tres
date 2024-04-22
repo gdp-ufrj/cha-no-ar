@@ -6,5 +6,6 @@
 script = ExtResource("1_105g2")
 Drink_Name = "Bem-Me-Quer"
 Drink_Tags = ["Energético", "Refrescante"]
-Drink_Description = "Chá de Hibisco, Maçã, Anis, Limão"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Bem-Me-Quer_Chá.png"
+Drink_Ingredients = "Chá de Hibisco, Maçã, Anis, Limão"
+Drink_Description = "Um blend de sabores cítricos e adocicados, servido gelado, perfeito para aumentar os ânimos."
+Drink_Image = "res://Assets/sprites/drinks_sprite/Bem-Me-Quer_Chá.png"

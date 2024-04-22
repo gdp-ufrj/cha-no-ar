@@ -3,12 +3,12 @@
 importer="dialogue_manager_compiler_11"
 type="Resource"
 uid="uid://d7chan0cf2cn"
-path="res://.godot/imported/leia.dialogue-c537912bf447a146d7b6e8f47eec21f3.tres"
+path="res://.godot/imported/Leia.dialogue-a15fa124c1ee0c6823e9c35c067fa1b5.tres"
 
 [deps]
 
-source_file="res://Dialogo/leia.dialogue"
-dest_files=["res://.godot/imported/leia.dialogue-c537912bf447a146d7b6e8f47eec21f3.tres"]
+source_file="res://Dialogo/Leia.dialogue"
+dest_files=["res://.godot/imported/Leia.dialogue-a15fa124c1ee0c6823e9c35c067fa1b5.tres"]
 
 [params]
 

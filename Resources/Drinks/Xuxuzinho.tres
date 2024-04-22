@@ -6,5 +6,6 @@
 script = ExtResource("1_qsafj")
 Drink_Name = "Xuxuzinho"
 Drink_Tags = ["Energético", "Tradicional"]
-Drink_Description = "Café Preto Expresso"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Xuxuzinha_Café.png"
+Drink_Ingredients = "Café Preto Expresso"
+Drink_Description = "Um clássico para as manhãs, tardes e até noites para os mais ousados! Uma bebida quente, rápida e perfeita para acordar o sistema nervoso."
+Drink_Image = "res://Assets/sprites/drinks_sprite/Xuxuzinha_Café.png"

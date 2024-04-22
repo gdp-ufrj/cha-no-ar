@@ -192,5 +192,4 @@ region_rect = Rect2(25, 32, 584, 733)
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Salvar" to="." method="_on_salvar_pressed"]
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/ResumeButton" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Menu principal" to="." method="_on_menu_principal_pressed"]
-[connection signal="pressed" from="Pause/CenterContainer/PauseMenu/Configurações" to="." method="troca_visibilidade" binds= ["Ajustes"]]
 [connection signal="pressed" from="Pause/CenterContainer/PauseMenu/QuitButton" to="." method="_on_quit_button_pressed"]

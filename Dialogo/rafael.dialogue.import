@@ -3,12 +3,12 @@
 importer="dialogue_manager_compiler_11"
 type="Resource"
 uid="uid://oontgrp1hp7x"
-path="res://.godot/imported/rafael.dialogue-a41ea248adfc691925597a64846e9e6f.tres"
+path="res://.godot/imported/Rafael.dialogue-da2690f9bbf24ac2c26c2c1a4c28e087.tres"
 
 [deps]
 
-source_file="res://Dialogo/rafael.dialogue"
-dest_files=["res://.godot/imported/rafael.dialogue-a41ea248adfc691925597a64846e9e6f.tres"]
+source_file="res://Dialogo/Rafael.dialogue"
+dest_files=["res://.godot/imported/Rafael.dialogue-da2690f9bbf24ac2c26c2c1a4c28e087.tres"]
 
 [params]
 

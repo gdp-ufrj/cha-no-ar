@@ -6,5 +6,6 @@
 script = ExtResource("1_2wny2")
 Drink_Name = "Chega Mais"
 Drink_Tags = ["Energético", "Tradicional"]
-Drink_Description = "Cappuccino"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Chega_Mais_Café.png"
+Drink_Ingredients = "Cappuccino"
+Drink_Description = "Uma bebida doce, sofisticada e aconchegante, ótima para a tarde de dias frios."
+Drink_Image = "res://Assets/sprites/drinks_sprite/Chega_Mais_Café.png"

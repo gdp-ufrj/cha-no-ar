@@ -6,5 +6,6 @@
 script = ExtResource("1_egn67")
 Drink_Name = "Corre-Corre"
 Drink_Tags = ["Energético", "Tradicional"]
-Drink_Description = "Chá de Erva Mate, Capim Limão, Maracujá, Cardamomo"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Corre-Corre_Chá.png"
+Drink_Ingredients = "Chá de Erva Mate, Capim Limão, Maracujá, Cardamomo"
+Drink_Description = "Uma mistura de sabores audaciosos e rústicos, com base na tradicional erva mate para trazer uma energia estimulante, servido quente."
+Drink_Image = "res://Assets/sprites/drinks_sprite/Corre-Corre_Chá.png"

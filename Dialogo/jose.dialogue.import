@@ -3,12 +3,12 @@
 importer="dialogue_manager_compiler_11"
 type="Resource"
 uid="uid://b1ijmerj13u7j"
-path="res://.godot/imported/jose.dialogue-7a4549f9a131072dba2a513f4e4c3802.tres"
+path="res://.godot/imported/Jose.dialogue-bfb507a5cc28077e4c202845c9046f5a.tres"
 
 [deps]
 
-source_file="res://Dialogo/jose.dialogue"
-dest_files=["res://.godot/imported/jose.dialogue-7a4549f9a131072dba2a513f4e4c3802.tres"]
+source_file="res://Dialogo/Jose.dialogue"
+dest_files=["res://.godot/imported/Jose.dialogue-bfb507a5cc28077e4c202845c9046f5a.tres"]
 
 [params]
 

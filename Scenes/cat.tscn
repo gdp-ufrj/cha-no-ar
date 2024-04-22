@@ -1,0 +1,114 @@
+[gd_scene load_steps=8 format=3 uid="uid://biwla6cpk0i01"]
+
+[ext_resource type="Texture2D" uid="uid://8nf22k4b2fkr" path="res://Assets/sprites/cat/Cat_Seated.png" id="1_cbhct"]
+[ext_resource type="Script" path="res://Scenes/cat.gd" id="2_804wq"]
+[ext_resource type="Texture2D" uid="uid://bh8f51ay00d1b" path="res://Assets/sprites/cat/Cat_Laying.png" id="3_304x4"]
+
+[sub_resource type="Animation" id="Animation_o066f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_cbhct")]
+}
+
+[sub_resource type="Animation" id="Animation_floa4"]
+resource_name = "idle_laying_cat"
+length = 1.6
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_304x4")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 1]
+}
+
+[sub_resource type="Animation" id="Animation_bnm3b"]
+resource_name = "idle_seated_cat"
+length = 1.4
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("1_cbhct"), ExtResource("1_cbhct")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wvri3"]
+_data = {
+"RESET": SubResource("Animation_o066f"),
+"idle_laying_cat": SubResource("Animation_floa4"),
+"idle_seated_cat": SubResource("Animation_bnm3b")
+}
+
+[node name="cat" type="Node2D"]
+script = ExtResource("2_804wq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../cat_sprite")
+libraries = {
+"": SubResource("AnimationLibrary_wvri3")
+}
+
+[node name="cat_sprite" type="Sprite2D" parent="."]
+position = Vector2(4, -10)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("1_cbhct")
+vframes = 7

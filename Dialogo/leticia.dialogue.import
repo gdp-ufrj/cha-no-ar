@@ -3,12 +3,12 @@
 importer="dialogue_manager_compiler_11"
 type="Resource"
 uid="uid://djfdwvermlbeh"
-path="res://.godot/imported/leticia.dialogue-f5e66cfbb0896d969aef279f39a57817.tres"
+path="res://.godot/imported/Leticia.dialogue-fba8f7dddb87009115b6ad5aa024693c.tres"
 
 [deps]
 
-source_file="res://Dialogo/leticia.dialogue"
-dest_files=["res://.godot/imported/leticia.dialogue-f5e66cfbb0896d969aef279f39a57817.tres"]
+source_file="res://Dialogo/Leticia.dialogue"
+dest_files=["res://.godot/imported/Leticia.dialogue-fba8f7dddb87009115b6ad5aa024693c.tres"]
 
 [params]
 

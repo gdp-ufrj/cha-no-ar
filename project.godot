@@ -12,7 +12,7 @@ config_version=5
 
 config/name="projetoVisualNovel"
 run/main_scene="res://Scenes/MainMenu.tscn"
-config/features=PackedStringArray("4.1", "GL Compatibility")
+config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -81,20 +81,35 @@ pause={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194305,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
 ]
 }
-ui_pick={
+left={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"echo":false,"script":null)
 ]
 }
-ui_interact={
+right={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
+]
+}
+up={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"echo":false,"script":null)
+]
+}
+down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"echo":false,"script":null)
+]
+}
+interact={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"echo":false,"script":null)
 ]
 }
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogo/main.dialogue", "res://Dialogo/customer.dialogue", "res://Dialogo/teste.dialogue", "res://Dialogo/caio.dialogue", "res://Dialogo/fernanda.dialogue", "res://Dialogo/maria.dialogue", "res://Dialogo/marlene.dialogue", "res://Dialogo/rafael.dialogue", "res://Dialogo/leticia.dialogue", "res://Dialogo/jose.dialogue", "res://Dialogo/bernardo.dialogue", "res://Dialogo/claudio.dialogue", "res://Dialogo/leia.dialogue", "res://Dialogo/Fabio.dialogue", "res://npc.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogo/Fabio.dialogue", "res://npc.dialogue", "res://Dialogo/Bernardo.dialogue", "res://Dialogo/Caio.dialogue", "res://Dialogo/Claudio.dialogue", "res://Dialogo/Fernanda.dialogue", "res://Dialogo/Jose.dialogue", "res://Dialogo/Leia.dialogue", "res://Dialogo/Leticia.dialogue", "res://Dialogo/Maria.dialogue", "res://Dialogo/Marlene.dialogue", "res://Dialogo/Rafael.dialogue", "res://Dialogo/Iris.dialogue")
 
 [layer_names]
 

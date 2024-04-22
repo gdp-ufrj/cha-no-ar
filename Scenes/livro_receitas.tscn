@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" path="res://Scripts/recipe_book.gd" id="1_sb185"]
 [ext_resource type="Texture2D" uid="uid://dhwtjk5jxbw8j" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-01.png" id="2_m148v"]
-[ext_resource type="Texture2D" uid="uid://d0empciyue8ug" path="res://Assets/sprites/drinks_sprite/Mãe_Natureza_Chá_.png" id="3_1o3vg"]
-[ext_resource type="Theme" path="res://Assets/themes/titles.tres" id="3_5m8qc"]
-[ext_resource type="Theme" path="res://Assets/themes/text.tres" id="4_i3brd"]
+[ext_resource type="Theme" uid="uid://ctx52f5e17dcf" path="res://Assets/themes/titles.tres" id="3_5m8qc"]
+[ext_resource type="Texture2D" uid="uid://d0empciyue8ug" path="res://Assets/sprites/tilesets/drinks_sprite/Mãe_Natureza_Chá_.png" id="3_okyml"]
+[ext_resource type="Theme" uid="uid://w1km7g474tf3" path="res://Assets/themes/text.tres" id="4_i3brd"]
 [ext_resource type="Texture2D" uid="uid://do181v0bmh7ch" path="res://Assets/sprites/sprite_recipe_book/Caderno UI-02.png" id="6_qb22c"]
 [ext_resource type="AudioStream" uid="uid://cykmmj1qtnb83" path="res://Assets/audio/Xicara sendo enchida.mp3" id="7_m27bt"]
+[ext_resource type="Texture2D" uid="uid://bw5c8bax67bpn" path="res://Assets/sprites/sprite_recipe_book/Close_Menu_Button.png" id="7_y7q4q"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_45w2d"]
 texture = ExtResource("6_qb22c")
@@ -19,8 +20,6 @@ region_rect = Rect2(222, 1698, 415, 75)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b0drr"]
 texture = ExtResource("6_qb22c")
 region_rect = Rect2(222, 1698, 415, 75)
-
-[sub_resource type="ButtonGroup" id="ButtonGroup_iadme"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nniuj"]
 texture = ExtResource("6_qb22c")
@@ -49,11 +48,11 @@ region_rect = Rect2(220, 1801, 860, 75)
 [node name="Recipes" type="Control"]
 process_mode = 3
 layout_mode = 3
-anchors_preset = 0
-offset_left = 40.0
-offset_top = 40.0
-offset_right = 1960.0
-offset_bottom = 1120.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_sb185")
 
@@ -62,27 +61,24 @@ visibility_layer = 2
 texture_filter = 2
 clip_contents = true
 layout_mode = 1
-anchors_preset = -1
-offset_left = 226.0
-offset_top = -43.0
-offset_right = 1312.0
-offset_bottom = 1043.0
+offset_right = 1086.0
+offset_bottom = 1086.0
 mouse_filter = 2
 texture = ExtResource("2_m148v")
 expand_mode = 1
 
 [node name="Drink Sprite" type="Sprite2D" parent="Background"]
 texture_filter = 2
-position = Vector2(478.266, 309.379)
+position = Vector2(486, 334)
 scale = Vector2(0.255722, 0.255722)
-texture = ExtResource("3_1o3vg")
+texture = ExtResource("3_okyml")
 
 [node name="Drink Name" type="Label" parent="Background"]
 layout_mode = 2
-offset_left = 635.0
-offset_top = 200.0
-offset_right = 871.0
-offset_bottom = 416.0
+offset_left = 619.0
+offset_top = 237.0
+offset_right = 855.0
+offset_bottom = 453.0
 theme = ExtResource("3_5m8qc")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
@@ -92,32 +88,34 @@ autowrap_mode = 3
 
 [node name="Ingredients Label" type="Label" parent="Background"]
 layout_mode = 2
-offset_left = 358.0
-offset_top = 420.0
-offset_right = 516.0
-offset_bottom = 455.0
+offset_left = 356.0
+offset_top = 520.0
+offset_right = 514.0
+offset_bottom = 555.0
 theme = ExtResource("3_5m8qc")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Ingredientes:"
 
-[node name="Drink Ingredients" type="Label" parent="Background/Ingredients Label"]
-layout_mode = 0
-offset_left = 6.0
-offset_top = 32.0
-offset_right = 500.0
-offset_bottom = 80.0
+[node name="Drink Ingredients" type="RichTextLabel" parent="Background/Ingredients Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.538
+anchor_bottom = 1.538
+offset_top = -18.83
+offset_right = 489.0
+offset_bottom = 78.17
 theme = ExtResource("4_i3brd")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "INGREDIENTES LALALALALALALALALALALALALALALALAL"
-vertical_alignment = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 25
+text = "Chá de Erva Mate, Capim Limão, Maracujá, Cardamomo"
 
 [node name="Description Label" type="Label" parent="Background"]
 layout_mode = 2
 offset_left = 356.0
-offset_top = 501.0
+offset_top = 620.0
 offset_right = 486.0
-offset_bottom = 536.0
+offset_bottom = 655.0
 theme = ExtResource("3_5m8qc")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
@@ -130,10 +128,11 @@ anchor_top = 1.538
 anchor_bottom = 1.538
 offset_top = -18.83
 offset_right = 489.0
-offset_bottom = 304.17
+offset_bottom = 102.17
 theme = ExtResource("4_i3brd")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+theme_override_font_sizes/normal_font_size = 25
+text = "Uma bebida moderna e refrescante, com uma mescla de dois componentes ousados, servida gelada, e com a presença de propriedades calmantes."
 
 [node name="Previous Tea" type="Button" parent="Background"]
 layout_mode = 2
@@ -144,7 +143,6 @@ offset_bottom = 835.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_45w2d")
 theme_override_styles/hover = SubResource("StyleBoxTexture_mijne")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_b0drr")
-button_group = SubResource("ButtonGroup_iadme")
 
 [node name="Next Tea" type="Button" parent="Background"]
 layout_mode = 2
@@ -166,9 +164,20 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_4sw0k")
 theme_override_styles/hover = SubResource("StyleBoxTexture_ya4ka")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_m882t")
 
+[node name="Close Menu" type="Button" parent="Background"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 792.0
+offset_top = 192.0
+offset_right = 834.0
+offset_bottom = 234.0
+icon = ExtResource("7_y7q4q")
+flat = true
+
 [node name="FillingTea" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_m27bt")
 
 [connection signal="pressed" from="Background/Previous Tea" to="." method="previous_drink"]
 [connection signal="pressed" from="Background/Next Tea" to="." method="next_drink"]
 [connection signal="pressed" from="Background/Make Tea" to="." method="make_tea"]
+[connection signal="pressed" from="Background/Close Menu" to="." method="close_menu"]

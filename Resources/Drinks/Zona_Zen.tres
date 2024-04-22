@@ -6,5 +6,6 @@
 script = ExtResource("1_iv52q")
 Drink_Name = "Zona Zen"
 Drink_Tags = ["Calmante", "Tradicional"]
-Drink_Description = "Chá Verde, Capim Limão, Laranja, Erva doce"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Zona_Zen_Chá_.png"
+Drink_Ingredients = "Chá Verde, Capim Limão, Laranja, Erva doce"
+Drink_Description = "Uma mistura de sabores cítricos e doces, servida quente, perfeita para relaxar!"
+Drink_Image = "res://Assets/sprites/drinks_sprite/Zona_Zen_Chá_.png"

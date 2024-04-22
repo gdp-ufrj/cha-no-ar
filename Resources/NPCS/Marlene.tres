@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="NPC_Resource" load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://Resources/npc_resource.gd" id="1_injxg"]
-[ext_resource type="Resource" path="res://Dialogo/marlene.dialogue" id="1_qenvs"]
+[ext_resource type="Resource" path="res://Dialogo/Marlene.dialogue" id="1_qenvs"]
 
 [resource]
 script = ExtResource("1_injxg")

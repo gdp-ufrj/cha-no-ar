@@ -3,12 +3,12 @@
 importer="dialogue_manager_compiler_11"
 type="Resource"
 uid="uid://8epppegvq1it"
-path="res://.godot/imported/caio.dialogue-9a19002d0623b67d9b7e80368c23b7c4.tres"
+path="res://.godot/imported/Caio.dialogue-32dd0d3cd04ab8ff051e02532e107e1c.tres"
 
 [deps]
 
-source_file="res://Dialogo/caio.dialogue"
-dest_files=["res://.godot/imported/caio.dialogue-9a19002d0623b67d9b7e80368c23b7c4.tres"]
+source_file="res://Dialogo/Caio.dialogue"
+dest_files=["res://.godot/imported/Caio.dialogue-32dd0d3cd04ab8ff051e02532e107e1c.tres"]
 
 [params]
 

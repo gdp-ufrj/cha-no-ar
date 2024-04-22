@@ -1,16 +1,16 @@
 ~ Maria_Day_2_0
 do assento_assigner()
 Maria: [#leia:normal1,#maria:normal1] Bom dia colega! Só vim dar uma passada rápída mesmo, saber as novas... Você viu que ontem teve um assalto aqui perto? Horrível... Enfim queria algo bem básico para me dar um up antes de voltar para o trabalho...
-
+do set_assento_waiting_for_drink("Maria")
 => END
 
 ~ Maria_Day_2_1
-do mark_last_speaking_for_day("Maria_Day_2")
-if check_fork_exists("Maria_Day_2", "given_drink_reaction"):
-	set comparation = consult_fork_result("Maria_Day_2", "given_drink_reaction")
+do mark_last_speaking_for_day("Maria")
+if check_fork_exists("Maria", "given_drink_reaction_1"):
+	set comparation = consult_fork_result("Maria", "given_drink_reaction_1")
 else:
 	set comparation = compare_tags(["Energético", "Tradicional"])
-	do mark_new_fork("Maria_Day_2", "given_drink_reaction", comparation)
+	do mark_new_fork("Maria", "given_drink_reaction_1", comparation)
 if comparation == 0:
 	Maria: [#leia:normal1,#maria:normal1] Oi? Acho que você me confundiu com alguém
 if comparation == 1:
@@ -24,14 +24,15 @@ if comparation == 2:
 
 ~ Maria_Day_5_0
 Maria: [#leia:normal1,#maria:normal1] Oi amiga... Tive uma baita noticia agora... To grávida! Não sei o que pensar... Mas a perspectiva de ser mãe me deixa ansiosa, tem algo para me relaxar? Acho que talvez eu já esteja até tendo desejos porque queira muito algo amargo agora também.
+do set_assento_waiting_for_drink("Maria")
 
 ~ Maria_Day_5_1
-do mark_last_speaking_for_day("Maria_Day_5")
-if check_fork_exists("Maria_Day_5", "given_drink_reaction"):
-	set comparation = consult_fork_result("Maria_Day_5", "given_drink_reaction")
+do mark_last_speaking_for_day("Maria")
+if check_fork_exists("Maria", "given_drink_reaction_2"):
+	set comparation = consult_fork_result("Maria", "given_drink_reaction_2")
 else:
 	set comparation = compare_tags(["Calmante", "Amargo"])
-	do mark_new_fork("Maria_Day_5", "given_drink_reaction", comparation)
+	do mark_new_fork("Maria", "given_drink_reaction_2", comparation)
 if comparation == 0:
 	Maria: [#leia:normal1,#maria:normal1] Oi? Acho que você me confundiu com alguém.
 if comparation == 1:

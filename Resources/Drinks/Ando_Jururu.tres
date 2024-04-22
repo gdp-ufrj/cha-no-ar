@@ -6,5 +6,6 @@
 script = ExtResource("1_y64dq")
 Drink_Name = "Ando Jururu"
 Drink_Tags = ["Calmante", "Tradicional"]
-Drink_Description = "Chá de Camomila, Melissa, Laranja"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Ando_Jururu_Chá.png"
+Drink_Ingredients = "Chá de Camomila, Melissa, Laranja"
+Drink_Description = "Uma mescla de sabores florais e delicados com um toque amargo, servida quente, ideal para ansiedade e insônia."
+Drink_Image = "res://Assets/sprites/drinks_sprite/Ando_Jururu_Chá.png"

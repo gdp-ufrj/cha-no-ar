@@ -6,5 +6,6 @@
 script = ExtResource("1_qdcpf")
 Drink_Name = "Benzadeus"
 Drink_Tags = ["Calmante", "Refrescante"]
-Drink_Description = "Matchá com Menta"
-Drink_Image = "res://Assets/sprites/drinks_sprite/Benzadeus_Chá.png"
+Drink_Ingredients = "Matchá com Menta"
+Drink_Description = "Uma bebida moderna e refrescante, com uma mescla de dois componentes ousados, servida gelada, e com a presença de propriedades calmantes."
+Drink_Image = "res://Assets/sprites/drinks_sprite/Benzadeus_Chá.png"

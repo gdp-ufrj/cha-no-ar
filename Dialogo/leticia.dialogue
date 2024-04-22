@@ -1,20 +1,20 @@
 ~ Leticia_Day_1_0
 Leticia: [#leia:normal1,#leticia:normal1] Oi ami! Tava me exercitando em uma corrida lá fora, mas tá muito quente! Tem alguma coisa aí para me refrescar e relaxar?
+do set_assento_waiting_for_drink("Leticia")
 => END
 
 ~ Leticia_Day_1_1
 do mark_last_speaking_for_day("Leticia")
-if check_fork_exists("Leticia", "given_drink_reaction"):
-	set comparation = consult_fork_result("Leticia", "given_drink_reaction")
+if check_fork_exists("Leticia", "given_drink_reaction_1"):
+	set comparation = consult_fork_result("Leticia", "given_drink_reaction_1")
 else:
 	set comparation = compare_tags(["Calmante", "Refrescante"])
-	do mark_new_fork("Leticia", "given_drink_reaction", comparation)
+	do set_npc_served("Leticia")
+	do mark_new_fork("Leticia", "given_drink_reaction_1", comparation)
 if comparation == 0:
 	Leticia:[#leia:triste1,#leticia:normal1] Que isso?! Ah, não... Não foi isso que eu pedi.
 if comparation == 1:
 	Leticia:[#leia:blush1,#leticia:normal1] É... Vai ter que servir,
 if comparation == 2:
 	Leticia:[#leia:normal1,#leticia:normal1] Hmmm... Muito bom! Finalmente os refrescos.
-do remove_npc("Leticia")
-
 => END

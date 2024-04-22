@@ -1,5 +1,5 @@
 extends Control
-@onready var pause_menu = $"../Pause/CenterContainer/PauseMenu"
+
 @onready var main_menu = $"../CenterContainer/MainMenu"
 @onready var vol_slider_master = $VBoxContainer/VolSliderMaster
 @onready var vol_slider_sfx = $VBoxContainer/VolSliderSFX
@@ -16,19 +16,7 @@ func troca_visibilidade_teste(node_path):
 		container.visible = !container.visible
 	else:
 		var container = get_node(node_path)
-		pause_menu.visible = !pause_menu.visible
 		container.visible = !container.visible
-
-func _unhandled_input(event):
-	if is_instance_valid(pause_menu):
-		if event.is_action_pressed("pause"):
-			if $".".visible == true:
-				pause_menu.visible = !pause_menu.visible
-				$".".visible = !$".".visible
-#	if is_instance_valid(main_menu):
-#		if event.is_action_pressed("pause"):
-#			main_menu.visible = !main_menu.visible
-#			$"../MainMenu".visible = !$"../MainMenu".visible
 
 func _on_fullscreen_toggled(button_pressed):
 	toca_som_botao()
@@ -45,6 +33,7 @@ func troca_visibilidade(node_path):
 func _on_voltar_opçoes_pressed():
 	troca_visibilidade_teste(".")
 	toca_som_botao()
+
 #####################Som
 func _ready():
 	vol_slider_master.value = AudioServer.get_bus_volume_db(bus_master)

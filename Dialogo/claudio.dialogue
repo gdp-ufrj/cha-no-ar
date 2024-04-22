@@ -1,16 +1,15 @@
 ~ Claudio_Day_4_0
-do assento_assigner()
 Claudio: [#leia:normal1,#Claudio:normal1] Claudioo na área! Estou querendo algo DELICIOSO que me lembre algo como 'Fantástica Fábrica de chá'. Para passar o resto do dia feliz por vir aqui. José pediu pra mandar um abraço pro Adonis.
-
+do set_assento_waiting_for_drink("Claudio")
 => END
 
 ~ Claudio_Day_4_1
-do mark_last_speaking_for_day("Claudio_Day_4")
-if check_fork_exists("Claudio_Day_4", "given_drink_reaction"):
-	set comparation = consult_fork_result("Claudio_Day_4", "given_drink_reaction")
+do mark_last_speaking_for_day("Claudio")
+if check_fork_exists("Claudio", "given_drink_reaction_1"):
+	set comparation = consult_fork_result("Claudio_Day_4", "given_drink_reaction_1")
 else:
 	set comparation = compare_tags(["Doce", "Refrescante"])
-	do mark_new_fork("Claudio_Day_4", "given_drink_reaction", comparation)
+	do mark_new_fork("Claudio", "given_drink_reaction_1", comparation)
 if comparation == 0:
 	Claudio: [#leia:normal1,#Claudio:normal1] Nossa. Acho que nunca mais volto aqui. Obrigado?
 if comparation == 1:

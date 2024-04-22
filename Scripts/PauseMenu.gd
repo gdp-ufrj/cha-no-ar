@@ -1,6 +1,8 @@
 extends Control
+
 @onready var ajuda = Container.new()
-@onready var pause_menu = get_node("Pause/CenterContainer/PauseMenu")
+@onready var pause_menu = $".."
+
 var music_position = 0
 func _unhandled_input(event):
 	#Ao apertar o input relacionado com o evento pause(nesse caso o Esc) muda o valor de is_paused pro valor

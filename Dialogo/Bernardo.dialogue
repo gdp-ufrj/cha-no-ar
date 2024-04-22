@@ -1,16 +1,15 @@
 ~ Bernardo_Day_3_0
-do assento_assigner()
 Bernardo: [#leia:normal1,#Bernardo:normal1] Bom dia... Adoro vir aqui, mas tenho evitado desde que comecei a dieta... Inclusive to nervoso com a consulta hoje, tem algo para me acalmar que não seja doce?
-
+do set_assento_waiting_for_drink("Bernardo")
 => END
 
 ~ Bernardo_Day_3_1
-do mark_last_speaking_for_day("Bernardo_Day_3")
-if check_fork_exists("Bernardo_Day_3", "given_drink_reaction"):
-	set comparation = consult_fork_result("Bernardo_Day_3", "given_drink_reaction")
+do mark_last_speaking_for_day("Bernardo")
+if check_fork_exists("Bernardo_Day_3", "given_drink_reaction_1"):
+	set comparation = consult_fork_result("Bernardo_Day_3", "given_drink_reaction_1")
 else:
 	set comparation = compare_tags(["Calmante", "Amargo"])
-	do mark_new_fork("Bernardo_Day_3", "given_drink_reaction", comparation)
+	do mark_new_fork("Bernardo_Day_3", "given_drink_reaction_1", comparation)
 if comparation == 0:
 	Bernardo: [#leia:normal1,#Bernardo:normal1] Não, não, não... Todo errado.
 if comparation == 1:
@@ -25,15 +24,13 @@ Bernardo: [#leia:normal1,#Bernardo:normal1] Bom dia! Estive aqui anteontem... Ma
 
 ~ Bernardo_Day_5_1
 do mark_last_speaking_for_day("Bernardo_Day_5")
-if check_fork_exists("Bernardo_Day_5", "given_drink_reaction"):
-	set comparation = consult_fork_result("Bernardo_Day_5", "given_drink_reaction")
+if check_fork_exists("Bernardo_Day_5", "given_drink_reaction_2"):
+	set comparation = consult_fork_result("Bernardo_Day_5", "given_drink_reaction_2")
 else:
 	set comparation = compare_tags(["Doce"])
-	do mark_new_fork("Bernardo_Day_5", "given_drink_reaction", comparation)
+	do mark_new_fork("Bernardo_Day_5", "given_drink_reaction_2", comparation)
 if comparation == 0:
 	Bernardo: [#leia:normal1,#Bernardo:normal1] Não, não, não... Todo errado.
 if comparation == 1:
 	Bernardo: [#leia:normal1,#Bernardo:normal1] Não, não, não... Todo errado.
-if comparation == 2:
-	Bernardo: [#leia:normal1,#Bernardo:normal1] Exatamente o que eu queria!
 => END

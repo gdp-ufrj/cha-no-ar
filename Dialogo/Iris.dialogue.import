@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://buykv1nrd23he"
+path="res://.godot/imported/Iris.dialogue-16d7361bad46a928f163910a715ffd5b.tres"
+
+[deps]
+
+source_file="res://Dialogo/Iris.dialogue"
+dest_files=["res://.godot/imported/Iris.dialogue-16d7361bad46a928f163910a715ffd5b.tres"]
+
+[params]
+
+defaults=true

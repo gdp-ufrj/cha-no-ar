@@ -1,69 +1,71 @@
 extends CharacterBody2D
-var _state_machine
 
-@onready var camera = get_node("Camera2D")
+@onready var camera = $Camera
 
 @export_category("variable")
-@export var _move_speed:float =128
+@export var move_speed:float = 80
 
-@export_category("Objects")
-@export var _animation_tree: AnimationTree = null
-@onready var detector: Area2D = $direcao/Area2D
-
-var can_pick = true
+var has_drink_in_hand = false
 var drink_in_hand: Resource
+var is_talking : bool
 
+@export var starting_direction : Vector2 = Vector2(0, 1)
+
+@onready var animation_tree = $AnimationTree
+@onready var state_machine = animation_tree.get("parameters/playback")
+@onready var interaction_indicator = $interaction_indicator
+
+func remove_player_speed():
+	move_speed = 0
 
 func _ready() -> void:
-	_state_machine = _animation_tree["parameters/playback"]
+	State.set_player_reference(self)
+	update_animation_parameters(starting_direction)
+	
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 	pass
 
 func _on_dialogue_ended(_resource: DialogueResource):
-	_move_speed = 128
+	move_speed = 80
+	is_talking = false
+	interaction_indicator.visible = false
+	if (has_drink_in_hand):
+		has_drink_in_hand = false
+		drink_in_hand = null
 
-func _unhandled_input(_event: InputEvent) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
-		var acionaveis = detector.get_overlapping_areas()
-		if acionaveis.size()>0:
-			var interacting = acionaveis[0]
-			if interacting.should_ignore_interaction:
-				return
-			if interacting.type == "Door":
-				get_parent().go_to_scene(interacting.portal, interacting.number)
-			elif interacting.type == "Dialogue":
-				_move_speed = 0
-				interacting.start_dialogue()
-			elif interacting.type == "Carry":
-				pass
-			return
-		
 func _physics_process(_delta: float) -> void:
-	_move()
-	_animated()
+	var input_direction = Vector2(
+		Input.get_action_strength("right") - Input.get_action_strength("left"),
+		Input.get_action_strength("down") - Input.get_action_strength("up")
+	)
+	
+	update_animation_parameters(input_direction)
+	
+	velocity = input_direction * move_speed
+	
 	move_and_slide()
 	
-func _move() -> void:
-	var _direction:Vector2 = Vector2(
-		Input.get_axis("ui_left","ui_right"),
-		Input.get_axis("ui_up","ui_down")
-	)
-	if _direction != Vector2.ZERO:
-		_animation_tree["parameters/idle/blend_position"] = _direction
-		_animation_tree["parameters/walk/blend_position"] = _direction
-	velocity = _direction.normalized()*_move_speed
-
-func _animated() -> void:
-	if velocity.length()>1:
-		_state_machine.travel("walk")
-		return
-	_state_machine.travel("idle")
-
-func make_player_current_camera():
-	var tilemap = get_owner().get_node("Terreno")
-	var map_rect = tilemap.get_used_rect()
-	var cell_size = tilemap.cell_quadrant_size
+	await pick_new_state()
 	
-	var map_size = map_rect.size * cell_size
-	camera.limit_right = map_size.x
-	camera.limit_bottom = map_size.y
+	
+func update_animation_parameters(move_input : Vector2):
+	if(move_input != Vector2.ZERO):
+		animation_tree.set("parameters/Walk/blend_position", move_input)
+		animation_tree.set("parameters/TeaWalk/blend_position", move_input)
+		animation_tree.set("parameters/Idle/blend_position", move_input)
+		animation_tree.set("parameters/TeaIdle/blend_position", move_input)
+	
+func pick_new_state():
+	var movement_tree_branch : String
+	var idle_tree_branch : String
+	if (!has_drink_in_hand):
+		movement_tree_branch = "Walk"
+		idle_tree_branch = "Idle"
+	else :
+		movement_tree_branch = "TeaWalk"
+		idle_tree_branch = "TeaIdle"
+	
+	if(velocity != Vector2.ZERO):
+		state_machine.travel(movement_tree_branch)
+	else:
+		state_machine.travel(idle_tree_branch)

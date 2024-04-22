@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dtlcf13b2csi4"]
+[gd_scene load_steps=5 format=3 uid="uid://dtlcf13b2csi4"]
 
 [ext_resource type="Texture2D" uid="uid://bpcoi2hac7r3p" path="res://Assets/sprites/inMap/Íris_Versão_Final.png" id="1_b8sf5"]
+[ext_resource type="PackedScene" uid="uid://b5qrbhh06a50p" path="res://Scenes/acionaveis.tscn" id="2_vk5ql"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tvsoq"]
 radius = 7.0503
 height = 14.1006
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5w772"]
+radius = 14.0357
 
 [node name="NPC" type="CharacterBody2D"]
 
@@ -19,3 +23,11 @@ texture = ExtResource("1_b8sf5")
 hframes = 5
 vframes = 4
 frame = 1
+
+[node name="acionaveis" parent="." instance=ExtResource("2_vk5ql")]
+type = "Dialogue"
+dialogue_owner = "Iris"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="acionaveis"]
+position = Vector2(0, 11)
+shape = SubResource("CircleShape2D_5w772")
